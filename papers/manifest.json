@@ -1,0 +1,63 @@
+{
+  "retrieval_date": "2026-09-08",
+  "page_numbering": "1-based PDF page numbers; matches printed page numbers in these versions",
+  "papers": [
+    {
+      "stem": "lee-2026-meta-harness-end-to-end",
+      "arxiv_version": "2603.28052v1",
+      "url": "https://arxiv.org/pdf/2603.28052v1",
+      "pdf_path": "papers/lee-2026-meta-harness-end-to-end.pdf",
+      "pages": 26,
+      "bytes": 1078140,
+      "sha256": "7d9b90f53a9f4801a090f1a4acb843340cde81e4f865f97d53fff2a6a570eb73",
+      "retrieved_date": "2026-09-08",
+      "text_extractor": "pdftotext -layout",
+      "visual_review_pages": [
+        9
+      ]
+    },
+    {
+      "stem": "zhang-2026-hyperagents",
+      "arxiv_version": "2603.19461v1",
+      "url": "https://arxiv.org/pdf/2603.19461v1",
+      "pdf_path": "papers/zhang-2026-hyperagents.pdf",
+      "pages": 60,
+      "bytes": 9012806,
+      "sha256": "92f9a73b43699c08c6000f7d4f1b68bec9fd872d217467fe4a1127e2f7981f1e",
+      "retrieved_date": "2026-09-08",
+      "text_extractor": "pdftotext -layout",
+      "visual_review_pages": [
+        13
+      ]
+    },
+    {
+      "stem": "hebbar-2026-sia-self-improving-ai",
+      "arxiv_version": "2605.27276v2",
+      "url": "https://arxiv.org/pdf/2605.27276v2",
+      "pdf_path": "papers/hebbar-2026-sia-self-improving-ai.pdf",
+      "pages": 15,
+      "bytes": 993538,
+      "sha256": "3f75a62487a5fb3fc2db8d06b78e6f6d598fc46b446cdfa9e205c33fb41de265",
+      "retrieved_date": "2026-09-08",
+      "text_extractor": "pdftotext -layout",
+      "visual_review_pages": [
+        11
+      ]
+    },
+    {
+      "stem": "feng-2026-coskill-joint-reinforcement",
+      "arxiv_version": "2609.04865v1",
+      "url": "https://arxiv.org/pdf/2609.04865v1",
+      "pdf_path": "papers/feng-2026-coskill-joint-reinforcement.pdf",
+      "pages": 25,
+      "bytes": 1102786,
+      "sha256": "054cd5f7f77995ea29bf19690904298bfe59b49ec2d066a7bf718f99c25e1bca",
+      "retrieved_date": "2026-09-08",
+      "text_extractor": "pdftotext -layout",
+      "visual_review_pages": [
+        7,
+        20
+      ]
+    }
+  ]
+}
