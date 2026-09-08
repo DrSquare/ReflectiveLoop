@@ -13,6 +13,11 @@ See [`index.md`](index.md) for the full generated catalog and
 [`wiki/overviews/self-improving-llm-agents.md`](wiki/overviews/self-improving-llm-agents.md)
 for a synthesis of how the four papers relate to each other.
 
+All four seeds have exact, versioned PDFs and full-text-grounded notes as
+of September 8, 2026. See the [PDF manifest](papers/README.md) and
+[claim-change record](logs/reports/2026-09-08-seed-pdf-upgrade.md) for
+provenance and corrections to the original abstract-level synthesis.
+
 ## Adding a paper
 Follow the ingest steps in [`AGENTS.md`](AGENTS.md), then regenerate the
 catalog:
