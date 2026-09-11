@@ -3,10 +3,10 @@
   "timezone": "America/Los_Angeles",
   "scheduled_local_time": "08:00",
   "task_title": "Update ReflectiveLoop papers",
-  "last_successful_scan_utc": null,
+  "last_successful_scan_utc": "2026-09-11T04:01:44+00:00",
   "current_scan": {
     "coverage_cutoff_utc": "2026-09-11T04:01:44+00:00",
-    "publication_status": "prepared",
+    "publication_status": "published_with_two_deferred_pdfs",
     "branch": "codex/self-improvement-literature-scan",
     "base_branch": "codex/pdf-ground-seed-papers",
     "admitted": [
@@ -60,7 +60,9 @@
         "version": "2609.08944v1",
         "stem": "li-2026-skilladam-stable-and-efficient-skill"
       }
-    ]
+    ],
+    "publication_commit": "9dacd7a2d2c95a4217d36d71d9746eb1c559e07b",
+    "pull_request": "https://github.com/DrSquare/ReflectiveLoop/pull/4"
   },
   "pending_elsewhere": [
     {

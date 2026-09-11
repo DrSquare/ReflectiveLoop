@@ -47,3 +47,5 @@ The enabled ChatGPT task **Update ReflectiveLoop papers** runs daily at **08:00 
 ## Verification
 
 Run `python3 scripts/build_index.py --apply`, `python3 scripts/validate_wiki.py`, and `git diff --check`. Publication and the observed validation result are appended to the daily log after they succeed. These gates verify artifact integrity; they do not reproduce scientific claims.
+
+Published as [PR #4](https://github.com/DrSquare/ReflectiveLoop/pull/4). Observed result: PASS for 14 PDF/source/wiki triples and 18 wiki pages, current catalog, local links, and reciprocal synthesis. The initial remote tree matched local Git tree 6613e90ad491a1e871d00d30834830b5ef7e183c exactly. Two oversized PDFs remain explicitly deferred.
