@@ -18,3 +18,4 @@ upgrade them to full PDF-grounded pages.
 | `zhang-2026-hyperagents` | [2603.19461](https://arxiv.org/abs/2603.19461) | Hyperagents |
 | `hebbar-2026-sia-self-improving-ai` | [2605.27276](https://arxiv.org/abs/2605.27276) | SIA: Self Improving AI with Harness & Weight Updates |
 | `feng-2026-coskill-joint-reinforcement` | [2609.04865](https://arxiv.org/abs/2609.04865) | CoSkill: Joint Reinforcement Learning of Reasoning and Meta-Skill Agents for Hierarchical Skill Evolution |
+| `park-2026-autosaddler-automatic-harness-optimization-with` | [2608.23041](https://arxiv.org/abs/2608.23041) | AutoSaddler: Automatic Harness Optimization with Durable Updates from Agent Execution Traces |

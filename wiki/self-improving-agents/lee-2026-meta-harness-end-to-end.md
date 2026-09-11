@@ -46,3 +46,8 @@ summary) and proposes the next candidate.
 - [[hebbar-2026-sia-self-improving-ai]] — also separates harness updates
   from a second improvement axis (SIA uses model weight updates; SIA's
   Feedback-Agent explicitly chooses between the two).
+- [[park-2026-autosaddler-automatic-harness-optimization-with]]
+  (AutoSaddler) — optimizes the same harness axis offline, from
+  failure-trace diagnosis over mini-batches with validation-gated
+  structured patches, rather than by online search with full history in
+  context.
