@@ -1,0 +1,133 @@
+{
+  "schema_version": 1,
+  "timezone": "America/Los_Angeles",
+  "scheduled_local_time": "08:00",
+  "task_title": "Update ReflectiveLoop papers",
+  "last_successful_scan_utc": null,
+  "current_scan": {
+    "coverage_cutoff_utc": "2026-09-11T04:01:44+00:00",
+    "publication_status": "prepared",
+    "branch": "codex/self-improvement-literature-scan",
+    "base_branch": "codex/pdf-ground-seed-papers",
+    "admitted": [
+      {
+        "id": "2601.21557",
+        "version": "2601.21557v2",
+        "stem": "ye-2026-meta-context-engineering-via-agentic"
+      },
+      {
+        "id": "2605.22166",
+        "version": "2605.22166v1",
+        "stem": "xu-2026-adapting-the-interface-not-the"
+      },
+      {
+        "id": "2606.09498",
+        "version": "2606.09498v1",
+        "stem": "zhang-2026-self-harness-harnesses-that-improve"
+      },
+      {
+        "id": "2608.15071",
+        "version": "2608.15071v1",
+        "stem": "wei-2026-evo-harness-context-to-harness"
+      },
+      {
+        "id": "2608.23552",
+        "version": "2608.23552v1",
+        "stem": "karten-2026-prime-agent-a-self-improving"
+      },
+      {
+        "id": "2608.24747",
+        "version": "2608.24747v1",
+        "stem": "yang-2026-skillforge-evolving-verifiable-skills-for"
+      },
+      {
+        "id": "2607.29468",
+        "version": "2607.29468v1",
+        "stem": "fu-2026-self-play-meets-skill-evolution"
+      },
+      {
+        "id": "2505.22954",
+        "version": "2505.22954v1",
+        "stem": "zhang-2025-darwin-godel-machine-open-ended"
+      },
+      {
+        "id": "2609.08228",
+        "version": "2609.08228v1",
+        "stem": "fu-2026-se-gos-self-evolving-graph"
+      },
+      {
+        "id": "2609.08944",
+        "version": "2609.08944v1",
+        "stem": "li-2026-skilladam-stable-and-efficient-skill"
+      }
+    ]
+  },
+  "pending_elsewhere": [
+    {
+      "id": "2608.23041",
+      "title": "AutoSaddler: Automatic Harness Optimization with Durable Updates",
+      "pull_request": "https://github.com/DrSquare/ReflectiveLoop/pull/3",
+      "status": "pending_existing_pr"
+    }
+  ],
+  "backlog": [
+    {
+      "id": "2608.01918",
+      "title": "HarnessCompass: Guiding Automatic Harness Evolution toward Generalizable and Effective Agent Harnesses",
+      "status": "primary_metadata_verified; PDF review pending"
+    },
+    {
+      "id": "2603.03329",
+      "title": "AutoHarness: improving LLM agents by automatically synthesizing a code harness",
+      "status": "primary_metadata_verified; PDF review pending"
+    },
+    {
+      "id": "2510.04618",
+      "title": "Agentic Context Engineering: Evolving Contexts for Self-Improving Language Models",
+      "status": "primary_metadata_verified; PDF review pending"
+    },
+    {
+      "id": "2408.08435",
+      "title": "Automated Design of Agentic Systems",
+      "status": "primary_metadata_verified; PDF review pending"
+    },
+    {
+      "id": "2505.22954",
+      "title": "Darwin Godel Machine",
+      "version": "2505.22954v3",
+      "status": "revision_detected; compare against ingested v1"
+    },
+    {
+      "id": "2605.09341",
+      "title": "SkillMAS: Skill Co-Evolution with LLM-based Multi-Agent System",
+      "status": "primary_metadata_verified; PDF review pending"
+    },
+    {
+      "id": "2604.08618",
+      "title": "SkillForge: Forging Domain-Specific, Self-Evolving Agent Skills in Cloud Technical Support",
+      "status": "distinct from 2608.24747; primary_metadata_verified; PDF review pending"
+    }
+  ],
+  "missing_pdfs": [
+    {
+      "id": "2605.09998",
+      "version": "2605.09998v1",
+      "stem": "karten-2026-continual-harness-online-adaptation-for",
+      "url": "https://arxiv.org/pdf/2605.09998v1",
+      "sha256": "50f60996b0d962cdbf01f5b6a262ccd68b149c8b67cc2594218453717ea0c45e",
+      "bytes": 31751676,
+      "status": "retrieved_and_reviewed_but_publication_blocked_by_16_MiB_request_limit",
+      "draft_bundle": "agenda/llm-wiki-ops/pending-ingestions/karten-2026-continual-harness-online-adaptation-for.json"
+    },
+    {
+      "id": "2602.08234",
+      "version": "2602.08234v1",
+      "stem": "xia-2026-skillrl-evolving-agents-via-recursive",
+      "url": "https://arxiv.org/pdf/2602.08234v1",
+      "sha256": "7624ecf49b96ce6bbe097c8054c33f77ca72865a07d277fcd7bc9c0edffb1658",
+      "bytes": 13153200,
+      "status": "retrieved_and_reviewed_but_publication_blocked_by_16_MiB_request_limit",
+      "draft_bundle": "agenda/llm-wiki-ops/pending-ingestions/xia-2026-skillrl-evolving-agents-via-recursive.json"
+    }
+  ]
+}

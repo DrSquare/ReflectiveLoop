@@ -5,19 +5,20 @@ tags: [self-improving-agents, harness, meta-agent, skill-library]
 ---
 
 ## Summary
-A growing line of 2026 work argues that a large fraction of an LLM
+A growing line of work argues that a large fraction of an LLM
 agent's usable capability lives outside the frozen model weights — in the
 harness/scaffold, the meta-level procedure that modifies the agent, or the
 skill library it draws on — and that these components should themselves be
 learned or searched over, rather than hand-engineered once and frozen.
-Four papers currently in this wiki each attack a different piece of that
-idea.
+Fourteen papers currently in this wiki cover different parts of that idea,
+including ten additions from the September 11, 2026 UTC scan.
 
-Full-text review: September 8, 2026; all four seed PDFs are present. The
+Seed full-text review: September 8, 2026; all four seed PDFs are present.
+Expanded review: September 11, 2026 UTC; all ten new PDFs are present. The
 revisions below replace only interpretations changed or qualified by the
 full text. See the [claim-change record](../../logs/reports/2026-09-08-seed-pdf-upgrade.md).
 
-## Papers surveyed here
+## Seed papers
 
 - [[self-improving-agents/lee-2026-meta-harness-end-to-end]]
   (Meta-Harness) — optimizes the harness alone via an agentic proposer
@@ -48,7 +49,7 @@ full text. See the [claim-change record](../../logs/reports/2026-09-08-seed-pdf-
   the GiGPO objective remain fixed. CoSkill includes weight updates.
   [§3, pp. 3-6](https://arxiv.org/pdf/2609.04865v1#page=3)
 
-## Cross-cutting observations
+## Cross-cutting observations from the seed review
 - All four treat some component that is conventionally hand-designed once
   and left static (harness, meta-modification procedure, or skill
   workflow) as an object that should itself be optimized during training
@@ -87,3 +88,32 @@ full text. See the [claim-change record](../../logs/reports/2026-09-08-seed-pdf-
   CoSkill's joint skill-library RL training outperform either alone? See
   [[questions/does-a-modifiable-meta-procedure-improve-skill-library-co-training]]
   for the PDF-grounded scope and remaining uncertainty.
+
+## Expanded literature: harnesses, skills, and systems
+
+This is a curated expansion, not an exhaustive survey. Each linked page identifies its pinned PDF version, method, reported results, evaluation boundary, and implementation provenance. Recent additions appear first.
+
+| Paper | First submission | What it adds |
+|---|---|---|
+| [[self-improving-agents/li-2026-skilladam-stable-and-efficient-skill]] (SkillAdam) | 2026-09-08 | SkillAdam uses persistent issue history and an adaptive edit budget to stabilize optimization of natural-language skill documents around frozen models. |
+| [[self-improving-agents/fu-2026-se-gos-self-evolving-graph]] (SE-GoS) | 2026-09-08 | SE-GoS evolves the graph and descriptions used to retrieve existing skills, while preserving skill content, model weights, and the retrieval algorithm. |
+| [[self-improving-agents/yang-2026-skillforge-evolving-verifiable-skills-for]] (SkillForge) | 2026-08-25 | SkillForge makes skill invocation explicit in agent trajectories and revises skills using usage outcomes while training the policy with GRPO. |
+| [[self-improving-agents/karten-2026-prime-agent-a-self-improving]] (Prime Agent) | 2026-08-24 | Prime Agent packages a persistent REPL, recursive agent sessions, and versioned harness state into a runtime for long-horizon reasoning and execution. |
+| [[self-improving-agents/wei-2026-evo-harness-context-to-harness]] (Evo-Harness) | 2026-08-15 | Evo-Harness compiles failed one-shot task executions into reusable general and task-type guidance for a frozen solver operating on a task stream. |
+| [[self-improving-agents/fu-2026-self-play-meets-skill-evolution]] (SESA) | 2026-07-31 | SESA couples search self-play to an evolving skill bank, allowing skill-conditioned learning to improve both model parameters and optional inference-time memory. |
+| [[self-improving-agents/zhang-2026-self-harness-harnesses-that-improve]] (Self-Harness) | 2026-06-08 | Self-Harness uses the same frozen model to solve tasks and propose bounded changes to its own harness, with regression scores deciding which edits survive. |
+| [[self-improving-agents/xu-2026-adapting-the-interface-not-the]] (Life-Harness) | 2026-05-21 | Life-Harness turns training-trajectory failures into reusable runtime interventions and freezes the resulting harness for held-out evaluation across model backbones. |
+| [[self-improving-agents/ye-2026-meta-context-engineering-via-agentic]] (MCE) | 2026-01-29 | MCE evolves the instructions and code that build context, then executes those skills to produce context artifacts, while keeping model weights frozen. |
+| [[self-improving-agents/zhang-2025-darwin-godel-machine-open-ended]] (Darwin Godel Machine) | 2025-05-29 | The Darwin Godel Machine evolves a population of coding agents that modify their own implementations, retaining useful stepping stones under empirical evaluation. |
+
+## Interpretations changed by the expansion
+
+**Learning the procedure is already a concrete research direction.** MCE evolves the skill that constructs context, and DGM lets coding agents improve their own implementations. The broad proposal to optimize an improvement procedure is therefore insufficient as a novelty claim. The remaining question concerns what joint editor/reasoner training and controlled cross-environment transfer add beyond these mechanisms. [MCE, pp. 5-7](https://arxiv.org/pdf/2601.21557v2#page=5); [DGM, p. 4](https://arxiv.org/pdf/2505.22954v1#page=4)
+
+**Persistent improvement has several substrates.** SkillForge and SESA change skills alongside trained policies. SE-GoS instead changes retrieval topology, weights, and descriptions without editing the skill bodies. SkillAdam changes a skill document under a fixed stateful optimization rule. These should occupy separate cells in an experimental design. [SkillForge, pp. 4-6](https://arxiv.org/pdf/2608.24747v1#page=4); [SESA, pp. 3-5](https://arxiv.org/pdf/2607.29468v1#page=3); [SE-GoS, pp. 5-7](https://arxiv.org/pdf/2609.08228v1#page=5); [SkillAdam, pp. 5-7](https://arxiv.org/pdf/2609.08944v1#page=5)
+
+**Continued editing can hurt.** Evo-Harness reports degradation with self-generated feedback; SE-GoS drops after additional evolution rounds. SkillAdam's memory and bounded edits address a related stability problem, but its Adam analogy does not establish convergence. [Evo-Harness, p. 8](https://arxiv.org/pdf/2608.15071v1#page=8); [SE-GoS, p. 10](https://arxiv.org/pdf/2609.08228v1#page=10); [SkillAdam, pp. 6-7](https://arxiv.org/pdf/2609.08944v1#page=6)
+
+**Transfer evidence has different strengths.** Life-Harness freezes training-derived interventions before testing additional models. Self-Harness uses its held-out scores in edit selection. SE-GoS provides a disjoint split but explicitly places its +5.4-point gain inside the noise band. Prime Agent's external ARC reference comparison is not a controlled harness-effect estimate. The expanded literature does not support a single performance ranking. [Life-Harness, p. 7](https://arxiv.org/pdf/2605.22166v1#page=7); [Self-Harness, p. 7](https://arxiv.org/pdf/2606.09498v1#page=7); [SE-GoS, p. 10](https://arxiv.org/pdf/2609.08228v1#page=10); [Prime Agent, p. 7](https://arxiv.org/pdf/2608.23552v1#page=7)
+
+See [[concepts/procedural-self-improvement]] for mechanism definitions, [[concepts/evaluating-self-improvement]] for evaluation requirements, and [[questions/does-a-modifiable-meta-procedure-improve-skill-library-co-training]] for the narrowed research question.
