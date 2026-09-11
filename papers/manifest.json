@@ -1,6 +1,6 @@
 {
-  "retrieval_date": "2026-09-08",
-  "page_numbering": "1-based PDF page numbers; matches printed page numbers in these versions",
+  "retrieval_date": "2026-09-11",
+  "page_numbering": "1-based PDF page numbers; citations refer to the pinned version in each entry",
   "papers": [
     {
       "stem": "lee-2026-meta-harness-end-to-end",
@@ -57,6 +57,146 @@
       "visual_review_pages": [
         7,
         20
+      ]
+    },
+    {
+      "stem": "ye-2026-meta-context-engineering-via-agentic",
+      "arxiv_version": "2601.21557v2",
+      "url": "https://arxiv.org/pdf/2601.21557v2",
+      "pdf_path": "papers/ye-2026-meta-context-engineering-via-agentic.pdf",
+      "pages": 46,
+      "bytes": 7311681,
+      "sha256": "da2d47e8ade571d41fdca14da027542e363fb16f052a0c29499f3500351f0973",
+      "retrieved_date": "2026-09-11",
+      "text_extractor": "pdftotext -layout",
+      "visual_review_pages": [
+        8
+      ]
+    },
+    {
+      "stem": "xu-2026-adapting-the-interface-not-the",
+      "arxiv_version": "2605.22166v1",
+      "url": "https://arxiv.org/pdf/2605.22166v1",
+      "pdf_path": "papers/xu-2026-adapting-the-interface-not-the.pdf",
+      "pages": 18,
+      "bytes": 2219289,
+      "sha256": "2706b7b971130e3f56d368a9de20cd2ce1f5677d570b2df0f2274aaeeff05bcc",
+      "retrieved_date": "2026-09-11",
+      "text_extractor": "pdftotext -layout",
+      "visual_review_pages": [
+        5
+      ]
+    },
+    {
+      "stem": "zhang-2026-self-harness-harnesses-that-improve",
+      "arxiv_version": "2606.09498v1",
+      "url": "https://arxiv.org/pdf/2606.09498v1",
+      "pdf_path": "papers/zhang-2026-self-harness-harnesses-that-improve.pdf",
+      "pages": 19,
+      "bytes": 4307149,
+      "sha256": "065712f5bc1caeed717ad94e68bc0a011420417e86ef9b919ddb5e44e41398ab",
+      "retrieved_date": "2026-09-11",
+      "text_extractor": "pdftotext -layout",
+      "visual_review_pages": [
+        9
+      ]
+    },
+    {
+      "stem": "wei-2026-evo-harness-context-to-harness",
+      "arxiv_version": "2608.15071v1",
+      "url": "https://arxiv.org/pdf/2608.15071v1",
+      "pdf_path": "papers/wei-2026-evo-harness-context-to-harness.pdf",
+      "pages": 16,
+      "bytes": 887865,
+      "sha256": "6fe9f508cd21fa8a1be9c46a4172bb3b433f5a79783ea50da948ceee9177a1b6",
+      "retrieved_date": "2026-09-11",
+      "text_extractor": "pdftotext -layout",
+      "visual_review_pages": [
+        6
+      ]
+    },
+    {
+      "stem": "karten-2026-prime-agent-a-self-improving",
+      "arxiv_version": "2608.23552v1",
+      "url": "https://arxiv.org/pdf/2608.23552v1",
+      "pdf_path": "papers/karten-2026-prime-agent-a-self-improving.pdf",
+      "pages": 16,
+      "bytes": 518236,
+      "sha256": "973323f2d3d85f3ec9b21709248b65ba236cf527cd5cc9ff556909104a5fd370",
+      "retrieved_date": "2026-09-11",
+      "text_extractor": "pdftotext -layout",
+      "visual_review_pages": [
+        7
+      ]
+    },
+    {
+      "stem": "yang-2026-skillforge-evolving-verifiable-skills-for",
+      "arxiv_version": "2608.24747v1",
+      "url": "https://arxiv.org/pdf/2608.24747v1",
+      "pdf_path": "papers/yang-2026-skillforge-evolving-verifiable-skills-for.pdf",
+      "pages": 22,
+      "bytes": 1547923,
+      "sha256": "66d2e4d6baff6d377d2918e470cfa846a2f1585e18249cd8fe0215e7273752a6",
+      "retrieved_date": "2026-09-11",
+      "text_extractor": "pdftotext -layout",
+      "visual_review_pages": [
+        5
+      ]
+    },
+    {
+      "stem": "fu-2026-self-play-meets-skill-evolution",
+      "arxiv_version": "2607.29468v1",
+      "url": "https://arxiv.org/pdf/2607.29468v1",
+      "pdf_path": "papers/fu-2026-self-play-meets-skill-evolution.pdf",
+      "pages": 9,
+      "bytes": 1019699,
+      "sha256": "21bc92c6619b2e688ea0ce6d961e92ecc96efd44669d771d0a5c7c2621ae196c",
+      "retrieved_date": "2026-09-11",
+      "text_extractor": "pdftotext -layout",
+      "visual_review_pages": [
+        6
+      ]
+    },
+    {
+      "stem": "zhang-2025-darwin-godel-machine-open-ended",
+      "arxiv_version": "2505.22954v1",
+      "url": "https://arxiv.org/pdf/2505.22954v1",
+      "pdf_path": "papers/zhang-2025-darwin-godel-machine-open-ended.pdf",
+      "pages": 64,
+      "bytes": 3733631,
+      "sha256": "217c1ac0884312b897648027bdfd6745f4b790b522cab8a61fea32faf0752943",
+      "retrieved_date": "2026-09-11",
+      "text_extractor": "pdftotext -layout",
+      "visual_review_pages": [
+        6
+      ]
+    },
+    {
+      "stem": "fu-2026-se-gos-self-evolving-graph",
+      "arxiv_version": "2609.08228v1",
+      "url": "https://arxiv.org/pdf/2609.08228v1",
+      "pdf_path": "papers/fu-2026-se-gos-self-evolving-graph.pdf",
+      "pages": 21,
+      "bytes": 1989924,
+      "sha256": "67d9ee46a42297abef8631d9b6ed6c05aa1f2550fadaeaf7acdc4dae602808a0",
+      "retrieved_date": "2026-09-11",
+      "text_extractor": "pdftotext -layout",
+      "visual_review_pages": [
+        10
+      ]
+    },
+    {
+      "stem": "li-2026-skilladam-stable-and-efficient-skill",
+      "arxiv_version": "2609.08944v1",
+      "url": "https://arxiv.org/pdf/2609.08944v1",
+      "pdf_path": "papers/li-2026-skilladam-stable-and-efficient-skill.pdf",
+      "pages": 17,
+      "bytes": 1465160,
+      "sha256": "f6ad2c01fe4534b05cfe54e1beea0bea65cb6754ecbc8a0ef99d6aba4af9a64a",
+      "retrieved_date": "2026-09-11",
+      "text_extractor": "pdftotext -layout",
+      "visual_review_pages": [
+        10
       ]
     }
   ]
