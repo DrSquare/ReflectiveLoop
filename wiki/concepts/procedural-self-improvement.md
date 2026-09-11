@@ -32,6 +32,19 @@ SkillForge adds explicit invocation and outcome-based maintenance, while SESA le
 
 ## Experiment implications
 
+### Consolidation and constrained search
+
+| Paper | Persistent object | Improvement mechanism | Boundary |
+|---|---|---|---|
+| [[self-improving-agents/gao-2026-experience-funnel-a-state-policy]] | Textual state and policy weights | Validation-gated state updates plus selective distillation into a state-free policy | Fixed selection/consolidation rules; editor learning and cross-domain transfer are not established |
+| [[self-improving-agents/zhang-2026-harnesscompass-guiding-automatic-harness-evolution]] | Runtime structure and guidance | Task-agnostic constraints, trace-grounded self-feedback, separate tracks and R3 merging | Fixed outer rules; cross-model reuse within one coding benchmark |
+| [[self-improving-agents/lou-2026-autoharness-improving-llm-agents-by]] | Per-game verifier or executable policy | Thompson-sampling program search with environment feedback | A distinct program per game; recursive weight distillation is future work |
+| [[self-improving-agents/park-2026-autosaddler-automatic-harness-optimization-with]] | Prompts, tools and middleware | Mini-batch re-execution, structured patching, EvoDAG recombination and development selection | Task-agent memory/skill curation excluded; offline refers to development time |
+
+Experience Funnel already studies the cycle from editable experience to policy consolidation and back to state revision. Thus, simply alternating external skills and policy learning is not a sufficient novelty claim. Its transition-selection mechanism is a useful comparator, but 01+11 filtering alone reduces to updated-state success in the paper's binary analysis. A stronger experiment must distinguish transition-history credit from ordinary success filtering. [PDF pp. 3-7](https://arxiv.org/pdf/2609.08919v1#page=3)
+
+HarnessCompass and AutoSaddler provide designed search procedures that constrain edits and test generalization, distinct from learning the improvement procedure itself. AutoSaddler re-runs candidates; its offline framing must not be read as fixed-log learning. AutoHarness provides the complementary alternative of compiling action constraints or a policy into code instead of modifying model weights. [HarnessCompass pp. 3-6](https://arxiv.org/pdf/2608.01918v1#page=3); [AutoSaddler pp. 4-6](https://arxiv.org/pdf/2608.23041v1#page=4); [AutoHarness pp. 2-6](https://arxiv.org/pdf/2603.03329v1#page=2)
+
 These are wiki inferences from the ingested papers:
 
 - Compare a fixed human procedure, a fixed learned procedure, an externally evolving procedure, and a jointly trained editor before attributing a gain to recursive improvement.

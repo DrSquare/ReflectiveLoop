@@ -24,6 +24,16 @@ Prime Agent explicitly describes ARC reference scores as external, since its own
 
 ## Recommendations derived from the papers
 
+### Additional full-text controls
+
+[[self-improving-agents/gao-2026-experience-funnel-a-state-policy]] separates training, selection validation, and test reporting, and measures consolidated policies with full, residual, or no state. It does not demonstrate a single learned procedure transferred between environments. Its main SearchQA value (62.4%) differs from the ablation value (63.6%), without a clear protocol reconciliation; repeated-run uncertainty is promised but absent from displayed final tables. Preserve these discrepancies rather than pool the figures. [PDF pp. 5-7](https://arxiv.org/pdf/2609.08919v1#page=5)
+
+[[self-improving-agents/zhang-2026-harnesscompass-guiding-automatic-harness-evolution]] has 50 evolution tasks and 450 untouched tasks; 54% to 66% is the evolution-set headline, whereas the held-out comparison is 51.6% to 60.4%. The cumulative feedback ablation regresses on held-out tasks before merging recovers it. Five versus twenty search turns is not an equal-compute result because each turn can involve different candidate and feedback work. [PDF pp. 5-6](https://arxiv.org/pdf/2608.01918v1#page=5)
+
+[[self-improving-agents/lou-2026-autoharness-improving-llm-agents-by]] separates legal-action testing over 145 environments from strategic performance on 32 games and complete code-policy evaluation on 16 games. Its generated policies are environment-specific, and finite rollout legality is not a proof of universal validity. [PDF pp. 3-6](https://arxiv.org/pdf/2603.03329v1#page=3)
+
+[[self-improving-agents/park-2026-autosaddler-automatic-harness-optimization-with]] provides group-disjoint evaluation for GAIA2 and SWE-Bench Pro, but only random task holdout for Terminal-Bench 2.0. Three test executions are not three optimizer runs. Its tables imply base gains of 9.0/9.6/10.0 points, while Section 5.2 contains arithmetic mistakes; retain table endpoints and recompute deltas explicitly. [PDF pp. 7-8, 20-21](https://arxiv.org/pdf/2608.23041v1#page=7)
+
 1. Reserve final tasks from proposal feedback, score-based selection, early stopping, and regression acceptance. Report selection-exposed results separately.
 2. For online task streams, score each task before its feedback changes later behavior. Test different stream orders and clean restarts; report adaptation as such.
 3. Distinguish transferred artifacts from transferred algorithms. Preserve an unchanged evaluator and task distribution while estimating an editor's learning-to-improve ability.

@@ -1,6 +1,6 @@
 # Canonical paper PDFs
 
-This branch contains **14 / 14 admitted exact PDFs**: four seeds from the September 8 upgrade and ten papers added September 11, 2026 UTC. All have source notes, paper wiki pages, and synthesis connections. PDFs are copied unchanged; extracted full-text transcriptions are not committed.
+This branch contains **18 / 18 admitted exact PDFs**: four seeds, thirteen later additions, and the full-text upgrade of AutoSaddler already cataloged on main. All have source notes, paper wiki pages, and synthesis connections. PDFs are copied unchanged; extracted full-text transcriptions are not committed.
 
 | Paper stem | Pinned PDF | Pages | Retrieved (UTC date) |
 |---|---|---:|---|
@@ -19,17 +19,22 @@ This branch contains **14 / 14 admitted exact PDFs**: four seeds from the Septem
 | [fu-2026-se-gos-self-evolving-graph](fu-2026-se-gos-self-evolving-graph.pdf) | [2609.08228v1](https://arxiv.org/pdf/2609.08228v1) | 21 | 2026-09-11 |
 | [li-2026-skilladam-stable-and-efficient-skill](li-2026-skilladam-stable-and-efficient-skill.pdf) | [2609.08944v1](https://arxiv.org/pdf/2609.08944v1) | 17 | 2026-09-11 |
 
+| [gao-2026-experience-funnel-a-state-policy](gao-2026-experience-funnel-a-state-policy.pdf) | [2609.08919v1](https://arxiv.org/pdf/2609.08919v1) | 11 | 2026-09-11 |
+| [zhang-2026-harnesscompass-guiding-automatic-harness-evolution](zhang-2026-harnesscompass-guiding-automatic-harness-evolution.pdf) | [2608.01918v1](https://arxiv.org/pdf/2608.01918v1) | 17 | 2026-09-11 |
+| [lou-2026-autoharness-improving-llm-agents-by](lou-2026-autoharness-improving-llm-agents-by.pdf) | [2603.03329v1](https://arxiv.org/pdf/2603.03329v1) | 21 | 2026-09-11 |
+| [park-2026-autosaddler-automatic-harness-optimization-with](park-2026-autosaddler-automatic-harness-optimization-with.pdf) | [2608.23041v1](https://arxiv.org/pdf/2608.23041v1) | 44 | 2026-09-11 |
+
 The [manifest](manifest.json) records SHA-256 hashes, byte counts, page counts, extraction methods, and visually inspected pages. Notes cite 1-based PDF pages in the pinned versions; these are version-specific analyses, not a guarantee that every PDF is the latest revision. DGM v3 was detected after reviewing v1 and is recorded for a separate revision comparison.
 
 ## Missing-PDF list
 
-Ten of twelve selected additions are published with exact PDFs. The two below were retrieved and reviewed locally, but their base64 uploads exceed the GitHub connection's 16 MiB request limit. They are not admitted to the wiki; their complete analyses and provenance are preserved as pending bundles.
+Two previously selected papers remain blocked; all four PDFs selected for the latest scan fit the available publication transport. The two below were retrieved and reviewed locally, but their base64 uploads exceed the GitHub connection's 16 MiB request limit. They are not admitted to the wiki; their complete analyses and provenance are preserved as pending bundles.
 
 | Pending paper | Exact PDF | Bytes | Saved analysis |
 |---|---|---:|---|
 | karten-2026-continual-harness-online-adaptation-for | [2605.09998v1](https://arxiv.org/pdf/2605.09998v1) | 31,751,676 | [Draft bundle](../agenda/llm-wiki-ops/pending-ingestions/karten-2026-continual-harness-online-adaptation-for.json) |
 | xia-2026-skillrl-evolving-agents-via-recursive | [2602.08234v1](https://arxiv.org/pdf/2602.08234v1) | 13,153,200 | [Draft bundle](../agenda/llm-wiki-ops/pending-ingestions/xia-2026-skillrl-evolving-agents-via-recursive.json) |
 
-Retry publication through an authenticated Git transport capable of these file sizes. Never compress or rewrite the canonical PDF to fit. Other candidates are in the [scan state](../agenda/llm-wiki-ops/scan_state.json). AutoSaddler is already pending in PR #3 and is not included in this branch's 14 admitted papers.
+Retry publication through an authenticated Git transport capable of these file sizes. Never compress or rewrite the canonical PDF to fit. Other candidates are in the [scan state](../agenda/llm-wiki-ops/scan_state.json). AutoSaddler's abstract entry merged through PR #3; its exact-PDF upgrade is now included among this branch's 18 admitted papers. The two blocked PDF hashes and payload sizes were rechecked on September 11; the transport limitation is unchanged.
 
 The historical [seed upgrade report](../logs/reports/2026-09-08-seed-pdf-upgrade.md) preserves the corrections to the original abstract-level notes.

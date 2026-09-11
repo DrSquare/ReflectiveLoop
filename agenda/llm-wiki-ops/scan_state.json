@@ -5,83 +5,75 @@
   "task_title": "Update ReflectiveLoop papers",
   "last_successful_scan_utc": "2026-09-11T04:01:44+00:00",
   "current_scan": {
-    "coverage_cutoff_utc": "2026-09-11T04:01:44+00:00",
-    "publication_status": "published_with_two_deferred_pdfs",
-    "branch": "codex/self-improvement-literature-scan",
+    "coverage_start_utc": "2026-09-04T04:01:44+00:00",
+    "coverage_cutoff_utc": "2026-09-11T15:04:36+00:00",
+    "publication_status": "prepared",
+    "branch": "codex/paper-scan-2026-09-11",
     "base_branch": "codex/pdf-ground-seed-papers",
+    "base_commit": "6555ace849f087d3ff1b92dcc5d90ab2842f65c4",
     "admitted": [
       {
-        "id": "2601.21557",
-        "version": "2601.21557v2",
-        "stem": "ye-2026-meta-context-engineering-via-agentic"
+        "id": "2609.08919",
+        "version": "2609.08919v1",
+        "stem": "gao-2026-experience-funnel-a-state-policy",
+        "change": "new_paper"
       },
       {
-        "id": "2605.22166",
-        "version": "2605.22166v1",
-        "stem": "xu-2026-adapting-the-interface-not-the"
+        "id": "2608.01918",
+        "version": "2608.01918v1",
+        "stem": "zhang-2026-harnesscompass-guiding-automatic-harness-evolution",
+        "change": "new_paper"
       },
       {
-        "id": "2606.09498",
-        "version": "2606.09498v1",
-        "stem": "zhang-2026-self-harness-harnesses-that-improve"
+        "id": "2603.03329",
+        "version": "2603.03329v1",
+        "stem": "lou-2026-autoharness-improving-llm-agents-by",
+        "change": "new_paper"
       },
       {
-        "id": "2608.15071",
-        "version": "2608.15071v1",
-        "stem": "wei-2026-evo-harness-context-to-harness"
-      },
-      {
-        "id": "2608.23552",
-        "version": "2608.23552v1",
-        "stem": "karten-2026-prime-agent-a-self-improving"
-      },
-      {
-        "id": "2608.24747",
-        "version": "2608.24747v1",
-        "stem": "yang-2026-skillforge-evolving-verifiable-skills-for"
-      },
-      {
-        "id": "2607.29468",
-        "version": "2607.29468v1",
-        "stem": "fu-2026-self-play-meets-skill-evolution"
-      },
-      {
-        "id": "2505.22954",
-        "version": "2505.22954v1",
-        "stem": "zhang-2025-darwin-godel-machine-open-ended"
-      },
-      {
-        "id": "2609.08228",
-        "version": "2609.08228v1",
-        "stem": "fu-2026-se-gos-self-evolving-graph"
-      },
-      {
-        "id": "2609.08944",
-        "version": "2609.08944v1",
-        "stem": "li-2026-skilladam-stable-and-efficient-skill"
+        "id": "2608.23041",
+        "version": "2608.23041v1",
+        "stem": "park-2026-autosaddler-automatic-harness-optimization-with",
+        "change": "upgrade_existing_main_abstract_entry"
       }
-    ],
-    "publication_commit": "9dacd7a2d2c95a4217d36d71d9746eb1c559e07b",
-    "pull_request": "https://github.com/DrSquare/ReflectiveLoop/pull/4"
+    ]
   },
   "pending_elsewhere": [
     {
       "id": "2608.23041",
-      "title": "AutoSaddler: Automatic Harness Optimization with Durable Updates",
+      "title": "AutoSaddler: Automatic Harness Optimization with Durable Updates from Agent Execution Traces",
       "pull_request": "https://github.com/DrSquare/ReflectiveLoop/pull/3",
-      "status": "pending_existing_pr"
+      "status": "merged_to_main_as_abstract_summary; exact_PDF_upgrade_in_current_scan"
     }
   ],
   "backlog": [
     {
-      "id": "2608.01918",
-      "title": "HarnessCompass: Guiding Automatic Harness Evolution toward Generalizable and Effective Agent Harnesses",
-      "status": "primary_metadata_verified; PDF review pending"
+      "id": "2606.01779",
+      "title": "HarnessForge: Joint Harness and Policy Evolution for Adaptive Agent Systems",
+      "version": "2606.01779v1",
+      "status": "primary_metadata_verified; high_priority_direct_adjacent_work; PDF review pending"
     },
     {
-      "id": "2603.03329",
-      "title": "AutoHarness: improving LLM agents by automatically synthesizing a code harness",
-      "status": "primary_metadata_verified; PDF review pending"
+      "id": "2609.10121",
+      "title": "ADMET-EvO: a self-evolving scientific agent for sustained research across heterogeneous tasks",
+      "version": "2609.10121v2",
+      "status": "primary_metadata_verified; revised_2026-09-10; scientific-agent evidence-gating candidate; PDF review pending"
+    },
+    {
+      "id": "2601.03509",
+      "title": "Evolving Programmatic Skill Networks",
+      "status": "primary_metadata_verified; code-skill composition candidate; PDF review pending"
+    },
+    {
+      "id": "2609.07360",
+      "title": "Scanning the Harness: An Empirical Study of Supply-Chain Defects in AI Coding-Agent Configurations",
+      "version": "2609.07360v1",
+      "status": "primary_metadata_verified; adjacent safety-evaluation candidate, not a self-improvement method; PDF review pending"
+    },
+    {
+      "id": "2606.01619",
+      "title": "ReSkill: Reconciling Skill Creation with Policy Optimization in Agentic RL",
+      "status": "citation_discovered_in_Experience_Funnel; primary metadata and PDF review pending"
     },
     {
       "id": "2510.04618",
@@ -119,7 +111,10 @@
       "sha256": "50f60996b0d962cdbf01f5b6a262ccd68b149c8b67cc2594218453717ea0c45e",
       "bytes": 31751676,
       "status": "retrieved_and_reviewed_but_publication_blocked_by_16_MiB_request_limit",
-      "draft_bundle": "agenda/llm-wiki-ops/pending-ingestions/karten-2026-continual-harness-online-adaptation-for.json"
+      "draft_bundle": "agenda/llm-wiki-ops/pending-ingestions/karten-2026-continual-harness-online-adaptation-for.json",
+      "last_checked_utc": "2026-09-11T15:04:36+00:00",
+      "base64_payload_bytes": 42335568,
+      "retry_result": "Exact local hash still matches; no shell credential helper; required base64 payload exceeds known 16777216-byte connector limit. No oversized upload retried."
     },
     {
       "id": "2602.08234",
@@ -129,7 +124,72 @@
       "sha256": "7624ecf49b96ce6bbe097c8054c33f77ca72865a07d277fcd7bc9c0edffb1658",
       "bytes": 13153200,
       "status": "retrieved_and_reviewed_but_publication_blocked_by_16_MiB_request_limit",
-      "draft_bundle": "agenda/llm-wiki-ops/pending-ingestions/xia-2026-skillrl-evolving-agents-via-recursive.json"
+      "draft_bundle": "agenda/llm-wiki-ops/pending-ingestions/xia-2026-skillrl-evolving-agents-via-recursive.json",
+      "last_checked_utc": "2026-09-11T15:04:36+00:00",
+      "base64_payload_bytes": 17537600,
+      "retry_result": "Exact local hash still matches; no shell credential helper; required base64 payload exceeds known 16777216-byte connector limit. No oversized upload retried."
+    }
+  ],
+  "scan_history": [
+    {
+      "coverage_cutoff_utc": "2026-09-11T04:01:44+00:00",
+      "publication_status": "published_with_two_deferred_pdfs",
+      "branch": "codex/self-improvement-literature-scan",
+      "base_branch": "codex/pdf-ground-seed-papers",
+      "admitted": [
+        {
+          "id": "2601.21557",
+          "version": "2601.21557v2",
+          "stem": "ye-2026-meta-context-engineering-via-agentic"
+        },
+        {
+          "id": "2605.22166",
+          "version": "2605.22166v1",
+          "stem": "xu-2026-adapting-the-interface-not-the"
+        },
+        {
+          "id": "2606.09498",
+          "version": "2606.09498v1",
+          "stem": "zhang-2026-self-harness-harnesses-that-improve"
+        },
+        {
+          "id": "2608.15071",
+          "version": "2608.15071v1",
+          "stem": "wei-2026-evo-harness-context-to-harness"
+        },
+        {
+          "id": "2608.23552",
+          "version": "2608.23552v1",
+          "stem": "karten-2026-prime-agent-a-self-improving"
+        },
+        {
+          "id": "2608.24747",
+          "version": "2608.24747v1",
+          "stem": "yang-2026-skillforge-evolving-verifiable-skills-for"
+        },
+        {
+          "id": "2607.29468",
+          "version": "2607.29468v1",
+          "stem": "fu-2026-self-play-meets-skill-evolution"
+        },
+        {
+          "id": "2505.22954",
+          "version": "2505.22954v1",
+          "stem": "zhang-2025-darwin-godel-machine-open-ended"
+        },
+        {
+          "id": "2609.08228",
+          "version": "2609.08228v1",
+          "stem": "fu-2026-se-gos-self-evolving-graph"
+        },
+        {
+          "id": "2609.08944",
+          "version": "2609.08944v1",
+          "stem": "li-2026-skilladam-stable-and-efficient-skill"
+        }
+      ],
+      "publication_commit": "9dacd7a2d2c95a4217d36d71d9746eb1c559e07b",
+      "pull_request": "https://github.com/DrSquare/ReflectiveLoop/pull/4"
     }
   ]
 }

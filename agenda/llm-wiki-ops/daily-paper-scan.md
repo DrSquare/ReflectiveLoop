@@ -29,3 +29,7 @@ PR #2 contains the four seed PDF upgrades. The initial expansion is based on its
 ## Publication transport and deferred PDFs
 
 If shell Git lacks authentication, use the connected GitHub Git Data API: upload binary blobs with base64, verify their Git SHAs, create the tree/commit, then update the ingestion branch without force. Verify the remote tree against the locally validated tree. The connector has a 16 MiB request-body limit; do not send a larger base64 payload. If an exact PDF cannot be published through available authenticated transport, preserve its reviewed drafts and provenance in agenda/llm-wiki-ops/pending-ingestions and keep it in the missing-PDF list. Do not admit its source/wiki pages until the exact PDF is present. Revisit missing_pdfs before the ordinary backlog even when the successful search watermark advances.
+
+## September 11 repository-state update
+
+PR #4 was merged into the still-open draft PR #2 branch at 6555ace849f087d3ff1b92dcc5d90ab2842f65c4. PR #3 merged AutoSaddler's abstract-only entry into main at 2695f7cccf1956d6a1eec3298147a4b183fe5ed2. The next scan branch is codex/paper-scan-2026-09-11, stacked on PR #2, with AutoSaddler upgraded under its existing main-branch stem. Check live refs and all ingestion branches before deduplicating or selecting a base; the closed PR #4 is historical, not the active publication target. Do not auto-merge or silently reconcile unrelated branch changes.
