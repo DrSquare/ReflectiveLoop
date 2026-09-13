@@ -9,7 +9,7 @@ Start with the [generated catalog](index.md), [overview](wiki/overviews/self-imp
 - [Auto-RecSys](wiki/self-improving-agents/li-2026-auto-recsys-harnessing-autonomous-research.md) — Persistent industrial research agents with evolving playbooks; operational adaptation evidence and explicit limits on validation and transfer.
 - [Ecdysis](wiki/self-improving-agents/yue-2026-ecdysis-efficient-and-effective-training.md) — Cross-task failure aggregation and diagnostic refinement before harness edits; frozen model-transfer tests and qualified accuracy/cost claims.
 
-These additions are stacked on [PR #5](https://github.com/DrSquare/ReflectiveLoop/pull/5), preserving the pending seed-PDF and literature updates. See the [September 12 log](logs/2026-09-12-codex-workspace.md) for evidence changes and publication status.
+Published in [PR #6](https://github.com/DrSquare/ReflectiveLoop/pull/6), stacked on [PR #5](https://github.com/DrSquare/ReflectiveLoop/pull/5), preserving the pending seed-PDF and literature updates. See the [September 12 review log](logs/2026-09-12-codex-workspace.md) and [September 13 publication log](logs/2026-09-13-codex-workspace.md).
 
 ## September 11 scan additions and upgrades
 

@@ -209,7 +209,10 @@
       "branch": "codex/add-harness-papers-2026-09-12",
       "base_branch": "codex/paper-scan-2026-09-11",
       "base_commit": "242cf8a6a2c1d607a4e78996fd51aa5372111391",
-      "publication_status": "prepared_for_publication",
+      "publication_status": "published",
+      "publication_commit": "64c901781f3dcaeaf663329271f30cd5a4abf8b2",
+      "pull_request": "https://github.com/DrSquare/ReflectiveLoop/pull/6",
+      "published_at_utc": "2026-09-13T19:56:00Z",
       "merge_status": "blocked_by_unmerged_dependency_PR_5",
       "admitted": [
         {
