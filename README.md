@@ -1,10 +1,17 @@
 # ReflectiveLoop
 
-A literature-review knowledge base for self-improving agent harnesses, skills, and systems, following the LLM Wiki pattern. This branch contains **14 PDF-grounded papers**, with source notes, synthesis pages, and research questions.
+A literature-review knowledge base for self-improving agent harnesses, skills, and systems, following the LLM Wiki pattern. This branch contains **18 PDF-grounded papers**, with source notes, synthesis pages, and research questions.
 
 Start with the [generated catalog](index.md), [overview](wiki/overviews/self-improving-llm-agents.md), [mechanism comparison](wiki/concepts/procedural-self-improvement.md), and [evaluation boundaries](wiki/concepts/evaluating-self-improvement.md).
 
-## September 11, 2026 UTC additions
+## Latest scan additions and upgrades
+
+- [Experience Funnel](wiki/self-improving-agents/gao-2026-experience-funnel-a-state-policy.md) (September 8) - Alternating state evolution and policy consolidation; a direct comparator for the research question, with reporting caveats.
+- [HarnessCompass](wiki/self-improving-agents/zhang-2026-harnesscompass-guiding-automatic-harness-evolution.md) - Constrained harness search with independent task holdout and frozen-harness cross-model tests.
+- [AutoHarness](wiki/self-improving-agents/lou-2026-autoharness-improving-llm-agents-by.md) - Generated action verifiers or complete code policies; environment-specific rather than learned editor transfer.
+- [AutoSaddler](wiki/self-improving-agents/park-2026-autosaddler-automatic-harness-optimization-with.md) - Exact-PDF upgrade of the entry on main, correcting offline-learning interpretation and narrative arithmetic.
+
+## Earlier September 11, 2026 UTC additions
 
 - [SkillAdam](wiki/self-improving-agents/li-2026-skilladam-stable-and-efficient-skill.md) — SkillAdam uses persistent issue history and an adaptive edit budget to stabilize optimization of natural-language skill documents around frozen models.
 - [SE-GoS](wiki/self-improving-agents/fu-2026-se-gos-self-evolving-graph.md) — SE-GoS evolves the graph and descriptions used to retrieve existing skills, while preserving skill content, model weights, and the retrieval algorithm.
@@ -17,7 +24,7 @@ Start with the [generated catalog](index.md), [overview](wiki/overviews/self-imp
 - [MCE](wiki/self-improving-agents/ye-2026-meta-context-engineering-via-agentic.md) — MCE evolves the instructions and code that build context, then executes those skills to produce context artifacts, while keeping model weights frozen.
 - [Darwin Godel Machine](wiki/self-improving-agents/zhang-2025-darwin-godel-machine-open-ended.md) — The Darwin Godel Machine evolves a population of coding agents that modify their own implementations, retaining useful stepping stones under empirical evaluation.
 
-The four original papers are Meta-Harness, Hyperagents, SIA, and CoSkill. Their PDF-grounded corrections are preserved from PR #2; AutoSaddler is separately pending in PR #3. This expansion is stacked on the seed-PDF branch and does not merge either PR.
+The four original papers are Meta-Harness, Hyperagents, SIA, and CoSkill. Their PDF-grounded corrections are preserved from PR #2. PR #4 merged into the PR #2 branch; AutoSaddler merged into main through PR #3. The latest scan is stacked on the current seed-PDF branch and upgrades AutoSaddler under its existing stem. PR #2 remains open; this scan does not merge PRs.
 
 ## Daily scan
 

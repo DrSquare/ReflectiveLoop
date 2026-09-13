@@ -198,6 +198,62 @@
       "visual_review_pages": [
         10
       ]
+    },
+    {
+      "stem": "gao-2026-experience-funnel-a-state-policy",
+      "arxiv_version": "2609.08919v1",
+      "url": "https://arxiv.org/pdf/2609.08919v1",
+      "pdf_path": "papers/gao-2026-experience-funnel-a-state-policy.pdf",
+      "pages": 11,
+      "bytes": 368680,
+      "sha256": "a3b8af3a22a02b602196d779eb67a23d9b9f836070340547fed698b8335d4bac",
+      "retrieved_date": "2026-09-11",
+      "text_extractor": "pdftotext -layout",
+      "visual_review_pages": [
+        6
+      ]
+    },
+    {
+      "stem": "zhang-2026-harnesscompass-guiding-automatic-harness-evolution",
+      "arxiv_version": "2608.01918v1",
+      "url": "https://arxiv.org/pdf/2608.01918v1",
+      "pdf_path": "papers/zhang-2026-harnesscompass-guiding-automatic-harness-evolution.pdf",
+      "pages": 17,
+      "bytes": 739389,
+      "sha256": "dd27f4d3d8846ac0e2dba8b6f4fabe6b177e334a072f8ec45a9c431dc04b4395",
+      "retrieved_date": "2026-09-11",
+      "text_extractor": "pdftotext -layout",
+      "visual_review_pages": [
+        6
+      ]
+    },
+    {
+      "stem": "lou-2026-autoharness-improving-llm-agents-by",
+      "arxiv_version": "2603.03329v1",
+      "url": "https://arxiv.org/pdf/2603.03329v1",
+      "pdf_path": "papers/lou-2026-autoharness-improving-llm-agents-by.pdf",
+      "pages": 21,
+      "bytes": 917772,
+      "sha256": "8399c0a6a76a38c1a96804c88d0bac69286fe52ba3f255cba9175e3882fecf19",
+      "retrieved_date": "2026-09-11",
+      "text_extractor": "pdftotext -layout",
+      "visual_review_pages": [
+        5
+      ]
+    },
+    {
+      "stem": "park-2026-autosaddler-automatic-harness-optimization-with",
+      "arxiv_version": "2608.23041v1",
+      "url": "https://arxiv.org/pdf/2608.23041v1",
+      "pdf_path": "papers/park-2026-autosaddler-automatic-harness-optimization-with.pdf",
+      "pages": 44,
+      "bytes": 1339855,
+      "sha256": "9c6af65c3aa725e654e90d5496948e5d9b7589d09a4d6ae1accec45eec3ecc5e",
+      "retrieved_date": "2026-09-11",
+      "text_extractor": "pdftotext -layout",
+      "visual_review_pages": [
+        7
+      ]
     }
   ]
 }

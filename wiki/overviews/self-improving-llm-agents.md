@@ -10,8 +10,8 @@ agent's usable capability lives outside the frozen model weights — in the
 harness/scaffold, the meta-level procedure that modifies the agent, or the
 skill library it draws on — and that these components should themselves be
 learned or searched over, rather than hand-engineered once and frozen.
-Fourteen papers currently in this wiki cover different parts of that idea,
-including ten additions from the September 11, 2026 UTC scan.
+Eighteen papers currently in this wiki cover different parts of that idea,
+including thirteen additions and the AutoSaddler full-text upgrade from the September 11, 2026 UTC scans.
 
 Seed full-text review: September 8, 2026; all four seed PDFs are present.
 Expanded review: September 11, 2026 UTC; all ten new PDFs are present. The
@@ -117,3 +117,18 @@ This is a curated expansion, not an exhaustive survey. Each linked page identifi
 **Transfer evidence has different strengths.** Life-Harness freezes training-derived interventions before testing additional models. Self-Harness uses its held-out scores in edit selection. SE-GoS provides a disjoint split but explicitly places its +5.4-point gain inside the noise band. Prime Agent's external ARC reference comparison is not a controlled harness-effect estimate. The expanded literature does not support a single performance ranking. [Life-Harness, p. 7](https://arxiv.org/pdf/2605.22166v1#page=7); [Self-Harness, p. 7](https://arxiv.org/pdf/2606.09498v1#page=7); [SE-GoS, p. 10](https://arxiv.org/pdf/2609.08228v1#page=10); [Prime Agent, p. 7](https://arxiv.org/pdf/2608.23552v1#page=7)
 
 See [[concepts/procedural-self-improvement]] for mechanism definitions, [[concepts/evaluating-self-improvement]] for evaluation requirements, and [[questions/does-a-modifiable-meta-procedure-improve-skill-library-co-training]] for the narrowed research question.
+
+## Additional evidence from the September 11 scan
+
+| Paper | Contribution to the synthesis | Important boundary |
+|---|---|---|
+| [[self-improving-agents/gao-2026-experience-funnel-a-state-policy]] | Alternates textual experience and selective policy consolidation | Does not establish learned-editor transfer; main and ablation scores need reconciliation |
+| [[self-improving-agents/zhang-2026-harnesscompass-guiding-automatic-harness-evolution]] | Constrained changes and separate component tracks improve a frozen harness | Search-set headline differs from held-out evidence; cumulative feedback ablation can regress |
+| [[self-improving-agents/lou-2026-autoharness-improving-llm-agents-by]] | Compiles action legality or entire policies into programs | Each game gets a separate harness; finite legality testing is not a proof |
+| [[self-improving-agents/park-2026-autosaddler-automatic-harness-optimization-with]] | Development-time mini-batch patch search with historical recombination | Re-executes candidates; task-agent skill curation is excluded; narrative deltas contain arithmetic errors |
+
+Experience Funnel narrows novelty further: alternating editable state with parametric consolidation is already demonstrated as a proposed method on the target classes of environments. The remaining research question must isolate the learned editor, transition-specific credit, and separately transferred components. The paper does not establish cross-domain transfer merely by training in several domains. [PDF pp. 3-7](https://arxiv.org/pdf/2609.08919v1#page=3)
+
+HarnessCompass supplies 450 untouched coding tasks and frozen cross-model reuse; AutoSaddler supplies group-disjoint GAIA2 and repository-disjoint SWE-Bench Pro tests. These are stronger controls than repeatedly selecting on a nominal held-out score, but neither learns the evaluator or proves arbitrary domain transfer. AutoHarness instead synthesizes a domain-specific executable constraint or policy; distillation into model weights is future work. [HarnessCompass pp. 5-6](https://arxiv.org/pdf/2608.01918v1#page=5); [AutoSaddler pp. 7, 20](https://arxiv.org/pdf/2608.23041v1#page=20); [AutoHarness pp. 3-6](https://arxiv.org/pdf/2603.03329v1#page=3)
+
+The AutoSaddler full text replaces the abstract-only interpretation on main: offline means development-time optimization with fresh executions, not fixed-log training. Its stated search space excludes task-agent memory and skill curation. Table endpoints imply gains of 9.0, 9.6, and 10.0 points over base harnesses; Section 5.2's inconsistent arithmetic is not propagated. [PDF pp. 4-8, 44](https://arxiv.org/pdf/2608.23041v1#page=4)
