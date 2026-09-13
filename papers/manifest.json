@@ -254,6 +254,42 @@
       "visual_review_pages": [
         7
       ]
+    },
+    {
+      "stem": "li-2026-auto-recsys-harnessing-autonomous-research",
+      "arxiv_version": "2609.10922v1",
+      "url": "https://arxiv.org/pdf/2609.10922v1",
+      "pdf_path": "papers/li-2026-auto-recsys-harnessing-autonomous-research.pdf",
+      "pages": 16,
+      "bytes": 824547,
+      "sha256": "f4a5656658f30151b8399cb7e06826cea95b8a62162527682a37a19697b6bbf9",
+      "retrieved_date": "2026-09-12",
+      "text_extractor": "pdftotext -layout",
+      "visual_review_pages": [
+        10,
+        11
+      ],
+      "discovery_url": "https://lnkd.in/p/g4GWF6f9",
+      "extraction_note": "Poppler emitted a font-type mismatch warning; readable extraction and inspected renders succeeded."
+    },
+    {
+      "stem": "yue-2026-ecdysis-efficient-and-effective-training",
+      "arxiv_version": "2609.11677v1",
+      "url": "https://arxiv.org/pdf/2609.11677v1",
+      "pdf_path": "papers/yue-2026-ecdysis-efficient-and-effective-training.pdf",
+      "pages": 19,
+      "bytes": 255994,
+      "sha256": "1cf10e040ab33542852e4979a415c159ad1afad4c8a1fc949ce88ad29bffcfb8",
+      "retrieved_date": "2026-09-12",
+      "text_extractor": "pdftotext -layout",
+      "visual_review_pages": [
+        7,
+        19
+      ],
+      "discovery_url": "https://lnkd.in/p/gzWd3Gmj",
+      "official_code_url": "https://github.com/cuiyu-ai/Ecdysis",
+      "official_code_inspected_commit": "ba21638addc1e3c94972822646ea4990c87d4768",
+      "extraction_note": "Poppler emitted a font-type mismatch warning; readable extraction and inspected renders succeeded."
     }
   ]
 }

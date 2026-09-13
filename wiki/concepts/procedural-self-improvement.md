@@ -52,4 +52,12 @@ These are wiki inferences from the ingested papers:
 - Evaluate a trained solver with and without its final memory, following SESA's controlled On/Off design; separately account for training-path differences against other solvers.
 - Include bank size, retrieval tokens, teacher/proposer cost, verification cost, and regressions alongside task success.
 
+## Operational playbooks and cross-task diagnosis
+
+[[self-improving-agents/li-2026-auto-recsys-harnessing-autonomous-research]] extends procedural memory to multi-day industrial experiments. Execution trajectories revise model-specific playbooks, while experiment outcomes update research history; structured state and shared logs make both usable after session/server failures. Its transfer mechanism reuses playbook organization with interactive filling of new model-specific contents. An observed monitor-code rewrite shows that adaptation can reach orchestration, but does not establish a generally improving meta-procedure. Playbook changes are accepted without a formal validation gate. [PDF pp. 5–10, 12, 14](https://arxiv.org/pdf/2609.10922v1#page=5)
+
+[[self-improving-agents/yue-2026-ecdysis-efficient-and-effective-training]] instead concentrates on the decision before editing: recurring cross-task failures inform sequential diagnostic roles, a consolidated specification, and one coding invocation per nonempty round. A strict aggregate training-score gate precedes frozen evaluation. Singleton failures remain auxiliary evidence, and recurrence is explicitly a heuristic rather than causal proof of a harness defect. The task model, role procedure, and evaluator remain fixed. [PDF pp. 3–7](https://arxiv.org/pdf/2609.11677v1#page=3)
+
+Together these papers strengthen the distinction between **state integrity**, **diagnostic plausibility**, and **empirical promotion**. Atomic writes protect experiment records; recurring failures improve the evidence for a proposed change; a training-score gate tests aggregate behavior. None alone verifies a memory entry's causal explanation or proves transfer of an improvement algorithm. This is a wiki synthesis, not a head-to-head result.
+
 See [[overviews/self-improving-llm-agents]], [[concepts/evaluating-self-improvement]], and [[questions/does-a-modifiable-meta-procedure-improve-skill-library-co-training]].
