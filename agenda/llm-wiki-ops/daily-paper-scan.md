@@ -17,8 +17,8 @@ Prioritize new primary research and substantial revisions, with concrete methods
 5. Write substantive PDF-grounded source and wiki notes. Preserve metric definitions, model/budget/split context, negative results, uncertainty, limitations, and verified implementation provenance. Inspect cited tables/figures visually when extraction alone is insufficient.
 6. Add bidirectional synthesis links and a contextual sentence. Record whether the paper strengthens, narrows, contradicts, or leaves existing claims unchanged. Revisit the meta-procedure/co-training question only as supported by the new evidence.
 7. Append the daily log; regenerate index.md; run `python3 scripts/validate_wiki.py` and `git diff --check`. Resolve concrete integrity failures before publishing.
-8. Commit and push an ingestion branch; create or update a reviewable PR. Preserve unrelated changes and never force-push over them. Do not merge PRs. If an unmerged ingestion branch already holds necessary content, use/update it or stack explicitly and record the dependency.
-9. After publishing succeeds, advance `last_successful_scan_utc` to the search coverage cutoff and record the publication in state/logs. This acknowledgement may require a small follow-up commit. If publishing fails, leave the successful watermark unchanged and report the actual blocker.
+8. Commit and push an ingestion branch; create or update a reviewable PR. Prefer the latest default branch when this does not import or lose pending content. Preserve unrelated changes and never force-push over them. If an unmerged ingestion branch already holds necessary content, stack explicitly and record the dependency; do not auto-merge that stack into a non-default branch. Apply the September 13 auto-merge policy below to eligible default-branch PRs.
+9. After publishing succeeds, advance `last_successful_scan_utc` to the search coverage cutoff and record publication and merge status separately in state/logs. This acknowledgement may require a small follow-up commit. If publishing fails, leave the successful watermark unchanged and report the actual blocker. Revisit unmerged eligible PRs even when the search watermark has advanced.
 
 When nothing qualifies, do not manufacture additions. Report that briefly. Logs and state record admitted, duplicate/pending, deferred, and missing-PDF items. An inaccessible linked project page does not invalidate an available canonical paper PDF; describe its access status honestly.
 
@@ -33,3 +33,19 @@ If shell Git lacks authentication, use the connected GitHub Git Data API: upload
 ## September 11 repository-state update
 
 PR #4 was merged into the still-open draft PR #2 branch at 6555ace849f087d3ff1b92dcc5d90ab2842f65c4. PR #3 merged AutoSaddler's abstract-only entry into main at 2695f7cccf1956d6a1eec3298147a4b183fe5ed2. The next scan branch is codex/paper-scan-2026-09-11, stacked on PR #2, with AutoSaddler upgraded under its existing main-branch stem. Check live refs and all ingestion branches before deduplicating or selecting a base; the closed PR #4 is historical, not the active publication target. Do not auto-merge or silently reconcile unrelated branch changes.
+
+## September 13 authorization: validation-gated automatic merge
+
+The user requested: “Schedule this to run every day at 8AM PT and auto merge.” Updated and re-enabled the existing task, rather than creating a duplicate. Its exact schedule is daily 08:00 in America/Los_Angeles, starting September 14, 2026; it follows Pacific daylight-saving changes. The cloud task update succeeded September 13. This policy supersedes the earlier no-merge rule for the recurring ingestion workflow only.
+
+Automatically merge this workflow's non-draft, default-branch-targeted ingestion PRs only when:
+
+- Exact PDFs are published with correct hashes, substantive notes, and synthesis links; generated indexes and available validation pass on the exact PR head.
+- Required CI and reviews are satisfied; there are no unresolved substantive findings, unrelated modifications, missing canonical files, or merge conflicts.
+- The complete diff preserves existing full-text corrections, canonical-ID deduplication, and concurrent scan state; GitHub reports the PR as mergeable.
+
+Use an expected-head-SHA guard for merging, verify the resulting default-branch tree, and record the merge commit. Never bypass branch protection or treat absent/unreadable check information as a passing requirement. If only enforced CI requirements are pending, GitHub auto-merge may be enabled when supported; otherwise retry on the next scan. Report blockers without merging.
+
+The scheduling change does not merge draft PR #2, PR #5, or other preexisting stacked dependencies. Auto-RecSys/Ecdysis on `codex/add-harness-papers-2026-09-12` depends on #5 and remains open until that dependency is separately integrated and the PR can safely target the default branch. Preserve the AutoSaddler full-text upgrade when main is eventually reconciled.
+
+Successful individual runs and no-new-paper outcomes do not complete this ongoing task. Keep it enabled. Keep missing-PDF and unmerged-PR retries independent of the search watermark.

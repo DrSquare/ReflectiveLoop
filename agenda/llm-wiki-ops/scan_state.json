@@ -3,6 +3,15 @@
   "timezone": "America/Los_Angeles",
   "scheduled_local_time": "08:00",
   "task_title": "Update ReflectiveLoop papers",
+  "merge_policy": {
+    "authorized_date_utc": "2026-09-13",
+    "mode": "auto_merge_validated_ingestion_prs_to_default_branch",
+    "automation_enabled": true,
+    "schedule_start_local": "2026-09-14T08:00:00",
+    "requirements": ["exact_PDF_and_wiki_validation", "required_CI_and_reviews_satisfied", "no_unresolved_substantive_findings", "mergeable_exact_head", "no_unmerged_dependencies_or_unrelated_changes"],
+    "preexisting_dependencies_left_untouched": [2, 5],
+    "retry_unmerged_prs_after_watermark_advances": true
+  },
   "last_successful_scan_utc": "2026-09-11T15:04:36+00:00",
   "current_scan": {
     "coverage_start_utc": "2026-09-04T04:01:44+00:00",
@@ -192,6 +201,35 @@
       ],
       "publication_commit": "9dacd7a2d2c95a4217d36d71d9746eb1c559e07b",
       "pull_request": "https://github.com/DrSquare/ReflectiveLoop/pull/4"
+    }
+  ],
+  "manual_ingestions": [
+    {
+      "date_utc": "2026-09-12",
+      "branch": "codex/add-harness-papers-2026-09-12",
+      "base_branch": "codex/paper-scan-2026-09-11",
+      "base_commit": "242cf8a6a2c1d607a4e78996fd51aa5372111391",
+      "publication_status": "published",
+      "publication_commit": "64c901781f3dcaeaf663329271f30cd5a4abf8b2",
+      "pull_request": "https://github.com/DrSquare/ReflectiveLoop/pull/6",
+      "published_at_utc": "2026-09-13T19:56:00Z",
+      "merge_status": "blocked_by_unmerged_dependency_PR_5",
+      "admitted": [
+        {
+          "id": "2609.10922",
+          "version": "2609.10922v1",
+          "stem": "li-2026-auto-recsys-harnessing-autonomous-research",
+          "user_link": "https://lnkd.in/p/g4GWF6f9"
+        },
+        {
+          "id": "2609.11677",
+          "version": "2609.11677v1",
+          "stem": "yue-2026-ecdysis-efficient-and-effective-training",
+          "user_link": "https://lnkd.in/p/gzWd3Gmj"
+        }
+      ],
+      "search_watermark_changed": false,
+      "notes": "Two explicit user-linked papers, deduplicated against main and open PRs #2/#5. Historical #4 merged into #2; #3 merged AutoSaddler abstract entry into main. Existing pending-ingestion bundles preserved."
     }
   ]
 }
