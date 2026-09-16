@@ -10,10 +10,36 @@ agent's usable capability lives outside the frozen model weights — in the
 harness/scaffold, the meta-level procedure that modifies the agent, or the
 skill library it draws on — and that these components should themselves be
 learned or searched over, rather than hand-engineered once and frozen.
-Five papers currently in this wiki each attack a different piece of that
-idea.
+Five legacy paper records in this wiki each attack a different piece of
+that idea. Their comparisons below remain abstract-based pending separate
+PDF upgrades. The sixth entry, Stellar Colosseum, is grounded in an exact
+PDF and adds an inference-time orchestration comparator.
 
-## Papers surveyed here
+## PDF-grounded comparator: research-state refinement
+
+[[self-improving-agents/lin-2026-stellar-colosseum-a-many-agent]] adds a designed
+workflow that improves the current proof and its supporting research state:
+strategy readiness gates precede dependency-aware decomposition, candidate
+critiques survive overlapping aggregation, and localized verifier findings
+support section repair or renewed exploration. A knowledge directory retains
+useful results and failed routes with evidence and caveats. This broadens the
+comparison beyond changing harness code or weights; refining an artifact is
+not itself evidence of a learned or self-editable improvement procedure.
+[PDF §§4.1-4.3, pp. 6-9](https://arxiv.org/pdf/2609.15983v2#page=6)
+
+Its 71.0% TCS-Bench result uses selection between two harness runs, with a
+reference-assisted automated grader. Its proof-to-Codeforces adaptation adds
+a terminal C++ implementation task and execution probe, obtaining 218/222
+accepted programs against hidden final tests. These are different validation
+regimes, and neither comparison isolates orchestration benefits at matched
+compute. Adaptive allocation and model training from validated trajectories
+are proposed future work. Thus the paper strengthens the case for retaining
+structured negative feedback during long tasks, while leaving the
+[[questions/does-a-modifiable-meta-procedure-improve-skill-library-co-training]]
+question unanswered.
+[PDF §§6-8, pp. 13-17](https://arxiv.org/pdf/2609.15983v2#page=13)
+
+## Legacy papers surveyed from abstracts
 
 - [[self-improving-agents/lee-2026-meta-harness-end-to-end]]
   (Meta-Harness) — optimizes the harness alone via an agentic proposer
@@ -39,7 +65,7 @@ idea.
   idea to hierarchical skill libraries, jointly training a learnable
   Meta-Skill Agent with a Reasoning Agent under RL.
 
-## Cross-cutting observations
+## Legacy cross-cutting observations (awaiting PDF upgrades)
 - All five treat some component that is conventionally hand-designed once
   and left static (harness, meta-modification procedure, or skill
   workflow) as an object that should itself be optimized during training
