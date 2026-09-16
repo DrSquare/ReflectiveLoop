@@ -3,10 +3,24 @@
 Canonical PDFs go here, copied (never symlinked), named
 `{first-author-lastname}-{year}-{first-5-title-tokens}.pdf`.
 
-## Missing-PDF list
+## Exact-PDF inventory
 
-The working sandbox this wiki was seeded from has no network access to
-`arxiv.org`, so the PDFs below could not be downloaded. Their `sources/`
+This branch contains **1 exact PDF** and **5 legacy abstract-only records**.
+The complete entry is recorded in [manifest.json](manifest.json); legacy records
+are listed separately there and below, and are not counted as PDF-grounded admissions.
+
+| Paper | Pinned version | Pages | Added / retrieved |
+|---|---|---:|---|
+| [Stellar Colosseum: A Many-Agent Harness for Long-Horizon Research in Mathematics and Theoretical Computer Science](lin-2026-stellar-colosseum-a-many-agent.pdf) | [2609.15983v2](https://arxiv.org/pdf/2609.15983v2) | 27 | 2026-09-16 |
+
+See its [wiki note](../wiki/self-improving-agents/lin-2026-stellar-colosseum-a-many-agent.md)
+for methods, benchmark protocol, limitations, and synthesis.
+
+## Missing-PDF list (legacy records on this branch)
+
+At initial seeding, the working sandbox could not download the PDFs below
+from `arxiv.org`. Their exact PDFs are still absent from this branch; upgrades
+remain pending in [PR #2](https://github.com/DrSquare/ReflectiveLoop/pull/2). Their `sources/`
 and `wiki/` pages were written from publicly reported abstracts/summaries
 instead (see `text_extractor: abstract-summary` in their frontmatter). Drop
 the real PDF into this folder and re-run the ingest steps in `AGENTS.md` to

@@ -1,0 +1,53 @@
+{
+  "retrieval_date": "2026-09-16",
+  "page_numbering": "1-based PDF page numbers; citations refer to the pinned version in each entry",
+  "papers": [
+    {
+      "stem": "lin-2026-stellar-colosseum-a-many-agent",
+      "title": "Stellar Colosseum: A Many-Agent Harness for Long-Horizon Research in Mathematics and Theoretical Computer Science",
+      "canonical_id": "2609.15983",
+      "arxiv_version": "2609.15983v2",
+      "url": "https://arxiv.org/pdf/2609.15983v2",
+      "pdf_path": "papers/lin-2026-stellar-colosseum-a-many-agent.pdf",
+      "pages": 27,
+      "bytes": 501606,
+      "sha256": "08d3ddee02b0e6dcdde3c03e718477ccc0889efc60850ad8bc00d07d64b1b34f",
+      "git_blob": "b226a80124e1ec2822b958e13490e60d4c4b356c",
+      "retrieved_date": "2026-09-16",
+      "text_extractor": "pdftotext -layout",
+      "text_extracted_date": "2026-09-16",
+      "text_extraction_warning": "Poppler reports font type/embedded font mismatch; extracted text and rendered result tables checked",
+      "visual_review_pages": [
+        13,
+        15
+      ]
+    }
+  ],
+  "legacy_incomplete_entries": [
+    {
+      "stem": "feng-2026-coskill-joint-reinforcement",
+      "canonical_id": "2609.04865",
+      "status": "preexisting_abstract_summary_pending_separate_PDF_upgrade"
+    },
+    {
+      "stem": "hebbar-2026-sia-self-improving-ai",
+      "canonical_id": "2605.27276",
+      "status": "preexisting_abstract_summary_pending_separate_PDF_upgrade"
+    },
+    {
+      "stem": "lee-2026-meta-harness-end-to-end",
+      "canonical_id": "2603.28052",
+      "status": "preexisting_abstract_summary_pending_separate_PDF_upgrade"
+    },
+    {
+      "stem": "park-2026-autosaddler-automatic-harness-optimization-with",
+      "canonical_id": "2608.23041",
+      "status": "preexisting_abstract_summary_pending_separate_PDF_upgrade"
+    },
+    {
+      "stem": "zhang-2026-hyperagents",
+      "canonical_id": "2603.19461",
+      "status": "preexisting_abstract_summary_pending_separate_PDF_upgrade"
+    }
+  ]
+}
