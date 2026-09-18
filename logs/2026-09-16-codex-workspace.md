@@ -35,7 +35,7 @@ Continual Harness and SkillRL's prior draft bundles and provenance were inspecte
 
 ### Fresh search and documented backlog
 
-Attempted coverage starts September 4, 2026 15:04:36 UTC (seven-day overlap from the September 11 successful watermark) and searches through September 16. The run was interrupted; there is no completed coverage cutoff.
+Attempted coverage starts September 4, 2026 15:04:36 UTC (seven-day overlap from the September 11 successful watermark) and searches through September 16. This re-anchors the overlap to the successful watermark rather than the archived September 11 scan window start. The run was interrupted; there is no completed coverage cutoff.
 
 - [The Last AI Built by Humans: Toward Genuine Recursive Self-Improvement](https://arxiv.org/abs/2609.11873v2), revised September 15: user-requested survey. Exact v2 download returned 79 pages / 7,838,387 bytes. Partial review covered the autonomy hierarchy and distinction between structural and effective recursion. Poppler emitted syntax/font warnings despite successful text extraction and pdfinfo. Full empirical review, rendering, versioned-byte hashing, and publication remain pending. No placeholder wiki page.
 - [SkillLift: Learning Dense Rubrics from Sparse Oracles for Efficient Skill Evolution](https://arxiv.org/abs/2609.15396), September 14: high-priority candidate for its learned ranking rubric and alternating skill/rubric updates. Primary abstract only; PDF and claims not reviewed.
