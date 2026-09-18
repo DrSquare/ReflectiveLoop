@@ -349,17 +349,28 @@
       "base_branch": "main",
       "base_commit": "d249cb8c6878d3816698c3e5e5fa1d42a5654a1f",
       "user_link": "https://github.com/google-research/envharness",
-      "publication_status": "reviewed_draft_checkpoint_only_not_completed_ingestion",
+      "publication_status": "published_draft_checkpoint_only_not_completed_ingestion",
       "merge_status": "not_attempted_missing_published_PDF",
       "admitted": [],
       "pending": [
         "2608.19880v1"
       ],
       "draft_bundle": "agenda/llm-wiki-ops/pending-ingestions/huang-2026-envharness-awakening-static-worlds-for.json",
-      "search_watermark_changed": false
+      "search_watermark_changed": false,
+      "pull_request": "https://github.com/DrSquare/ReflectiveLoop/pull/10",
+      "publication_commit": "60967c6685a5f65fd41e9d9bf4eacb8bb1917ee9",
+      "published_at_utc": "2026-09-18T17:26:29Z"
     }
   ],
-  "pending_prs": [],
+  "pending_prs": [
+    {
+      "number": 10,
+      "branch": "codex/envharness-pending-2026-09-18",
+      "base": "main",
+      "status": "draft_reviewed_EnvHarness_ingestion_blocked_by_missing_published_PDF",
+      "checkpoint_commit": "60967c6685a5f65fd41e9d9bf4eacb8bb1917ee9"
+    }
+  ],
   "duplicate_pending_this_scan": [
     "2609.15983v2 in PR8",
     "2609.10922v1 and 2609.11677v1 in PR6",
