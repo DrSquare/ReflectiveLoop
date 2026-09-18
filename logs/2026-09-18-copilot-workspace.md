@@ -20,3 +20,4 @@ model: "Copilot coding agent; exact model identifier not exposed"
 - Counts move to **21 PDF-grounded papers** across README, `papers/README.md`, and the overview.
 - `python3 scripts/build_index.py --apply` and `python3 scripts/validate_wiki.py` pass: 21 PDF/source/wiki triples, 25 wiki pages, catalog current, local and bidirectional synthesis links valid. Poppler tools are unavailable in this environment, so page counts and extraction were not re-checked here; the prior records stand.
 - Publication-pending and missing-PDF entries, scan state, and open PRs are unchanged by this merge.
+- Post-merge correction: the Stellar Colosseum page still said the Hyperagents and CoSkill records were abstract-based "on this branch". Both are PDF-grounded here, so that qualification was removed. The earlier entry above records the state of a different merge (19 papers) and is left unchanged as an append-only record.
