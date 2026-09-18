@@ -157,7 +157,8 @@
       "retry_result": "Preserved prior draft/provenance inspected before ordinary backlog. Shell Git dry-run failed for absent authentication; known base64 sizes remain above 16 MiB. Exact bytes were not re-downloaded/rehashed this run. No oversized upload attempted.",
       "last_checked": "2026-09-16",
       "last_checked_precision": "date",
-      "last_verified_bytes_utc": "2026-09-11T15:04:36+00:00"
+      "last_verified_bytes": "2026-09-11T15:04:36+00:00",
+      "last_verified_bytes_precision": "timestamp"
     },
     {
       "id": "2602.08234",
@@ -172,7 +173,8 @@
       "retry_result": "Preserved prior draft/provenance inspected before ordinary backlog. Shell Git dry-run failed for absent authentication; known base64 sizes remain above 16 MiB. Exact bytes were not re-downloaded/rehashed this run. No oversized upload attempted.",
       "last_checked": "2026-09-16",
       "last_checked_precision": "date",
-      "last_verified_bytes_utc": "2026-09-11T15:04:36+00:00"
+      "last_verified_bytes": "2026-09-11T15:04:36+00:00",
+      "last_verified_bytes_precision": "timestamp"
     },
     {
       "id": "2606.01779",
@@ -186,7 +188,9 @@
       "status": "retrieved_hash_matches_prior_review; upload_interrupted; expected_remote_blob_404",
       "draft_bundle": "agenda/llm-wiki-ops/pending-ingestions/2026-09-14-reviewed-evidence.md",
       "last_checked": "2026-09-16",
-      "last_checked_precision": "date"
+      "last_checked_precision": "date",
+      "last_verified_bytes": "2026-09-16",
+      "last_verified_bytes_precision": "date"
     },
     {
       "id": "2609.09134",
@@ -200,7 +204,9 @@
       "status": "retrieved_hash_matches_prior_review; historical_remote_upload_returned_expected_SHA; current_connector_cannot_decode_binary; not_in_published_tree",
       "draft_bundle": "agenda/llm-wiki-ops/pending-ingestions/2026-09-14-reviewed-evidence.md",
       "last_checked": "2026-09-16",
-      "last_checked_precision": "date"
+      "last_checked_precision": "date",
+      "last_verified_bytes": "2026-09-16",
+      "last_verified_bytes_precision": "date"
     }
   ],
   "scan_history": [
