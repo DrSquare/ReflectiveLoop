@@ -153,7 +153,7 @@
       "bytes": 31751676,
       "status": "retrieved_and_reviewed_but_publication_blocked_by_16_MiB_request_limit",
       "draft_bundle": "agenda/llm-wiki-ops/pending-ingestions/karten-2026-continual-harness-online-adaptation-for.json",
-      "last_checked_utc": "2026-09-16",
+      "last_checked_utc": "2026-09-16T00:00:00+00:00",
       "base64_payload_bytes": 42335568,
       "retry_result": "Preserved prior draft/provenance inspected before ordinary backlog. Shell Git dry-run failed for absent authentication; known base64 sizes remain above 16 MiB. Exact bytes were not re-downloaded/rehashed this run. No oversized upload attempted."
     },
@@ -166,7 +166,7 @@
       "bytes": 13153200,
       "status": "retrieved_and_reviewed_but_publication_blocked_by_16_MiB_request_limit",
       "draft_bundle": "agenda/llm-wiki-ops/pending-ingestions/xia-2026-skillrl-evolving-agents-via-recursive.json",
-      "last_checked_utc": "2026-09-16",
+      "last_checked_utc": "2026-09-16T00:00:00+00:00",
       "base64_payload_bytes": 17537600,
       "retry_result": "Preserved prior draft/provenance inspected before ordinary backlog. Shell Git dry-run failed for absent authentication; known base64 sizes remain above 16 MiB. Exact bytes were not re-downloaded/rehashed this run. No oversized upload attempted."
     },
@@ -179,7 +179,7 @@
       "sha256": "3d269c0a0d8a1097b790c6df788cf8ef1d41d2d3e734e4347266caeb30fc6fc7",
       "git_blob": "0c4fdaa4f723a057b441db317be4eecca84cba90",
       "pages": 25,
-      "last_checked_utc": "2026-09-16",
+      "last_checked_utc": "2026-09-16T00:00:00+00:00",
       "status": "retrieved_hash_matches_prior_review; upload_interrupted; expected_remote_blob_404",
       "draft_bundle": "agenda/llm-wiki-ops/pending-ingestions/2026-09-14-reviewed-evidence.md"
     },
@@ -192,7 +192,7 @@
       "sha256": "ae8b8973f7964fca32b192fe3166ac66edb1afb78ad2b5212ec33b892a25cc34",
       "git_blob": "3fbf1bd0b0da7fe04c589b7ba23ee5a401182e0a",
       "pages": 10,
-      "last_checked_utc": "2026-09-16",
+      "last_checked_utc": "2026-09-16T00:00:00+00:00",
       "status": "retrieved_hash_matches_prior_review; historical_remote_upload_returned_expected_SHA; current_connector_cannot_decode_binary; not_in_published_tree",
       "draft_bundle": "agenda/llm-wiki-ops/pending-ingestions/2026-09-14-reviewed-evidence.md"
     }
@@ -343,7 +343,8 @@
     },
     {
       "number": 7,
-      "status": "draft_recovery_only_no_admitted_papers"
+      "status": "draft_recovery_only_no_admitted_papers",
+      "head": "31d84bde6b9c17f66f6b66dfee4fd6d6319eafb0"
     },
     {
       "number": 8,
