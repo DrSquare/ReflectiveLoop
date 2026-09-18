@@ -29,13 +29,15 @@ The [manifest](manifest.json) records SHA-256 hashes, byte counts, page counts, 
 
 ## Missing-PDF list
 
-Two previously selected papers remain blocked; all four PDFs selected for the September 11 scan and both user-requested additions on September 12 fit the available publication transport. The two below were retrieved and reviewed locally, but their base64 uploads exceed the GitHub connection's 16 MiB request limit. They are not admitted to the wiki; their complete analyses and provenance are preserved as pending bundles.
+Four publication-pending PDF entries remain blocked by size or transport limits. They are not admitted to the wiki, and no source/wiki placeholders have been created. AutoSaddler's abstract entry merged through PR #3; its exact-PDF upgrade is now included among this branch's 20 admitted papers. The historical [seed upgrade report](../logs/reports/2026-09-08-seed-pdf-upgrade.md) preserves the corrections to the original abstract-level notes.
 
-| Pending paper | Exact PDF | Bytes | Saved analysis |
-|---|---|---:|---|
-| karten-2026-continual-harness-online-adaptation-for | [2605.09998v1](https://arxiv.org/pdf/2605.09998v1) | 31,751,676 | [Draft bundle](../agenda/llm-wiki-ops/pending-ingestions/karten-2026-continual-harness-online-adaptation-for.json) |
-| xia-2026-skillrl-evolving-agents-via-recursive | [2602.08234v1](https://arxiv.org/pdf/2602.08234v1) | 13,153,200 | [Draft bundle](../agenda/llm-wiki-ops/pending-ingestions/xia-2026-skillrl-evolving-agents-via-recursive.json) |
+| Paper | Exact version | Bytes | Blocker category | Current blocker |
+|---|---|---:|---|---|
+| Continual Harness (`karten-2026-continual-harness-online-adaptation-for`) | [2605.09998v1](https://arxiv.org/pdf/2605.09998v1) | 31,751,676 | size-limit | Prior reviewed exact PDF; base64 upload exceeds the GitHub connection's 16 MiB request limit. Draft bundle: [karten pending ingestion](../agenda/llm-wiki-ops/pending-ingestions/karten-2026-continual-harness-online-adaptation-for.json). |
+| SkillRL (`xia-2026-skillrl-evolving-agents-via-recursive`) | [2602.08234v1](https://arxiv.org/pdf/2602.08234v1) | 13,153,200 | size-limit | Prior reviewed exact PDF; base64 upload exceeds the GitHub connection's 16 MiB request limit. Draft bundle: [xia pending ingestion](../agenda/llm-wiki-ops/pending-ingestions/xia-2026-skillrl-evolving-agents-via-recursive.json). |
+| HarnessForge (`chen-2026-harnessforge-joint-harness-and-policy`) | [2606.01779v1](https://arxiv.org/pdf/2606.01779v1) | 3,872,329 | transport | Download/hash reverified; interrupted binary upload; expected Git blob returns 404. |
+| Co-Evolving Harnesses and Models (`yu-2026-co-evolving-harnesses-and-models`) | [2609.09134v1](https://arxiv.org/pdf/2609.09134v1) | 378,829 | transport | Download/hash reverified; not attached to a completed ingestion tree; binary connector read cannot be decoded. |
 
-Retry publication through an authenticated Git transport capable of these file sizes. Never compress or rewrite the canonical PDF to fit. Other candidates are in the [scan state](../agenda/llm-wiki-ops/scan_state.json). AutoSaddler's abstract entry merged through PR #3; its exact-PDF upgrade is now included among this branch's 20 admitted papers. The two blocked PDF hashes and payload sizes were rechecked on September 11; the transport limitation is unchanged.
+One additional backlog item is review-incomplete, not a missing-PDF record: The Last AI Built by Humans (`bengio-2026-the-last-ai-built`), [2609.11873v2](https://arxiv.org/pdf/2609.11873v2). Its exact download and partial review exist, but PDF syntax warnings still need rendering/validation and its versioned hash and full review are incomplete.
 
-The historical [seed upgrade report](../logs/reports/2026-09-08-seed-pdf-upgrade.md) preserves the corrections to the original abstract-level notes.
+See the [September 16 scan checkpoint](../agenda/llm-wiki-ops/pending-ingestions/2026-09-16-scan-checkpoint.json), [reviewed evidence note](../agenda/llm-wiki-ops/pending-ingestions/2026-09-14-reviewed-evidence.md), and [dated log](../logs/2026-09-16-codex-workspace.md) for the recovery checkpoint. Other candidates are in the [scan state](../agenda/llm-wiki-ops/scan_state.json). Retry publication through an authenticated Git transport capable of the blocked file sizes. Never compress or rewrite a canonical PDF to fit.

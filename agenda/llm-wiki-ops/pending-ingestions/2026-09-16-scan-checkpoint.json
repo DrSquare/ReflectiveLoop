@@ -1,0 +1,100 @@
+{
+  "schema_version": 1,
+  "date": "2026-09-16",
+  "status": "recovery_only_not_admitted",
+  "last_successful_scan_utc": "2026-09-11T15:04:36+00:00",
+  "watermark_advanced": false,
+  "workspace": "/workspace/scratch/bc3b7f77ec40",
+  "local_branch": "codex/paper-scan-2026-09-16",
+  "recovery_note": "Local clone/worktree and PDF extraction existed; no complete new ingestion tree was written/validated/published in this attempt. The September 14 21-file tree is a prior attempt, not this run.",
+  "retrieved_pdfs": [
+    {
+      "title": "HarnessForge: Joint Harness and Policy Evolution for Adaptive Agent Systems",
+      "id": "2606.01779",
+      "version": "2606.01779v1",
+      "stem": "chen-2026-harnessforge-joint-harness-and-policy",
+      "url": "https://arxiv.org/pdf/2606.01779v1",
+      "pages": 25,
+      "bytes": 3872329,
+      "sha256": "3d269c0a0d8a1097b790c6df788cf8ef1d41d2d3e734e4347266caeb30fc6fc7",
+      "remote_blob_status": "404 after interrupted uploads",
+      "retrieved_date": "2026-09-16",
+      "text_extractor": "pdftotext -layout",
+      "visual_review_pages": [
+        6
+      ],
+      "sha256_reverified": true,
+      "visual_review_this_run": false,
+      "git_blob": "0c4fdaa4f723a057b441db317be4eecca84cba90",
+      "remote_blob_confirmed": false
+    },
+    {
+      "title": "Co-Evolving Harnesses and Models: On-Policy Correction Helps Weaker Models Catch Up Where Imitation Fails",
+      "id": "2609.09134",
+      "version": "2609.09134v1",
+      "stem": "yu-2026-co-evolving-harnesses-and-models",
+      "url": "https://arxiv.org/pdf/2609.09134v1",
+      "pages": 10,
+      "bytes": 378829,
+      "sha256": "ae8b8973f7964fca32b192fe3166ac66edb1afb78ad2b5212ec33b892a25cc34",
+      "git_blob": "3fbf1bd0b0da7fe04c589b7ba23ee5a401182e0a",
+      "remote_blob_status": "upload returned matching SHA; not yet attached to a published ingestion tree",
+      "retrieved_date": "2026-09-16",
+      "text_extractor": "pdftotext -layout",
+      "visual_review_pages": [
+        5
+      ],
+      "sha256_reverified": true,
+      "visual_review_this_run": false,
+      "remote_blob_confirmed": false
+    }
+  ],
+  "binary_transport": {
+    "git_dry_run": "fatal: could not read Username for https://github.com: terminal prompts disabled",
+    "harnessforge_expected_blob": "0c4fdaa4f723a057b441db317be4eecca84cba90",
+    "harnessforge_remote_status": "404 at recovery recheck",
+    "co_evolving_expected_blob": "3fbf1bd0b0da7fe04c589b7ba23ee5a401182e0a",
+    "co_evolving_remote_status": "GitHub fetch/fetch_blob reject binary UTF-8 decoding; do not report fresh successful hash verification",
+    "connector_request_limit": 16777216,
+    "harnessforge_base64_bytes": 5163108
+  },
+  "survey": {
+    "id": "2609.11873",
+    "version": "2609.11873v2",
+    "title": "The Last AI Built by Humans: Toward Genuine Recursive Self-Improvement",
+    "date": "2026-09-15",
+    "status": "user_requested; exact_version_downloaded; 79_pages; partial_review_only; Poppler_syntax_warnings_need_visual_validation; no_admission",
+    "pinned_pdf_url": "https://arxiv.org/pdf/2609.11873v2",
+    "pages": 79,
+    "bytes": 7838387,
+    "versioned_sha256": null,
+    "unversioned_download_sha256": "e2c322735f824228b1916c42be710e463dbba255be56644e746a67d84fd21f28",
+    "hash_note": "Hash printed for unversioned retrieval only; do not silently assign it to separately downloaded versioned bytes.",
+    "extractor": "pdftotext -layout",
+    "warnings": "Unterminated string / End of file inside dictionary near offsets 1805/1807; font mismatch. Text extraction and pdfinfo returned successfully. Rendering and independent validation still required."
+  },
+  "validation": {
+    "complete_ingestion": false,
+    "git_diff_check": false,
+    "catalog_regenerated": false,
+    "README_new_admission_coverage": "not_applicable_zero_admissions",
+    "existing_root_README": "preexisting count is stale (four versus five catalog paper records); not modified by recovery-only checkpoint",
+    "pr8": "metadata/reviews/check availability inspected; full exact-head validation not completed"
+  },
+  "resume": [
+    "Restore a working execution environment before PDF validation.",
+    "Re-read live refs; preserve PR2 seed/AutoSaddler corrections and PR6 unresolved reviews.",
+    "Retry HarnessForge binary transfer through authenticated transport; confirm actual Git hash. Decode/retrieve Co-Evolving through a binary-capable transport.",
+    "Re-read pinned PDFs and existing review evidence; complete source/wiki/synthesis/README/manifest validation on a fresh main-based branch.",
+    "Review 2609.11873v2, SkillLift, and AlgoEvo; do not mistake search snippets for full-text admission.",
+    "Keep recovery PR7 draft; publish completed ingestion separately. Advance successful watermark only after completed publication; merge only eligible validated exact heads."
+  ],
+  "candidate_ids": [
+    "2609.11873",
+    "2609.15396",
+    "2609.15820",
+    "2609.00829",
+    "2609.09468",
+    "2609.08183"
+  ]
+}
