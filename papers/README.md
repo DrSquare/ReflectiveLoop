@@ -33,3 +33,19 @@ upgrade them to full PDF-grounded pages.
 | `hebbar-2026-sia-self-improving-ai` | [2605.27276](https://arxiv.org/abs/2605.27276) | SIA: Self Improving AI with Harness & Weight Updates |
 | `feng-2026-coskill-joint-reinforcement` | [2609.04865](https://arxiv.org/abs/2609.04865) | CoSkill: Joint Reinforcement Learning of Reasoning and Meta-Skill Agents for Hierarchical Skill Evolution |
 | `park-2026-autosaddler-automatic-harness-optimization-with` | [2608.23041](https://arxiv.org/abs/2608.23041) | AutoSaddler: Automatic Harness Optimization with Durable Updates from Agent Execution Traces |
+
+## September 16 recovery checkpoint: not admitted
+
+These are retrieval/publication-pending candidates, not additional catalog entries.
+No source/wiki placeholder has been created. See the [scan checkpoint](../agenda/llm-wiki-ops/pending-ingestions/2026-09-16-scan-checkpoint.json) and [dated log](../logs/2026-09-16-codex-workspace.md).
+
+| Paper | Exact version | Current blocker |
+|---|---|---|
+| HarnessForge | [2606.01779v1](https://arxiv.org/pdf/2606.01779v1) | Download/hash reverified; interrupted binary upload; expected Git blob returns 404 |
+| Co-Evolving Harnesses and Models | [2609.09134v1](https://arxiv.org/pdf/2609.09134v1) | Download/hash reverified; not attached to a completed ingestion tree; binary connector read cannot be decoded |
+| The Last AI Built by Humans | [2609.11873v2](https://arxiv.org/pdf/2609.11873v2) | Exact download and partial review; PDF syntax warnings need rendering/validation; versioned hash and full review incomplete |
+| Continual Harness | [2605.09998v1](https://arxiv.org/pdf/2605.09998v1) | Prior reviewed exact PDF exceeds 16 MiB base64 request limit; shell Git lacks authentication |
+| SkillRL | [2602.08234v1](https://arxiv.org/pdf/2602.08234v1) | Prior reviewed exact PDF exceeds 16 MiB base64 request limit; shell Git lacks authentication |
+
+The five legacy entries above remain unchanged. Their separate pending PDF upgrades,
+including AutoSaddler's full-text corrections, must not be lost during integration.
