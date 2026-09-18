@@ -25,7 +25,7 @@ Both pinned recovery PDFs were downloaded again; SHA-256 matches the prior Septe
 | HarnessForge | 2606.01779v1 | 3,872,329 | `3d269c0a0d8a1097b790c6df788cf8ef1d41d2d3e734e4347266caeb30fc6fc7` |
 | Co-Evolving Harnesses and Models | 2609.09134v1 | 378,829 | `ae8b8973f7964fca32b192fe3166ac66edb1afb78ad2b5212ec33b892a25cc34` |
 
-Co-Evolving's complete extracted text was revisited. It preserves the key distinction between 78.0% harness-only mean success, 63.1% after full-trajectory imitation, and 79.7% after local correction; no new synthesis was admitted. Earlier substantive review remains in [the preserved evidence](../agenda/llm-wiki-ops/pending-ingestions/2026-09-14-reviewed-evidence.md). HarnessForge was re-downloaded and hashed, but fresh visual/table validation was not completed.
+Co-Evolving's complete extracted text was revisited. It preserves the key distinctions among 78.0% harness-only mean success, 63.1% after full-trajectory imitation, and 79.7% after local correction; no new synthesis was admitted. Earlier substantive review remains in [the preserved evidence](../agenda/llm-wiki-ops/pending-ingestions/2026-09-14-reviewed-evidence.md). HarnessForge was re-downloaded and hashed, but fresh visual/table validation was not completed.
 
 Shell Git's read-only push test failed because no authentication was available. HarnessForge's API upload was interrupted again; the expected binary blob still returned 404 when recovery resumed. The 5,163,108-byte base64 payload is below the 16 MiB request limit. Do not misclassify this as an oversized-PDF rejection.
 

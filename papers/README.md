@@ -28,7 +28,7 @@ The [manifest](manifest.json) records SHA-256 hashes, byte counts, page counts, 
 
 ## Missing-PDF list
 
-Publication-pending candidates remain blocked or incomplete. They are not admitted to the wiki, and no source/wiki placeholders have been created. AutoSaddler's abstract entry merged through PR #3; its exact-PDF upgrade is now included among this branch's 18 admitted papers. The historical [seed upgrade report](../logs/reports/2026-09-08-seed-pdf-upgrade.md) preserves the corrections to the original abstract-level notes.
+Five publication-pending candidates remain blocked or incomplete. They are not admitted to the wiki, and no source/wiki placeholders have been created. AutoSaddler's abstract entry merged through PR #3; its exact-PDF upgrade is now included among this branch's 18 admitted papers. The historical [seed upgrade report](../logs/reports/2026-09-08-seed-pdf-upgrade.md) preserves the corrections to the original abstract-level notes.
 
 | Paper | Exact version | Blocker category | Current blocker |
 |---|---|---|---|
