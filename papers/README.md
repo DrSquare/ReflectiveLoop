@@ -1,6 +1,6 @@
 # Canonical paper PDFs
 
-This branch contains **18 / 18 admitted exact PDFs**: four seeds, thirteen later additions, and the full-text upgrade of AutoSaddler already cataloged on main. All have source notes, paper wiki pages, and synthesis connections. PDFs are copied unchanged; extracted full-text transcriptions are not committed.
+This branch contains **19 / 19 admitted exact PDFs**: four seeds, thirteen later additions, the full-text upgrade of AutoSaddler already cataloged on main, and the September 16 addition of Stellar Colosseum. All have source notes, paper wiki pages, and synthesis connections. PDFs are copied unchanged; extracted full-text transcriptions are not committed.
 
 | Paper stem | Pinned PDF | Pages | Retrieved (UTC date) |
 |---|---|---:|---|
@@ -23,12 +23,13 @@ This branch contains **18 / 18 admitted exact PDFs**: four seeds, thirteen later
 | [zhang-2026-harnesscompass-guiding-automatic-harness-evolution](zhang-2026-harnesscompass-guiding-automatic-harness-evolution.pdf) | [2608.01918v1](https://arxiv.org/pdf/2608.01918v1) | 17 | 2026-09-11 |
 | [lou-2026-autoharness-improving-llm-agents-by](lou-2026-autoharness-improving-llm-agents-by.pdf) | [2603.03329v1](https://arxiv.org/pdf/2603.03329v1) | 21 | 2026-09-11 |
 | [park-2026-autosaddler-automatic-harness-optimization-with](park-2026-autosaddler-automatic-harness-optimization-with.pdf) | [2608.23041v1](https://arxiv.org/pdf/2608.23041v1) | 44 | 2026-09-11 |
+| [lin-2026-stellar-colosseum-a-many-agent](lin-2026-stellar-colosseum-a-many-agent.pdf) | [2609.15983v2](https://arxiv.org/pdf/2609.15983v2) | 27 | 2026-09-16 |
 
 The [manifest](manifest.json) records SHA-256 hashes, byte counts, page counts, extraction methods, and visually inspected pages. Notes cite 1-based PDF pages in the pinned versions; these are version-specific analyses, not a guarantee that every PDF is the latest revision. DGM v3 was detected after reviewing v1 and is recorded for a separate revision comparison.
 
 ## Missing-PDF list
 
-Four publication-pending PDF entries remain blocked by size or transport limits. They are not admitted to the wiki, and no source/wiki placeholders have been created. AutoSaddler's abstract entry merged through PR #3; its exact-PDF upgrade is now included among this branch's 18 admitted papers. The historical [seed upgrade report](../logs/reports/2026-09-08-seed-pdf-upgrade.md) preserves the corrections to the original abstract-level notes.
+Four publication-pending PDF entries remain blocked by size or transport limits. They are not admitted to the wiki, and no source/wiki placeholders have been created. AutoSaddler's abstract entry merged through PR #3; its exact-PDF upgrade is now included among this branch's admitted papers. The historical [seed upgrade report](../logs/reports/2026-09-08-seed-pdf-upgrade.md) preserves the corrections to the original abstract-level notes.
 
 | Paper | Exact version | Bytes | Blocker category | Current blocker |
 |---|---|---:|---|---|

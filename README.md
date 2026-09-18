@@ -1,8 +1,12 @@
 # ReflectiveLoop
 
-A literature-review knowledge base for self-improving agent harnesses, skills, and systems, following the LLM Wiki pattern. This branch contains **18 PDF-grounded papers**, with source notes, synthesis pages, and research questions.
+A literature-review knowledge base for self-improving agent harnesses, skills, and systems, following the LLM Wiki pattern. This branch contains **19 PDF-grounded papers**, with source notes, synthesis pages, and research questions.
 
 Start with the [generated catalog](index.md), [overview](wiki/overviews/self-improving-llm-agents.md), [mechanism comparison](wiki/concepts/procedural-self-improvement.md), and [evaluation boundaries](wiki/concepts/evaluating-self-improvement.md).
+
+## Added September 16, 2026
+
+- [Stellar Colosseum: A Many-Agent Harness for Long-Horizon Research in Mathematics and Theoretical Computer Science](wiki/self-improving-agents/lin-2026-stellar-colosseum-a-many-agent.md) ([arXiv:2609.15983v2](https://arxiv.org/abs/2609.15983v2)) — Readiness-gated proof planning, overlapping candidate-and-critique aggregation, and localized repair with persistent research memory. An inference-time harness comparator; learning the controller or model remains future work.
 
 ## Latest scan additions and upgrades
 

@@ -10,13 +10,38 @@ agent's usable capability lives outside the frozen model weights — in the
 harness/scaffold, the meta-level procedure that modifies the agent, or the
 skill library it draws on — and that these components should themselves be
 learned or searched over, rather than hand-engineered once and frozen.
-Eighteen papers currently in this wiki cover different parts of that idea,
-including thirteen additions and the AutoSaddler full-text upgrade from the September 11, 2026 UTC scans.
+Nineteen papers currently in this wiki cover different parts of that idea,
+including thirteen additions and the AutoSaddler full-text upgrade from the
+September 11, 2026 UTC scans, plus the September 16 addition of Stellar Colosseum.
 
 Seed full-text review: September 8, 2026; all four seed PDFs are present.
 Expanded review: September 11, 2026 UTC; all ten new PDFs are present. The
 revisions below replace only interpretations changed or qualified by the
 full text. See the [claim-change record](../../logs/reports/2026-09-08-seed-pdf-upgrade.md).
+
+## Research-state refinement as an inference-time comparator
+
+[[self-improving-agents/lin-2026-stellar-colosseum-a-many-agent]] adds a designed
+workflow that improves the current proof and its supporting research state:
+strategy readiness gates precede dependency-aware decomposition, candidate
+critiques survive overlapping aggregation, and localized verifier findings
+support section repair or renewed exploration. A knowledge directory retains
+useful results and failed routes with evidence and caveats. This broadens the
+comparison beyond changing harness code or weights; refining an artifact is
+not itself evidence of a learned or self-editable improvement procedure.
+[PDF §§4.1-4.3, pp. 6-9](https://arxiv.org/pdf/2609.15983v2#page=6)
+
+Its 71.0% TCS-Bench result uses selection between two harness runs, with a
+reference-assisted automated grader. Its proof-to-Codeforces adaptation adds
+a terminal C++ implementation task and execution probe, obtaining 218/222
+accepted programs against hidden final tests. These are different validation
+regimes, and neither comparison isolates orchestration benefits at matched
+compute. Adaptive allocation and model training from validated trajectories
+are proposed future work. Thus the paper strengthens the case for retaining
+structured negative feedback during long tasks, while leaving the
+[[questions/does-a-modifiable-meta-procedure-improve-skill-library-co-training]]
+question unanswered.
+[PDF §§6-8, pp. 13-17](https://arxiv.org/pdf/2609.15983v2#page=13)
 
 ## Seed papers
 

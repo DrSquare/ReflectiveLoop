@@ -16,7 +16,7 @@ Generated catalog of `wiki/` pages. Regenerate with
 
 - [Does a modifiable meta-procedure improve skill-library co-training?](wiki/questions/does-a-modifiable-meta-procedure-improve-skill-library-co-training.md)
 
-## self-improving-agents (18)
+## self-improving-agents (19)
 
 - [CoSkill: Joint Reinforcement Learning of Reasoning and Meta-Skill Agents for Hierarchical Skill Evolution](wiki/self-improving-agents/feng-2026-coskill-joint-reinforcement.md)
 - [SE-GoS: Self-Evolving Graph-of-Skills for Skill Library at Scale](wiki/self-improving-agents/fu-2026-se-gos-self-evolving-graph.md)
@@ -26,6 +26,7 @@ Generated catalog of `wiki/` pages. Regenerate with
 - [Prime Agent: A Self-Improving RLM Harness](wiki/self-improving-agents/karten-2026-prime-agent-a-self-improving.md)
 - [Meta-Harness: End-to-End Optimization of Model Harnesses](wiki/self-improving-agents/lee-2026-meta-harness-end-to-end.md)
 - [SkillAdam: Stable and Efficient Skill Evolution for Agents](wiki/self-improving-agents/li-2026-skilladam-stable-and-efficient-skill.md)
+- [Stellar Colosseum: A Many-Agent Harness for Long-Horizon Research in Mathematics and Theoretical Computer Science](wiki/self-improving-agents/lin-2026-stellar-colosseum-a-many-agent.md)
 - [AutoHarness: improving LLM agents by automatically synthesizing a code harness](wiki/self-improving-agents/lou-2026-autoharness-improving-llm-agents-by.md)
 - [AutoSaddler: Automatic Harness Optimization with Durable Updates from Agent Execution Traces](wiki/self-improving-agents/park-2026-autosaddler-automatic-harness-optimization-with.md)
 - [Evo-Harness: Context-to-Harness Skill Compilation for Self-Evolving Agents](wiki/self-improving-agents/wei-2026-evo-harness-context-to-harness.md)
