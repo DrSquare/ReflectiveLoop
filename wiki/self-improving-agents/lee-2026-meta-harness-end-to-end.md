@@ -48,7 +48,8 @@ Discovered programs include label-aware TF-IDF classification, subject-routed BM
 
 ## Related Papers
 
-- [[overviews/self-improving-llm-agents]] places the result alongside the other three seeds.
+- [[overviews/self-improving-llm-agents]] places the result alongside the other seed papers and later harness-optimization scans.
 - [[hebbar-2026-sia-self-improving-ai]] adds task-model training, but differs in LawBench setup; the studies are not a matched experiment.
 - [[zhang-2026-hyperagents]] makes meta-agent code editable, a distinct mechanism.
+- [[park-2026-autosaddler-automatic-harness-optimization-with]] optimizes the same harness axis with development-time mini-batch diagnosis, re-execution, validation-gated patches, and history-aware recombination rather than same-benchmark online search.
 - [Detailed source analysis](../../sources/lee-2026-meta-harness-end-to-end.md); [canonical PDF](../../papers/lee-2026-meta-harness-end-to-end.pdf).
