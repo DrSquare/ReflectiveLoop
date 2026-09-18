@@ -25,7 +25,8 @@
       ],
       "sha256_reverified": true,
       "visual_review_this_run": false,
-      "expected_git_blob": "0c4fdaa4f723a057b441db317be4eecca84cba90"
+      "git_blob": "0c4fdaa4f723a057b441db317be4eecca84cba90",
+      "remote_blob_confirmed": false
     },
     {
       "title": "Co-Evolving Harnesses and Models: On-Policy Correction Helps Weaker Models Catch Up Where Imitation Fails",
@@ -44,7 +45,8 @@
         5
       ],
       "sha256_reverified": true,
-      "visual_review_this_run": false
+      "visual_review_this_run": false,
+      "remote_blob_confirmed": false
     }
   ],
   "binary_transport": {

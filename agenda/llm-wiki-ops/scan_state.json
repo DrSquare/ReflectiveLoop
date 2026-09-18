@@ -373,5 +373,8 @@
     "2606.03056",
     "2607.22688",
     "2606.14249"
-  ]
+  ],
+  "timestamp_conventions": {
+    "missing_pdfs.last_checked_utc": "When an exact time-of-day was not recorded during a recovery checkpoint, the date is normalized to 00:00:00+00:00 and must be interpreted as date-granular, not as an exact midnight check."
+  }
 }

@@ -30,12 +30,12 @@ The [manifest](manifest.json) records SHA-256 hashes, byte counts, page counts, 
 
 Four publication-pending PDF entries remain blocked by size or transport limits. They are not admitted to the wiki, and no source/wiki placeholders have been created. AutoSaddler's abstract entry merged through PR #3; its exact-PDF upgrade is now included among this branch's 18 admitted papers. The historical [seed upgrade report](../logs/reports/2026-09-08-seed-pdf-upgrade.md) preserves the corrections to the original abstract-level notes.
 
-| Paper | Exact version | Blocker category | Current blocker |
-|---|---|---|---|
-| Continual Harness (`karten-2026-continual-harness-online-adaptation-for`) | [2605.09998v1](https://arxiv.org/pdf/2605.09998v1) | size-limit | Prior reviewed exact PDF is 31,751,676 bytes; base64 upload exceeds the GitHub connection's 16 MiB request limit. Draft bundle: [karten pending ingestion](../agenda/llm-wiki-ops/pending-ingestions/karten-2026-continual-harness-online-adaptation-for.json). |
-| SkillRL (`xia-2026-skillrl-evolving-agents-via-recursive`) | [2602.08234v1](https://arxiv.org/pdf/2602.08234v1) | size-limit | Prior reviewed exact PDF is 13,153,200 bytes; base64 upload exceeds the GitHub connection's 16 MiB request limit. Draft bundle: [xia pending ingestion](../agenda/llm-wiki-ops/pending-ingestions/xia-2026-skillrl-evolving-agents-via-recursive.json). |
-| HarnessForge (`chen-2026-harnessforge-joint-harness-and-policy`) | [2606.01779v1](https://arxiv.org/pdf/2606.01779v1) | transport | 3,872,329 bytes; download/hash reverified; interrupted binary upload; expected Git blob returns 404. |
-| Co-Evolving Harnesses and Models (`yu-2026-co-evolving-harnesses-and-models`) | [2609.09134v1](https://arxiv.org/pdf/2609.09134v1) | transport | 378,829 bytes; download/hash reverified; not attached to a completed ingestion tree; binary connector read cannot be decoded. |
+| Paper | Exact version | Bytes | Blocker category | Current blocker |
+|---|---|---:|---|---|
+| Continual Harness (`karten-2026-continual-harness-online-adaptation-for`) | [2605.09998v1](https://arxiv.org/pdf/2605.09998v1) | 31,751,676 | size-limit | Prior reviewed exact PDF; base64 upload exceeds the GitHub connection's 16 MiB request limit. Draft bundle: [karten pending ingestion](../agenda/llm-wiki-ops/pending-ingestions/karten-2026-continual-harness-online-adaptation-for.json). |
+| SkillRL (`xia-2026-skillrl-evolving-agents-via-recursive`) | [2602.08234v1](https://arxiv.org/pdf/2602.08234v1) | 13,153,200 | size-limit | Prior reviewed exact PDF; base64 upload exceeds the GitHub connection's 16 MiB request limit. Draft bundle: [xia pending ingestion](../agenda/llm-wiki-ops/pending-ingestions/xia-2026-skillrl-evolving-agents-via-recursive.json). |
+| HarnessForge (`chen-2026-harnessforge-joint-harness-and-policy`) | [2606.01779v1](https://arxiv.org/pdf/2606.01779v1) | 3,872,329 | transport | Download/hash reverified; interrupted binary upload; expected Git blob returns 404. |
+| Co-Evolving Harnesses and Models (`yu-2026-co-evolving-harnesses-and-models`) | [2609.09134v1](https://arxiv.org/pdf/2609.09134v1) | 378,829 | transport | Download/hash reverified; not attached to a completed ingestion tree; binary connector read cannot be decoded. |
 
 One additional backlog item is review-incomplete, not a missing-PDF record: The Last AI Built by Humans (`bengio-2026-the-last-ai-built`), [2609.11873v2](https://arxiv.org/pdf/2609.11873v2). Its exact download and partial review exist, but PDF syntax warnings still need rendering/validation and its versioned hash and full review are incomplete.
 
