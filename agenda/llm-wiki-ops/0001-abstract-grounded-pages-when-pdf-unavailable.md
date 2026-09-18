@@ -21,3 +21,13 @@ papers were also added to the missing-PDF table in `papers/README.md`.
 - Once a machine with `arxiv.org` access downloads the real PDFs, they
   should be dropped into `papers/`, re-ingested per the `AGENTS.md` steps,
   and the missing-PDF table entries removed.
+
+## Resolution: 2026-09-08
+
+All four seed PDFs were retrieved directly from versioned arXiv URLs and
+copied into `papers/`. Their source/wiki pairs were re-ingested with
+`pdftotext -layout` plus visual checks of result pages. Versions, hashes,
+and page counts are recorded in `papers/manifest.json`; the missing list
+is now empty. This ADR records the historical fallback, not the current
+evidence status. See `logs/reports/2026-09-08-seed-pdf-upgrade.md` for
+claim-level corrections and synthesis changes.

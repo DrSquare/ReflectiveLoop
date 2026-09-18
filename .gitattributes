@@ -1,0 +1,2 @@
+# Preserve canonical paper bytes and prevent text/whitespace diffs.
+*.pdf binary

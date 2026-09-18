@@ -1,103 +1,55 @@
 ---
 title: "AutoSaddler: Automatic Harness Optimization with Durable Updates from Agent Execution Traces"
-authors: Sungho Park, Wonjoong Kim, Rongyuan Tan, Jue Zhang, Wook-Shin Han, Pengfei Gao, Chanyoung Park, Yongqiang Yao, Rao Fu, Elsie Nallipogu, Qingwei Lin, Saravan Rajmohan, Dongmei Zhang
+authors: "Sungho Park; Wonjoong Kim; Rongyuan Tan; Jue Zhang; Wook-Shin Han; Pengfei Gao; Chanyoung Park; Yongqiang Yao; Rao Fu; Elsie Nallipogu; Qingwei Lin; Saravan Rajmohan; Dongmei Zhang"
 year: 2026
-doi: arXiv:2608.23041
-category: [self-improving-agents]
-pdf_path: /papers/park-2026-autosaddler-automatic-harness-optimization-with.pdf
-pdf_filename: park-2026-autosaddler-automatic-harness-optimization-with.pdf
-source_collection: arxiv
-source_format: abstract
-text_extractor: abstract-summary
-text_extracted_date: 2026-09-08
+doi: "arXiv:2608.23041"
+category: ["self-improving-agents"]
+pdf_path: "/papers/park-2026-autosaddler-automatic-harness-optimization-with.pdf"
+pdf_filename: "park-2026-autosaddler-automatic-harness-optimization-with.pdf"
+source_collection: "arxiv"
+source_format: "pdf"
+text_extractor: "pdftotext-layout"
+text_extracted_date: "2026-09-11"
+arxiv_version: "2608.23041v1"
+pdf_url: "https://arxiv.org/pdf/2608.23041v1"
+pdf_pages: 44
+pdf_sha256: "9c6af65c3aa725e654e90d5496948e5d9b7589d09a4d6ae1accec45eec3ecc5e"
 ---
 
 ## One-line Summary
-AutoSaddler casts automatic harness optimization as offline learning:
-it diagnoses failure traces from mini-batches of agent executions,
-generates structured patches that treat the harness as code, and keeps
-only the updates that survive validation, yielding durable harness
-improvements on GAIA2, SWE-Bench Pro, and Terminal-Bench 2.0.
+
+AutoSaddler performs development-time harness optimization with fresh mini-batch executions, evidence-grounded code patches, and history-aware candidate recombination, then selects on development data before untouched-test evaluation.
 
 ## 1. Document Information
-- arXiv: 2608.23041, version v1 submitted 24 August 2026.
-- The arXiv abstract page links a project website and a code release;
-  neither could be inspected from this environment (no network access to
-  `arxiv.org`), so their URLs are not recorded here.
-- No PDF is available in `papers/` for this paper; see the missing-PDF
-  list in `papers/README.md`. Everything below is grounded in the
-  publicly reported abstract only (`text_extractor: abstract-summary`).
+
+AutoSaddler: Automatic Harness Optimization with Durable Updates from Agent Execution Traces. 2608.23041v1; submission date 2026-08-24. The unchanged [local PDF](../papers/park-2026-autosaddler-automatic-harness-optimization-with.pdf) has 44 pages. Citations are 1-based PDF pages. Review covers methods, reported results, and cited limitations, not experiment reproduction or a complete code audit. The PDF names [an author project URL](https://aka.ms/AutoSaddler-website) and says code will be available there. The URL could not be opened in this run; a functioning code release is not claimed. This replaces the abstract-summary analysis of the same canonical ID already on main, preserving its existing stem.
 
 ## 2. Key Contributions
-- Frames automatic harness optimization as an *offline learning* problem
-  over previously collected agent execution traces, rather than as an
-  online search that must re-run the agent for every candidate.
-- Iterative updates driven by failure signals accumulated over
-  mini-batches of tasks, rather than from a single trajectory.
-- Failure-trace diagnosis ("deep debugging") as the source of the update
-  signal, instead of shallow self-reflection over outcomes.
-- Structured patch generation that treats the harness as code, so edits
-  are targeted rather than unconstrained rewrites.
-- Validation-based update selection, keeping only changes that
-  generalize instead of those that repair one specific trajectory.
+
+Combines diagnosis, a prompt/tool/middleware patch taxonomy, capability-to-steering scheduling, and an EvoDAG of edits and outcomes. The full text corrects the old abstract-derived interpretation: offline means before deployment, not training only on fixed previously collected traces without re-executing candidates. Memory and skill curation are outside its stated task-agent optimization scope. [PDF pp. 3-6](https://arxiv.org/pdf/2608.23041v1#page=3)
 
 ## 3. Methodology and Architecture
-The reported pipeline is a loop over mini-batches of tasks: run the
-current harness, collect execution traces, diagnose the failures in
-those traces, generate a structured patch against the harness source,
-and then accept or reject that patch based on validation performance.
-Accepted patches are durable — they persist into subsequent iterations,
-so improvement accumulates across mini-batches instead of being scoped to
-the trajectory that produced the signal. The abstract does not describe
-the harness representation, patch format, model choices, or
-compute budget in enough detail to reproduce the system; those details
-require the PDF.
+
+Each iteration runs the current harness on a training mini-batch, jointly diagnoses failures and edits harness code, and re-executes the patched harness on that mini-batch. A positive mini-batch delta triggers development-set evaluation. Reflection records fixed, regressed, still-failing, and still-passing cases regardless of acceptance. EvoDAG stores candidate history; an evolution agent can recombine different lineages. The final choice maximizes development score and is not modified using test feedback. [PDF pp. 4-6](https://arxiv.org/pdf/2608.23041v1#page=4)
+
+The three optimizer roles use Claude Agent SDK; default underlying LLM is Opus 4.6. GAIA2 train/dev/test counts are 75/65/300 with disjoint universes; SWE-Bench Pro is 79/80/237 with disjoint repositories; Terminal-Bench 2.0 is a random 30/19/40 task split, not group-disjoint. Generally one optimization run is followed by three test executions. AutoSaddler/GEPA run 2 epochs on GAIA2/SBP and 4 on TB2; Meta-Harness gets larger epoch counts to avoid a smaller task-execution budget. [PDF pp. 7, 20](https://arxiv.org/pdf/2608.23041v1#page=20)
 
 ## 4. Key Results and Benchmarks
-Reported gains over the respective baselines:
 
-| Benchmark | Reported gain |
-|---|---|
-| GAIA2 | +9.0 points |
-| SWE-Bench Pro | +9.6 points |
-| Terminal-Bench 2.0 | +10.0 points |
+Tables 2-3 report test Pass@1 (mean +/- standard deviation over three executions): GAIA2 62.0 +/- 1.2 versus base 53.0 +/- 1.5; SWE-Bench Pro 46.9 +/- 1.8 versus 37.3 +/- 4.8; TB2 final iteration 50.0 +/- 0.0 versus 40.0 +/- 0.0 on 40 test tasks. Computed from displayed endpoints, base-harness gains are 9.0, 9.6, and 10.0 percentage points. Against the strongest automated rows, computed gaps are 7.4 (GEPA 54.6), 4.4 (GEPA 42.5), and 6.7 (Meta-Harness 43.3). Section 5.2 prints inconsistent deltas (8.4, 6.2, and 4.4); retain the table endpoints and explicit arithmetic. [PDF pp. 7-8](https://arxiv.org/pdf/2608.23041v1#page=7)
 
-Ablations reported in the abstract favor:
-- deep failure-trace debugging over shallow reflection;
-- targeted, structured modifications over unconstrained editing;
-- generalization-aware (validation-based) selection over
-  trajectory-specific repair.
-
-Baseline identities, harness/model configurations, and variance across
-runs are not stated in the abstract.
+GAIA2 ablations score 57.8 without deep diagnosis, 56.9 without structured intervention, and 50.6 without generalization-aware selection, versus 62.0 full. An independent optimization run's 58.6 result is specifically Universe 22, not the aggregate three-universe score. The reported 147 traces leveraged for optimization are not total environment executions: the best development checkpoint needs approximately 1,000 executions. [PDF pp. 2, 7-8, 21](https://arxiv.org/pdf/2608.23041v1#page=21)
 
 ## 5. Limitations and Future Work
-- As summarized here, the evidence base is the abstract alone; no
-  numbers were verified against the full paper.
-- The method depends on collecting and storing agent execution traces
-  and on having a validation split large enough to distinguish
-  generalizing patches from trajectory-specific ones.
-- Being offline, the approach optimizes against the task distribution
-  present in the collected traces; behaviour under distribution shift is
-  not addressed in the abstract.
+
+Three test executions measure deployment stochasticity, not three independent optimization runs; the extra GAIA2 optimization check covers one universe. Small TB2 test size and zero observed execution variance do not imply zero uncertainty. Test groups differ for GAIA2 and SBP, but TB2 uses random task holdout. The matched task-execution budgets do not equalize all optimizer cost; deep code diagnosis adds work. [PDF pp. 7-8, 20-21](https://arxiv.org/pdf/2608.23041v1#page=7)
+
+Requires supervised task-level outcomes and largely stateless independent tasks. Generalization claims should not be extended to persistent user memory, evolving skill curation, or arbitrary new domains. Structured patching changes a runtime, not a learned outer optimizer or shared editor-policy RL objective. Arithmetic inconsistencies in the narrative require checking tables. The authors recommend human review/security validation before production deployment. [PDF pp. 4, 44](https://arxiv.org/pdf/2608.23041v1#page=44)
 
 ## 6. Related Work
-- [[lee-2026-meta-harness-end-to-end]] (Meta-Harness) — the closest
-  neighbour in this wiki: also optimizes the harness around a frozen
-  model using execution traces, but as an online agentic search over
-  harness variants with full history in context, where AutoSaddler runs
-  offline over mini-batches with validation-gated structured patches.
-- [[hebbar-2026-sia-self-improving-ai]] (SIA) — pairs harness revision
-  with model weight updates; AutoSaddler stays entirely on the harness
-  axis.
+
+[[lee-2026-meta-harness-end-to-end]]; [[hebbar-2026-sia-self-improving-ai]]; [[zhang-2026-harnesscompass-guiding-automatic-harness-evolution]]. Synthesis: [[concepts/procedural-self-improvement]] and [[concepts/evaluating-self-improvement]].
 
 ## 7. Glossary
-- **Harness**: The code and control flow surrounding a frozen LLM that
-  determines what the model sees and how its outputs are used.
-- **Durable update**: A harness change that is retained across
-  optimization iterations rather than applied only to the trajectory
-  that motivated it.
-- **Structured patch**: A constrained, code-level edit to the harness,
-  as opposed to an unconstrained rewrite.
-- **Validation-based selection**: Accepting a candidate update only if
-  it improves performance on held-out validation tasks.
+
+Offline: development-time optimization, still using new executions. EvoDAG: candidate/patch/lesson history. Capability patch: executable behavior change. Steering patch: textual guidance change. Development selection: choosing a harness before final test reporting.
