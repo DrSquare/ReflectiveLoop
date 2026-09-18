@@ -2,7 +2,7 @@
 date: 2026-09-16
 agent: codex
 host: workspace
-model: unspecified
+model: "Codex; exact model identifier not exposed"
 ---
 
 ## [2026-09-16] maintenance | daily paper scan | Interrupted recovery and fresh candidate checkpoint

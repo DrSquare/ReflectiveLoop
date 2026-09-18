@@ -17,7 +17,6 @@
       "pages": 25,
       "bytes": 3872329,
       "sha256": "3d269c0a0d8a1097b790c6df788cf8ef1d41d2d3e734e4347266caeb30fc6fc7",
-      "git_blob": "0c4fdaa4f723a057b441db317be4eecca84cba90",
       "remote_blob_status": "404 after interrupted uploads",
       "retrieved_date": "2026-09-16",
       "text_extractor": "pdftotext -layout",
@@ -25,7 +24,8 @@
         6
       ],
       "sha256_reverified": true,
-      "visual_review_this_run": false
+      "visual_review_this_run": false,
+      "expected_git_blob": "0c4fdaa4f723a057b441db317be4eecca84cba90"
     },
     {
       "title": "Co-Evolving Harnesses and Models: On-Policy Correction Helps Weaker Models Catch Up Where Imitation Fails",
@@ -71,43 +71,6 @@
     "extractor": "pdftotext -layout",
     "warnings": "Unterminated string / End of file inside dictionary near offsets 1805/1807; font mismatch. Text extraction and pdfinfo returned successfully. Rendering and independent validation still required."
   },
-  "candidates": [
-    {
-      "id": "2609.11873",
-      "version": "2609.11873v2",
-      "title": "The Last AI Built by Humans: Toward Genuine Recursive Self-Improvement",
-      "date": "2026-09-15",
-      "status": "user_requested; exact_version_downloaded; 79_pages; partial_review_only; Poppler_syntax_warnings_need_visual_validation; no_admission"
-    },
-    {
-      "id": "2609.15396",
-      "title": "SkillLift: Learning Dense Rubrics from Sparse Oracles for Efficient Skill Evolution",
-      "date": "2026-09-14",
-      "status": "primary_abstract_verified; high_priority_rubric_learning_and_skill_evolution; PDF_review_pending"
-    },
-    {
-      "id": "2609.15820",
-      "title": "AlgoEvo: Self-Evolving Agentic Search for Automated Algorithm Discovery",
-      "date": "2026-09-14",
-      "status": "primary_abstract_verified; reusable_cross_task_design_skills; PDF_review_pending"
-    },
-    {
-      "id": "2609.00829",
-      "title": "HarnessEvolve: Learning from Reference Trajectories for Reliable Agent Self-Evolution",
-      "date": "2026-09-01",
-      "status": "primary_abstract_verified; relevant_gated_harness_evolution_backlog; PDF_review_pending"
-    },
-    {
-      "id": "2609.09468",
-      "title": "Building the Harness Automatically: Self-Play in Code Distills a Text Harness for Black-Box Optimization",
-      "status": "primary_search_result; metadata_and_PDF_review_pending"
-    },
-    {
-      "id": "2609.08183",
-      "title": "NeoHorse-1: Towards Recursive Self-Improvement",
-      "status": "primary_search_result; exact_title_metadata_and_PDF_review_pending"
-    }
-  ],
   "validation": {
     "complete_ingestion": false,
     "git_diff_check": false,
@@ -123,5 +86,13 @@
     "Re-read pinned PDFs and existing review evidence; complete source/wiki/synthesis/README/manifest validation on a fresh main-based branch.",
     "Review 2609.11873v2, SkillLift, and AlgoEvo; do not mistake search snippets for full-text admission.",
     "Keep recovery PR7 draft; publish completed ingestion separately. Advance successful watermark only after completed publication; merge only eligible validated exact heads."
+  ],
+  "candidate_ids": [
+    "2609.11873",
+    "2609.15396",
+    "2609.15820",
+    "2609.00829",
+    "2609.09468",
+    "2609.08183"
   ]
 }
