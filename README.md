@@ -1,6 +1,6 @@
 # ReflectiveLoop
 
-A literature-review knowledge base for self-improving agent harnesses, skills, and systems, following the LLM Wiki pattern. This branch contains **19 PDF-grounded papers**, with source notes, synthesis pages, and research questions.
+A literature-review knowledge base for self-improving agent harnesses, skills, and systems, following the LLM Wiki pattern. This branch contains **21 PDF-grounded papers**, with source notes, synthesis pages, and research questions.
 
 Start with the [generated catalog](index.md), [overview](wiki/overviews/self-improving-llm-agents.md), [mechanism comparison](wiki/concepts/procedural-self-improvement.md), and [evaluation boundaries](wiki/concepts/evaluating-self-improvement.md).
 
@@ -8,7 +8,14 @@ Start with the [generated catalog](index.md), [overview](wiki/overviews/self-imp
 
 - [Stellar Colosseum: A Many-Agent Harness for Long-Horizon Research in Mathematics and Theoretical Computer Science](wiki/self-improving-agents/lin-2026-stellar-colosseum-a-many-agent.md) ([arXiv:2609.15983v2](https://arxiv.org/abs/2609.15983v2)) — Readiness-gated proof planning, overlapping candidate-and-critique aggregation, and localized repair with persistent research memory. An inference-time harness comparator; learning the controller or model remains future work.
 
-## Latest scan additions and upgrades
+## September 12 user-requested additions
+
+- [Auto-RecSys](wiki/self-improving-agents/li-2026-auto-recsys-harnessing-autonomous-research.md) — Persistent industrial research agents with evolving playbooks; operational adaptation evidence and explicit limits on validation and transfer.
+- [Ecdysis](wiki/self-improving-agents/yue-2026-ecdysis-efficient-and-effective-training.md) — Cross-task failure aggregation and diagnostic refinement before harness edits; frozen model-transfer tests and qualified accuracy/cost claims.
+
+Published in [PR #6](https://github.com/DrSquare/ReflectiveLoop/pull/6), stacked on [PR #5](https://github.com/DrSquare/ReflectiveLoop/pull/5), preserving the pending seed-PDF and literature updates. See the [September 12 review log](logs/2026-09-12-codex-workspace.md) and [September 13 publication log](logs/2026-09-13-codex-workspace.md).
+
+## September 11 scan additions and upgrades
 
 - [Experience Funnel](wiki/self-improving-agents/gao-2026-experience-funnel-a-state-policy.md) (September 8) - Alternating state evolution and policy consolidation; a direct comparator for the research question, with reporting caveats.
 - [HarnessCompass](wiki/self-improving-agents/zhang-2026-harnesscompass-guiding-automatic-harness-evolution.md) - Constrained harness search with independent task holdout and frozen-harness cross-model tests.
@@ -32,7 +39,7 @@ The four original papers are Meta-Harness, Hyperagents, SIA, and CoSkill. Their 
 
 ## Daily scan
 
-A ChatGPT task is configured for **08:00 America/Los_Angeles every day**, including daylight-saving changes. It searches primary sources, checks duplicates across the catalog and open PRs, adds exact PDFs and substantive notes, updates synthesis, validates the wiki, and publishes an ingestion PR. It does not merge PRs. See the [scan procedure](agenda/llm-wiki-ops/daily-paper-scan.md) and [scan state](agenda/llm-wiki-ops/scan_state.json). No API key or GitHub Actions runner is required by this repository configuration; the scheduled task uses the connected research and GitHub tools.
+A ChatGPT task is configured for **08:00 America/Los_Angeles every day**, including daylight-saving changes. It searches primary sources, checks duplicates across the catalog and open PRs, adds exact PDFs and substantive notes, updates synthesis, validates the wiki, and publishes an ingestion PR. Following the user's September 13 instruction, it automatically merges eligible scan PRs into the default branch after validation, required checks/reviews, and mergeability checks pass. Conflicts, unresolved findings, missing PDFs, and unmerged dependencies block merging; existing draft/stacked PRs #2 and #5 remain untouched. The existing task was re-enabled, with the next scheduled date September 14. See the [scan procedure](agenda/llm-wiki-ops/daily-paper-scan.md) and [scan state](agenda/llm-wiki-ops/scan_state.json). No API key or GitHub Actions runner is required by this repository configuration; the scheduled task uses the connected research and GitHub tools.
 
 ## Add or validate papers
 

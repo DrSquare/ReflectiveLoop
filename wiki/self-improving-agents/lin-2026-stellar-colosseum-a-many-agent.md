@@ -62,6 +62,6 @@ Cross-model execution and the theorem-to-program adaptation are useful transfer 
 
 ## Related Papers
 
-Synthesis: [[overviews/self-improving-llm-agents]]. Research boundary: [[questions/does-a-modifiable-meta-procedure-improve-skill-library-co-training]]. The existing [[zhang-2026-hyperagents]] and [[feng-2026-coskill-joint-reinforcement]] records motivate the comparison, but remain abstract-based on this branch pending their separate PDF upgrade.
+Synthesis: [[overviews/self-improving-llm-agents]]. Research boundary: [[questions/does-a-modifiable-meta-procedure-improve-skill-library-co-training]]. The existing PDF-grounded [[zhang-2026-hyperagents]] and [[feng-2026-coskill-joint-reinforcement]] records motivate the comparison.
 
 Detailed methods and provenance: [source note](../../sources/lin-2026-stellar-colosseum-a-many-agent.md); [exact PDF](../../papers/lin-2026-stellar-colosseum-a-many-agent.pdf). Paper-linked artifacts: [Knuth proofs](https://github.com/dpwoodru/knuthCycles), [Erdős draft](https://github.com/dpwoodru/erdos). These are proof artifacts; no official runnable harness release was identified.

@@ -1,6 +1,6 @@
 # Canonical paper PDFs
 
-This branch contains **19 / 19 admitted exact PDFs**: four seeds, thirteen later additions, the full-text upgrade of AutoSaddler already cataloged on main, and the September 16 addition of Stellar Colosseum. All have source notes, paper wiki pages, and synthesis connections. PDFs are copied unchanged; extracted full-text transcriptions are not committed.
+This branch contains **21 / 21 admitted exact PDFs**: four seeds, fifteen later additions, the full-text upgrade of AutoSaddler already cataloged on main, and the September 16 addition of Stellar Colosseum. All have source notes, paper wiki pages, and synthesis connections. PDFs are copied unchanged; extracted full-text transcriptions are not committed.
 
 | Paper stem | Pinned PDF | Pages | Retrieved (UTC date) |
 |---|---|---:|---|
@@ -18,18 +18,19 @@ This branch contains **19 / 19 admitted exact PDFs**: four seeds, thirteen later
 | [zhang-2025-darwin-godel-machine-open-ended](zhang-2025-darwin-godel-machine-open-ended.pdf) | [2505.22954v1](https://arxiv.org/pdf/2505.22954v1) | 64 | 2026-09-11 |
 | [fu-2026-se-gos-self-evolving-graph](fu-2026-se-gos-self-evolving-graph.pdf) | [2609.08228v1](https://arxiv.org/pdf/2609.08228v1) | 21 | 2026-09-11 |
 | [li-2026-skilladam-stable-and-efficient-skill](li-2026-skilladam-stable-and-efficient-skill.pdf) | [2609.08944v1](https://arxiv.org/pdf/2609.08944v1) | 17 | 2026-09-11 |
-
 | [gao-2026-experience-funnel-a-state-policy](gao-2026-experience-funnel-a-state-policy.pdf) | [2609.08919v1](https://arxiv.org/pdf/2609.08919v1) | 11 | 2026-09-11 |
 | [zhang-2026-harnesscompass-guiding-automatic-harness-evolution](zhang-2026-harnesscompass-guiding-automatic-harness-evolution.pdf) | [2608.01918v1](https://arxiv.org/pdf/2608.01918v1) | 17 | 2026-09-11 |
 | [lou-2026-autoharness-improving-llm-agents-by](lou-2026-autoharness-improving-llm-agents-by.pdf) | [2603.03329v1](https://arxiv.org/pdf/2603.03329v1) | 21 | 2026-09-11 |
 | [park-2026-autosaddler-automatic-harness-optimization-with](park-2026-autosaddler-automatic-harness-optimization-with.pdf) | [2608.23041v1](https://arxiv.org/pdf/2608.23041v1) | 44 | 2026-09-11 |
+| [li-2026-auto-recsys-harnessing-autonomous-research](li-2026-auto-recsys-harnessing-autonomous-research.pdf) | [2609.10922v1](https://arxiv.org/pdf/2609.10922v1) | 16 | 2026-09-12 |
+| [yue-2026-ecdysis-efficient-and-effective-training](yue-2026-ecdysis-efficient-and-effective-training.pdf) | [2609.11677v1](https://arxiv.org/pdf/2609.11677v1) | 19 | 2026-09-12 |
 | [lin-2026-stellar-colosseum-a-many-agent](lin-2026-stellar-colosseum-a-many-agent.pdf) | [2609.15983v2](https://arxiv.org/pdf/2609.15983v2) | 27 | 2026-09-16 |
 
 The [manifest](manifest.json) records SHA-256 hashes, byte counts, page counts, extraction methods, and visually inspected pages. Notes cite 1-based PDF pages in the pinned versions; these are version-specific analyses, not a guarantee that every PDF is the latest revision. DGM v3 was detected after reviewing v1 and is recorded for a separate revision comparison.
 
 ## Missing-PDF list
 
-Four publication-pending PDF entries remain blocked by size or transport limits. They are not admitted to the wiki, and no source/wiki placeholders have been created. AutoSaddler's abstract entry merged through PR #3; its exact-PDF upgrade is now included among this branch's admitted papers. The historical [seed upgrade report](../logs/reports/2026-09-08-seed-pdf-upgrade.md) preserves the corrections to the original abstract-level notes.
+Four publication-pending PDF entries remain blocked by size or transport limits. They are not admitted to the wiki, and no source/wiki placeholders have been created. AutoSaddler's abstract entry merged through PR #3; its exact-PDF upgrade is now included among this branch's 21 admitted papers. The historical [seed upgrade report](../logs/reports/2026-09-08-seed-pdf-upgrade.md) preserves the corrections to the original abstract-level notes.
 
 | Paper | Exact version | Bytes | Blocker category | Current blocker |
 |---|---|---:|---|---|

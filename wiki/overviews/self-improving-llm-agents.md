@@ -10,9 +10,9 @@ agent's usable capability lives outside the frozen model weights — in the
 harness/scaffold, the meta-level procedure that modifies the agent, or the
 skill library it draws on — and that these components should themselves be
 learned or searched over, rather than hand-engineered once and frozen.
-Nineteen papers currently in this wiki cover different parts of that idea,
-including thirteen additions and the AutoSaddler full-text upgrade from the
-September 11, 2026 UTC scans, plus the September 16 addition of Stellar Colosseum.
+Twenty-one papers currently in this wiki cover different parts of that idea,
+including the September 11 scans, the September 12 additions of Auto-RecSys and
+Ecdysis, and the September 16 addition of Stellar Colosseum.
 
 Seed full-text review: September 8, 2026; all four seed PDFs are present.
 Expanded review: September 11, 2026 UTC; all ten new PDFs are present. The
@@ -157,3 +157,11 @@ Experience Funnel narrows novelty further: alternating editable state with param
 HarnessCompass supplies 450 untouched coding tasks and frozen cross-model reuse; AutoSaddler supplies group-disjoint GAIA2 and repository-disjoint SWE-Bench Pro tests. These are stronger controls than repeatedly selecting on a nominal held-out score, but neither learns the evaluator or proves arbitrary domain transfer. AutoHarness instead synthesizes a domain-specific executable constraint or policy; distillation into model weights is future work. [HarnessCompass pp. 5-6](https://arxiv.org/pdf/2608.01918v1#page=5); [AutoSaddler pp. 7, 20](https://arxiv.org/pdf/2608.23041v1#page=20); [AutoHarness pp. 3-6](https://arxiv.org/pdf/2603.03329v1#page=3)
 
 The AutoSaddler full text replaces the abstract-only interpretation on main: offline means development-time optimization with fresh executions, not fixed-log training. Its stated search space excludes task-agent memory and skill curation. Table endpoints imply gains of 9.0, 9.6, and 10.0 points over base harnesses; Section 5.2's inconsistent arithmetic is not propagated. [PDF pp. 4-8, 44](https://arxiv.org/pdf/2608.23041v1#page=4)
+
+## September 12 additions: persistent research and failure diagnosis
+
+[[self-improving-agents/li-2026-auto-recsys-harnessing-autonomous-research]] (Auto-RecSys; September 10 submission) connects evolving execution playbooks and research history to persistent multi-server experimentation. It adds evidence for reduced operational recovery over 31 iterations on one model, including regression after a baseline change and subsequent recovery. Reusing a playbook template with human-assisted filling differs from cross-model insight transfer; formal playbook validation and scientific-quality attribution remain open. [PDF pp. 6–7, 10–14](https://arxiv.org/pdf/2609.10922v1#page=10)
+
+[[self-improving-agents/yue-2026-ecdysis-efficient-and-effective-training]] (Ecdysis; September 10 submission) groups failures across tasks, uses diagnostic roles before code edits, and accepts aggregate training improvements before frozen held-out/model-transfer evaluation. It supports aggregation as a useful designed improvement procedure under a common Life-Harness initialization. Its 18.56% gain is relative across three datasets; its data-reduction claim is a single-cell tradeoff, and cross-task recurrence does not prove causal attribution. [PDF pp. 3–9, 19](https://arxiv.org/pdf/2609.11677v1#page=3)
+
+These papers broaden operational and diagnostic controls without resolving the Hyperagents/CoSkill joint-training question. Auto-RecSys supplies an observed orchestration rewrite; Ecdysis fixes the diagnostic roles and task weights. Neither demonstrates joint training of a modifiable improvement procedure and skill-editing/reasoning roles with controlled cross-domain transfer. See the updated mechanism and evaluation concepts for the distinct evidence boundaries.
