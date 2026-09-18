@@ -94,7 +94,7 @@ Two case studies report 46- and 75-page Knuth-cycle proof drafts and a 22-page E
 
 ## 6. Related Work
 
-Wiki synthesis: [[overviews/self-improving-llm-agents]]. Paper page: [[lin-2026-stellar-colosseum-a-many-agent]]. Colosseum adds a useful inference-time comparator to the repository's focus on changing the harness, meta-procedure, weights, and skills. Its own proposed post-training extension does not answer [[questions/does-a-modifiable-meta-procedure-improve-skill-library-co-training]]. Comparisons against the five legacy entries on this branch remain provisional because their PDF upgrades are still pending separately.
+Wiki synthesis: [[overviews/self-improving-llm-agents]]. Paper page: [[lin-2026-stellar-colosseum-a-many-agent]]. Colosseum adds a useful inference-time comparator to the repository's focus on changing the harness, meta-procedure, weights, and skills. Its own proposed post-training extension does not answer [[questions/does-a-modifiable-meta-procedure-improve-skill-library-co-training]]. Comparisons are made against the PDF-grounded entries already in this wiki.
 
 ## 7. Glossary
 
