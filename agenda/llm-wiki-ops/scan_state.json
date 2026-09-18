@@ -199,6 +199,22 @@
       "draft_bundle": "agenda/llm-wiki-ops/pending-ingestions/2026-09-14-reviewed-evidence.md",
       "last_checked_utc": "2026-09-16T00:00:00+00:00",
       "last_verified_bytes_utc": "2026-09-16T00:00:00+00:00"
+    },
+    {
+      "id": "2609.14858",
+      "version": "2609.14858v1",
+      "title": "Dream-RSI: Recursive Self-Improvement through Evolving Worlds",
+      "stem": "zheng-2026-dream-rsi-recursive-self-improvement",
+      "url": "https://arxiv.org/pdf/2609.14858v1",
+      "bytes": 954448,
+      "pages": 36,
+      "sha256": "b2d13d5944d052c2b63d40e65dce116ebcc606e3b756f6acfc938afe21fe2db9",
+      "git_blob": "0cb845272e11df00319a97fc62ecdbb700db0640",
+      "status": "reviewed_exact_PDF_local; binary_upload_timeout; expected_remote_blob_404; not_admitted",
+      "draft_bundle": "agenda/llm-wiki-ops/pending-ingestions/zheng-2026-dream-rsi-recursive-self-improvement.json",
+      "last_checked_utc": "2026-09-18T22:59:08.527905+00:00",
+      "blocker_category": "transport",
+      "base64_payload_bytes": 1272600
     }
   ],
   "scan_history": [
@@ -326,34 +342,29 @@
       ],
       "search_watermark_changed": false,
       "notes": "Two explicit user-linked papers, deduplicated against main and open PRs #2/#5. Historical #4 merged into #2; #3 merged AutoSaddler abstract entry into main. Existing pending-ingestion bundles preserved."
+    },
+    {
+      "date_utc": "2026-09-18",
+      "branch": "codex/dream-rsi-pending-2026-09-18",
+      "base_branch": "main",
+      "base_commit": "d249cb8c6878d3816698c3e5e5fa1d42a5654a1f",
+      "user_link": "https://arxiv.org/html/2609.14858v1",
+      "publication_status": "reviewed_draft_checkpoint_only_not_completed_ingestion",
+      "merge_status": "not_attempted_missing_published_PDF",
+      "admitted": [],
+      "pending": [
+        "2609.14858v1"
+      ],
+      "draft_bundle": "agenda/llm-wiki-ops/pending-ingestions/zheng-2026-dream-rsi-recursive-self-improvement.json",
+      "search_watermark_changed": false
     }
   ],
   "pending_prs": [
     {
-      "number": 2,
-      "head": "2b128d0379a439fac81ce2cd2a8aa934fda9a488",
-      "status": "draft_seed_stack_not_in_main_do_not_merge"
-    },
-    {
-      "number": 5,
-      "head": "242cf8a6a2c1d607a4e78996fd51aa5372111391",
-      "status": "merged_into_PR2_on_2026-09-13_not_main"
-    },
-    {
-      "number": 6,
-      "head": "08181e7817401579b57fbaacf9a9b1348ad54e81",
-      "base": "codex/paper-scan-2026-09-11",
-      "status": "unmerged_seed_dependency; unresolved_external_README_evidence_and_task_weight_claim"
-    },
-    {
-      "number": 7,
-      "head": "31d84bde6b9c17f66f6b66dfee4fd6d6319eafb0",
-      "status": "draft_recovery_only_no_admitted_papers"
-    },
-    {
-      "number": 8,
-      "head": "187b81f5d76ace8b836e2305b4f1856377e2954e",
-      "status": "independent_main_based; mergeable_clean_and_no_review_threads; exact_head_validation_incomplete_this_run; leave_open"
+      "number": 10,
+      "head": "0b3113d30151efef0c2ae6904748dcd76a57bd65",
+      "base": "main",
+      "status": "draft_EnvHarness_reviewed_notes_pending_PDF_publication; preserved_separately"
     }
   ],
   "duplicate_pending_this_scan": [
@@ -376,5 +387,48 @@
   ],
   "timestamp_conventions": {
     "missing_pdfs.last_checked_utc": "When an exact time-of-day was not recorded during a recovery checkpoint, the date is normalized to 00:00:00+00:00 and must be interpreted as date-granular, not as an exact midnight check."
+  },
+  "pending_prs_snapshot_history": [
+    {
+      "snapshot_date_utc": "2026-09-16",
+      "entries": [
+        {
+          "number": 2,
+          "head": "2b128d0379a439fac81ce2cd2a8aa934fda9a488",
+          "status": "draft_seed_stack_not_in_main_do_not_merge"
+        },
+        {
+          "number": 5,
+          "head": "242cf8a6a2c1d607a4e78996fd51aa5372111391",
+          "status": "merged_into_PR2_on_2026-09-13_not_main"
+        },
+        {
+          "number": 6,
+          "head": "08181e7817401579b57fbaacf9a9b1348ad54e81",
+          "base": "codex/paper-scan-2026-09-11",
+          "status": "unmerged_seed_dependency; unresolved_external_README_evidence_and_task_weight_claim"
+        },
+        {
+          "number": 7,
+          "head": "31d84bde6b9c17f66f6b66dfee4fd6d6319eafb0",
+          "status": "draft_recovery_only_no_admitted_papers"
+        },
+        {
+          "number": 8,
+          "head": "187b81f5d76ace8b836e2305b4f1856377e2954e",
+          "status": "independent_main_based; mergeable_clean_and_no_review_threads; exact_head_validation_incomplete_this_run; leave_open"
+        }
+      ],
+      "note": "Historical state preserved; September 18 fresh read found only PR #10 open before this Dream-RSI checkpoint."
+    }
+  ],
+  "live_repository_snapshot": {
+    "checked_date_utc": "2026-09-18",
+    "default_branch": "main",
+    "head": "d249cb8c6878d3816698c3e5e5fa1d42a5654a1f",
+    "open_prs_before_this_checkpoint": [
+      10
+    ],
+    "note": "21 admitted papers; seed/scan/AutoSaddler/Auto-RecSys/Ecdysis/Stellar Colosseum changes integrated. EnvHarness is pending, not a dependency of this separate addition."
   }
 }
