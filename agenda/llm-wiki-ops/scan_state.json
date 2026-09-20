@@ -215,6 +215,22 @@
       "last_checked_utc": "2026-09-18T22:59:08.527905+00:00",
       "blocker_category": "transport",
       "base64_payload_bytes": 1272600
+     },
+     {
+      "id": "2608.19880",
+      "version": "2608.19880v1",
+      "title": "EnvHarness: Awakening Static Worlds for Agent Learning",
+      "stem": "huang-2026-envharness-awakening-static-worlds-for",
+      "url": "https://arxiv.org/pdf/2608.19880v1",
+      "bytes": 2510495,
+      "pages": 41,
+      "sha256": "3859eed3337e0324ef94f38ca21f69cc6daa15b5a78497680370959223d51fd4",
+      "git_blob": "6c77627830248ad9baeead15859ca6d1ae72912b",
+      "status": "exact_PDF_reviewed_locally; binary_upload_stalled; expected_remote_blob_404; no_admission",
+      "draft_bundle": "agenda/llm-wiki-ops/pending-ingestions/huang-2026-envharness-awakening-static-worlds-for.json",
+      "last_checked_utc": "2026-09-18T17:24:24.902609+00:00",
+      "blocker_category": "transport",
+      "base64_payload_bytes": 3347328
     }
   ],
   "scan_history": [
@@ -359,14 +375,34 @@
       "search_watermark_changed": false,
       "pull_request": "https://github.com/DrSquare/ReflectiveLoop/pull/11",
       "publication_commit": "ea02fb65983f8e254c1066ed423f3c582c750e42"
+     },
+     {
+      "date_utc": "2026-09-18",
+      "branch": "codex/envharness-pending-2026-09-18",
+      "base_branch": "main",
+      "base_commit": "d249cb8c6878d3816698c3e5e5fa1d42a5654a1f",
+      "user_link": "https://github.com/google-research/envharness",
+      "publication_status": "published_draft_checkpoint_only_not_completed_ingestion",
+      "merge_status": "not_attempted_missing_published_PDF",
+      "admitted": [],
+      "pending": [
+        "2608.19880v1"
+      ],
+      "draft_bundle": "agenda/llm-wiki-ops/pending-ingestions/huang-2026-envharness-awakening-static-worlds-for.json",
+      "search_watermark_changed": false,
+      "pull_request": "https://github.com/DrSquare/ReflectiveLoop/pull/10",
+      "publication_commit": "60967c6685a5f65fd41e9d9bf4eacb8bb1917ee9",
+      "published_at_utc": "2026-09-18T17:26:29Z"
     }
   ],
   "pending_prs": [
     {
       "number": 10,
       "head": "0b3113d30151efef0c2ae6904748dcd76a57bd65",
+      "branch": "codex/envharness-pending-2026-09-18",
       "base": "main",
-      "status": "draft_EnvHarness_reviewed_notes_pending_PDF_publication; preserved_separately"
+      "status": "draft_reviewed_EnvHarness_ingestion_blocked_by_missing_published_PDF",
+      "checkpoint_commit": "60967c6685a5f65fd41e9d9bf4eacb8bb1917ee9"
     },
     {
       "number": 11,
