@@ -199,6 +199,22 @@
       "draft_bundle": "agenda/llm-wiki-ops/pending-ingestions/2026-09-14-reviewed-evidence.md",
       "last_checked_utc": "2026-09-16T00:00:00+00:00",
       "last_verified_bytes_utc": "2026-09-16T00:00:00+00:00"
+    },
+    {
+      "id": "2608.19880",
+      "version": "2608.19880v1",
+      "title": "EnvHarness: Awakening Static Worlds for Agent Learning",
+      "stem": "huang-2026-envharness-awakening-static-worlds-for",
+      "url": "https://arxiv.org/pdf/2608.19880v1",
+      "bytes": 2510495,
+      "pages": 41,
+      "sha256": "3859eed3337e0324ef94f38ca21f69cc6daa15b5a78497680370959223d51fd4",
+      "git_blob": "6c77627830248ad9baeead15859ca6d1ae72912b",
+      "status": "exact_PDF_reviewed_locally; binary_upload_stalled; expected_remote_blob_404; no_admission",
+      "draft_bundle": "agenda/llm-wiki-ops/pending-ingestions/huang-2026-envharness-awakening-static-worlds-for.json",
+      "last_checked_utc": "2026-09-18T17:24:24.902609+00:00",
+      "blocker_category": "transport",
+      "base64_payload_bytes": 3347328
     }
   ],
   "scan_history": [
@@ -326,34 +342,33 @@
       ],
       "search_watermark_changed": false,
       "notes": "Two explicit user-linked papers, deduplicated against main and open PRs #2/#5. Historical #4 merged into #2; #3 merged AutoSaddler abstract entry into main. Existing pending-ingestion bundles preserved."
+    },
+    {
+      "date_utc": "2026-09-18",
+      "branch": "codex/envharness-pending-2026-09-18",
+      "base_branch": "main",
+      "base_commit": "d249cb8c6878d3816698c3e5e5fa1d42a5654a1f",
+      "user_link": "https://github.com/google-research/envharness",
+      "publication_status": "published_draft_checkpoint_only_not_completed_ingestion",
+      "merge_status": "not_attempted_missing_published_PDF",
+      "admitted": [],
+      "pending": [
+        "2608.19880v1"
+      ],
+      "draft_bundle": "agenda/llm-wiki-ops/pending-ingestions/huang-2026-envharness-awakening-static-worlds-for.json",
+      "search_watermark_changed": false,
+      "pull_request": "https://github.com/DrSquare/ReflectiveLoop/pull/10",
+      "publication_commit": "60967c6685a5f65fd41e9d9bf4eacb8bb1917ee9",
+      "published_at_utc": "2026-09-18T17:26:29Z"
     }
   ],
   "pending_prs": [
     {
-      "number": 2,
-      "head": "2b128d0379a439fac81ce2cd2a8aa934fda9a488",
-      "status": "draft_seed_stack_not_in_main_do_not_merge"
-    },
-    {
-      "number": 5,
-      "head": "242cf8a6a2c1d607a4e78996fd51aa5372111391",
-      "status": "merged_into_PR2_on_2026-09-13_not_main"
-    },
-    {
-      "number": 6,
-      "head": "08181e7817401579b57fbaacf9a9b1348ad54e81",
-      "base": "codex/paper-scan-2026-09-11",
-      "status": "unmerged_seed_dependency; unresolved_external_README_evidence_and_task_weight_claim"
-    },
-    {
-      "number": 7,
-      "head": "31d84bde6b9c17f66f6b66dfee4fd6d6319eafb0",
-      "status": "draft_recovery_only_no_admitted_papers"
-    },
-    {
-      "number": 8,
-      "head": "187b81f5d76ace8b836e2305b4f1856377e2954e",
-      "status": "independent_main_based; mergeable_clean_and_no_review_threads; exact_head_validation_incomplete_this_run; leave_open"
+      "number": 10,
+      "branch": "codex/envharness-pending-2026-09-18",
+      "base": "main",
+      "status": "draft_reviewed_EnvHarness_ingestion_blocked_by_missing_published_PDF",
+      "checkpoint_commit": "60967c6685a5f65fd41e9d9bf4eacb8bb1917ee9"
     }
   ],
   "duplicate_pending_this_scan": [
@@ -376,5 +391,46 @@
   ],
   "timestamp_conventions": {
     "missing_pdfs.last_checked_utc": "When an exact time-of-day was not recorded during a recovery checkpoint, the date is normalized to 00:00:00+00:00 and must be interpreted as date-granular, not as an exact midnight check."
+  },
+  "pending_prs_snapshot_history": [
+    {
+      "snapshot_date_utc": "2026-09-16",
+      "entries": [
+        {
+          "number": 2,
+          "head": "2b128d0379a439fac81ce2cd2a8aa934fda9a488",
+          "status": "draft_seed_stack_not_in_main_do_not_merge"
+        },
+        {
+          "number": 5,
+          "head": "242cf8a6a2c1d607a4e78996fd51aa5372111391",
+          "status": "merged_into_PR2_on_2026-09-13_not_main"
+        },
+        {
+          "number": 6,
+          "head": "08181e7817401579b57fbaacf9a9b1348ad54e81",
+          "base": "codex/paper-scan-2026-09-11",
+          "status": "unmerged_seed_dependency; unresolved_external_README_evidence_and_task_weight_claim"
+        },
+        {
+          "number": 7,
+          "head": "31d84bde6b9c17f66f6b66dfee4fd6d6319eafb0",
+          "status": "draft_recovery_only_no_admitted_papers"
+        },
+        {
+          "number": 8,
+          "head": "187b81f5d76ace8b836e2305b4f1856377e2954e",
+          "status": "independent_main_based; mergeable_clean_and_no_review_threads; exact_head_validation_incomplete_this_run; leave_open"
+        }
+      ],
+      "note": "Historical entries preserved; fresh September 18 API read returned no open PRs before this checkpoint."
+    }
+  ],
+  "live_repository_snapshot": {
+    "checked_date_utc": "2026-09-18",
+    "default_branch": "main",
+    "head": "d249cb8c6878d3816698c3e5e5fa1d42a5654a1f",
+    "open_prs_before_this_checkpoint": [],
+    "note": "Seed/scan additions, Auto-RecSys/Ecdysis, AutoSaddler corrections and Stellar Colosseum are present in main; historical stacked relationships no longer block this new main-based addition."
   }
 }
