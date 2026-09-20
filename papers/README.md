@@ -30,7 +30,7 @@ The [manifest](manifest.json) records SHA-256 hashes, byte counts, page counts, 
 
 ## Missing-PDF list
 
-Five publication-pending PDF entries remain blocked by size or transport limits. They are not admitted to the wiki, and no source/wiki placeholders have been created. AutoSaddler's abstract entry merged through PR #3; its exact-PDF upgrade is now included among this branch's 21 admitted papers. The historical [seed upgrade report](../logs/reports/2026-09-08-seed-pdf-upgrade.md) preserves the corrections to the original abstract-level notes.
+Six publication-pending PDF entries remain blocked by size or transport limits. They are not admitted to the wiki, and no source/wiki placeholders have been created. AutoSaddler's abstract entry merged through PR #3; its exact-PDF upgrade is now included among this branch's 21 admitted papers. The historical [seed upgrade report](../logs/reports/2026-09-08-seed-pdf-upgrade.md) preserves the corrections to the original abstract-level notes.
 
 | Paper | Exact version | Bytes | Blocker category | Current blocker |
 |---|---|---:|---|---|
@@ -38,6 +38,7 @@ Five publication-pending PDF entries remain blocked by size or transport limits.
 | SkillRL (`xia-2026-skillrl-evolving-agents-via-recursive`) | [2602.08234v1](https://arxiv.org/pdf/2602.08234v1) | 13,153,200 | size-limit | Prior reviewed exact PDF; base64 upload exceeds the GitHub connection's 16 MiB request limit. Draft bundle: [xia pending ingestion](../agenda/llm-wiki-ops/pending-ingestions/xia-2026-skillrl-evolving-agents-via-recursive.json). |
 | HarnessForge (`chen-2026-harnessforge-joint-harness-and-policy`) | [2606.01779v1](https://arxiv.org/pdf/2606.01779v1) | 3,872,329 | transport | Download/hash reverified; interrupted binary upload; expected Git blob returns 404. |
 | Co-Evolving Harnesses and Models (`yu-2026-co-evolving-harnesses-and-models`) | [2609.09134v1](https://arxiv.org/pdf/2609.09134v1) | 378,829 | transport | Download/hash reverified; not attached to a completed ingestion tree; binary connector read cannot be decoded. |
+| Dream-RSI (`zheng-2026-dream-rsi-recursive-self-improvement`) | [2609.14858v1](https://arxiv.org/pdf/2609.14858v1) | 954,448 | transport | Exact 36-page PDF reviewed and hash-verified locally; binary upload timed out and expected blob remains absent. [Reviewed source draft](../agenda/llm-wiki-ops/pending-ingestions/zheng-2026-dream-rsi-recursive-self-improvement.source.md); [complete bundle](../agenda/llm-wiki-ops/pending-ingestions/zheng-2026-dream-rsi-recursive-self-improvement.json). |
 | EnvHarness (`huang-2026-envharness-awakening-static-worlds-for`) | [2608.19880v1](https://arxiv.org/pdf/2608.19880v1) | 2,510,495 | transport | Exact PDF reviewed and hash-verified locally; binary upload stalled; expected Git blob returns 404. [Reviewed drafts](../agenda/llm-wiki-ops/pending-ingestions/envharness-2026-09-18-review.md). |
 
 One additional backlog item is review-incomplete, not a missing-PDF record: The Last AI Built by Humans (`bengio-2026-the-last-ai-built`), [2609.11873v2](https://arxiv.org/pdf/2609.11873v2). Its exact download and partial review exist, but PDF syntax warnings still need rendering/validation and its versioned hash and full review are incomplete.
