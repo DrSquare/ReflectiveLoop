@@ -245,8 +245,23 @@
       "base64_payload_bytes": 7538284,
       "status": "reviewed_exact_PDF_local; two_bounded_binary_upload_timeouts; expected_remote_blob_404; not_admitted",
       "draft_bundle": "agenda/llm-wiki-ops/pending-ingestions/lu-2026-procedural-graphs-self-evolving-execution.json",
-      "last_checked_date_utc": "2026-09-20",
-      "retry_result": "Shell Git push has no authentication; supported base64 Git Data API calls timed out after 55s and 120s. Body is below 16 MiB; remote blob remains 404. This is a publication transport failure, not a PDF retrieval failure."
+      "last_checked_date_utc": "2026-09-21",
+      "retry_result": "September 21 explicit retry: shell authentication still unavailable, supported API upload timed out after 55 seconds, expected PDF blob remains 404. Exact local PDF and all preserved drafts verified. Browser fallback awaits confirmation.",
+      "publication_retry_history": [
+        {
+          "date_utc": "2026-09-21",
+          "kind": "explicit_user_request_publication_retry",
+          "pdf_sha256": "90ffc33b32c009846a183edab09b521cde4d5342ccbfafa71cd00bd2186ddb9a",
+          "bytes": 5653711,
+          "base64_payload_bytes": 7538284,
+          "supported_api_result": "create_blob did not complete within a bounded 55-second attempt; subsequent expected Git blob returned HTTP 404",
+          "shell_git_result": "push dry-run failed for missing authentication",
+          "draft_validation": "PASS: current PR 21 PDF/source/wiki triples / 25 wiki pages; nine saved proposed text hashes intact; PDF hash/bytes and proposed README coverage/count verified",
+          "next_step": "Browser upload requires user confirmation under control-browser skill after repeated connector failure; not attempted",
+          "admitted": [],
+          "watermark_advanced": false
+        }
+      ]
     }
   ],
   "scan_history": [
@@ -432,7 +447,9 @@
       "search_watermark_changed": false,
       "publication_commit": "2801b11caeefe2a87623a51f4f4117bd3e50ccef",
       "pull_request": "https://github.com/DrSquare/ReflectiveLoop/pull/12",
-      "published_at_utc": "2026-09-20T23:16:18Z"
+      "published_at_utc": "2026-09-20T23:16:18Z",
+      "last_retry_date_utc": "2026-09-21",
+      "retry_status": "same_binary_publication_blocker; browser_confirmation_needed"
     }
   ],
   "pending_prs": [
@@ -521,10 +538,12 @@
     }
   ],
   "live_repository_snapshot": {
-    "checked_date_utc": "2026-09-20",
+    "checked_date_utc": "2026-09-21",
     "default_branch": "main",
     "head": "6608e1c5e0a2a0109a242c2d02f80ca0247b35ed",
-    "open_prs_before_this_checkpoint": [],
-    "note": "21 admitted exact-PDF papers / 25 wiki pages. PRs #10/#11 merged only reviewed EnvHarness/Dream-RSI checkpoints; their papers remain missing-PDF candidates. Existing integrated seed/scan/AutoSaddler/Auto-RecSys/Ecdysis/Stellar Colosseum content preserved."
+    "open_prs_at_retry": [
+      12
+    ],
+    "note": "Main unchanged at 21 exact-PDF papers; only PR #12 open, draft at 1f11601d5434e34ce4fef8a0db2e5d000657f715 before retry record. No duplicate created; #10/#11 remain merged checkpoints without admission."
   }
 }
