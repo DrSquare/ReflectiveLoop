@@ -1,5 +1,5 @@
 {
-  "retrieval_date": "2026-09-16",
+  "retrieval_date": "2026-09-21",
   "page_numbering": "1-based PDF page numbers; citations refer to the pinned version in each entry",
   "papers": [
     {
@@ -306,6 +306,22 @@
       "visual_review_pages": [
         13,
         15
+      ]
+    },
+    {
+      "stem": "yu-2026-co-evolving-harnesses-and-models",
+      "arxiv_version": "2609.09134v1",
+      "url": "https://arxiv.org/pdf/2609.09134v1",
+      "pdf_path": "papers/yu-2026-co-evolving-harnesses-and-models.pdf",
+      "pages": 10,
+      "bytes": 378829,
+      "sha256": "ae8b8973f7964fca32b192fe3166ac66edb1afb78ad2b5212ec33b892a25cc34",
+      "git_blob": "3fbf1bd0b0da7fe04c589b7ba23ee5a401182e0a",
+      "retrieved_date": "2026-09-21",
+      "text_extractor": "pdftotext -layout",
+      "text_extraction_warning": "Poppler font-type mismatch; all pages extracted and result table rendered successfully",
+      "visual_review_pages": [
+        5
       ]
     }
   ]

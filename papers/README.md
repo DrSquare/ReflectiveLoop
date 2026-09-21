@@ -1,6 +1,6 @@
 # Canonical paper PDFs
 
-This branch contains **21 / 21 admitted exact PDFs**: four seeds, fifteen later additions, the full-text upgrade of AutoSaddler already cataloged on main, and the September 16 addition of Stellar Colosseum. All have source notes, paper wiki pages, and synthesis connections. PDFs are copied unchanged; extracted full-text transcriptions are not committed.
+This branch contains **22 / 22 admitted exact PDFs**, including the September 21 recovery of Co-Evolving Harnesses and Models. All have source notes, paper wiki pages, and synthesis connections. PDFs are copied unchanged; extracted full-text transcriptions are not committed.
 
 | Paper stem | Pinned PDF | Pages | Retrieved (UTC date) |
 |---|---|---:|---|
@@ -25,21 +25,22 @@ This branch contains **21 / 21 admitted exact PDFs**: four seeds, fifteen later 
 | [li-2026-auto-recsys-harnessing-autonomous-research](li-2026-auto-recsys-harnessing-autonomous-research.pdf) | [2609.10922v1](https://arxiv.org/pdf/2609.10922v1) | 16 | 2026-09-12 |
 | [yue-2026-ecdysis-efficient-and-effective-training](yue-2026-ecdysis-efficient-and-effective-training.pdf) | [2609.11677v1](https://arxiv.org/pdf/2609.11677v1) | 19 | 2026-09-12 |
 | [lin-2026-stellar-colosseum-a-many-agent](lin-2026-stellar-colosseum-a-many-agent.pdf) | [2609.15983v2](https://arxiv.org/pdf/2609.15983v2) | 27 | 2026-09-16 |
+| [yu-2026-co-evolving-harnesses-and-models](yu-2026-co-evolving-harnesses-and-models.pdf) | [2609.09134v1](https://arxiv.org/pdf/2609.09134v1) | 10 | 2026-09-21 |
 
 The [manifest](manifest.json) records SHA-256 hashes, byte counts, page counts, extraction methods, and visually inspected pages. Notes cite 1-based PDF pages in the pinned versions; these are version-specific analyses, not a guarantee that every PDF is the latest revision. DGM v3 was detected after reviewing v1 and is recorded for a separate revision comparison.
 
 ## Missing-PDF list
 
-Six publication-pending PDF entries remain blocked by size or transport limits. They are not admitted to the wiki, and no source/wiki placeholders have been created. AutoSaddler's abstract entry merged through PR #3; its exact-PDF upgrade is now included among this branch's 21 admitted papers. The historical [seed upgrade report](../logs/reports/2026-09-08-seed-pdf-upgrade.md) preserves the corrections to the original abstract-level notes.
+Six publication-pending PDF entries remain blocked by size or transport limits, including Procedural Graphs in draft PR #12. They are not admitted to the wiki, and no source/wiki placeholders have been created. Co-Evolving Harnesses and Models has been recovered from its existing Git blob. AutoSaddler's exact-PDF upgrade remains among this branch's 22 admitted papers. The historical [seed upgrade report](../logs/reports/2026-09-08-seed-pdf-upgrade.md) preserves the corrections to the original abstract-level notes.
 
 | Paper | Exact version | Bytes | Blocker category | Current blocker |
 |---|---|---:|---|---|
 | Continual Harness (`karten-2026-continual-harness-online-adaptation-for`) | [2605.09998v1](https://arxiv.org/pdf/2605.09998v1) | 31,751,676 | size-limit | Prior reviewed exact PDF; base64 upload exceeds the GitHub connection's 16 MiB request limit. Draft bundle: [karten pending ingestion](../agenda/llm-wiki-ops/pending-ingestions/karten-2026-continual-harness-online-adaptation-for.json). |
 | SkillRL (`xia-2026-skillrl-evolving-agents-via-recursive`) | [2602.08234v1](https://arxiv.org/pdf/2602.08234v1) | 13,153,200 | size-limit | Prior reviewed exact PDF; base64 upload exceeds the GitHub connection's 16 MiB request limit. Draft bundle: [xia pending ingestion](../agenda/llm-wiki-ops/pending-ingestions/xia-2026-skillrl-evolving-agents-via-recursive.json). |
 | HarnessForge (`chen-2026-harnessforge-joint-harness-and-policy`) | [2606.01779v1](https://arxiv.org/pdf/2606.01779v1) | 3,872,329 | transport | Download/hash reverified; interrupted binary upload; expected Git blob returns 404. |
-| Co-Evolving Harnesses and Models (`yu-2026-co-evolving-harnesses-and-models`) | [2609.09134v1](https://arxiv.org/pdf/2609.09134v1) | 378,829 | transport | Download/hash reverified; not attached to a completed ingestion tree; binary connector read cannot be decoded. |
 | Dream-RSI (`zheng-2026-dream-rsi-recursive-self-improvement`) | [2609.14858v1](https://arxiv.org/pdf/2609.14858v1) | 954,448 | transport | Exact 36-page PDF reviewed and hash-verified locally; binary upload timed out and expected blob remains absent. [Reviewed source draft](../agenda/llm-wiki-ops/pending-ingestions/zheng-2026-dream-rsi-recursive-self-improvement.source.md); [complete bundle](../agenda/llm-wiki-ops/pending-ingestions/zheng-2026-dream-rsi-recursive-self-improvement.json). |
 | EnvHarness (`huang-2026-envharness-awakening-static-worlds-for`) | [2608.19880v1](https://arxiv.org/pdf/2608.19880v1) | 2,510,495 | transport | Exact PDF reviewed and hash-verified locally; binary upload stalled; expected Git blob returns 404. [Reviewed drafts](../agenda/llm-wiki-ops/pending-ingestions/envharness-2026-09-18-review.md). |
+| Procedural Graphs (`lu-2026-procedural-graphs-self-evolving-execution`) | [2609.09153v1](https://arxiv.org/pdf/2609.09153v1) | 5,653,711 | transport | Existing reviewed bundle and browser-upload work remain isolated in [draft PR #12](https://github.com/DrSquare/ReflectiveLoop/pull/12); exact binary is still absent at its checked head. No duplicate admission. |
 
 One additional backlog item is review-incomplete, not a missing-PDF record: The Last AI Built by Humans (`bengio-2026-the-last-ai-built`), [2609.11873v2](https://arxiv.org/pdf/2609.11873v2). Its exact download and partial review exist, but PDF syntax warnings still need rendering/validation and its versioned hash and full review are incomplete.
 

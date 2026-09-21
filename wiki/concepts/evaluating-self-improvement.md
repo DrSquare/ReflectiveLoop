@@ -40,6 +40,12 @@ Prime Agent explicitly describes ARC reference scores as external, since its own
 4. Match total expenditure, including failed proposals, teachers, replay verification, and descendant agents. Report quality-cost curves when one scalar budget cannot match all resources.
 5. Record harmful updates and uncertainty across independent searches or training runs, not just the best candidate's benchmark score.
 
+## Post-training compatibility controls
+
+[[self-improving-agents/yu-2026-co-evolving-harnesses-and-models]] shows why a harness-transfer result cannot substitute for evaluating post-training under that harness. Whole-trajectory expert imitation harms all seven Qwen tasks despite upward harness reuse by the teacher. Localized corrections recover most of the loss, but +1.7 aggregate points includes two small regressions and lacks a reported paired significance test. Evaluate the same model update under both base and evolved harnesses; then compare matched student-state and whole-trajectory supervision. These are design inferences, not universal guarantees. [Table 1, PDF p. 5](https://arxiv.org/pdf/2609.09134v1#page=5)
+
+Its LLM-judge planning-defect shares are conditioned on failed rollouts, and the prose overall failure rates have an unreconciled denominator relative to task means. Keep outcome scores, failure composition and causal mechanism claims separate. An under-one-hour SFT run is not total adaptation cost. [Table 3 and Appendices B-D, PDF pp. 6-10](https://arxiv.org/pdf/2609.09134v1#page=6)
+
 ## Operational adaptation and diagnostic evidence
 
 [[self-improving-agents/li-2026-auto-recsys-harnessing-autonomous-research]] reports a 31-iteration, one-model trajectory: operational fixes fall 4.0 → 1.3, rise after a baseline change, then recover to 0.5 with 5/6 late iterations requiring no operational fix. Implementation debugging is excluded. No controlled component ablation separates playbook maturation from human assistance, task mix, or infrastructure changes. Human-attention savings and a longest autonomous session are observations, not a controlled scientific-quality result. [PDF pp. 10–13](https://arxiv.org/pdf/2609.10922v1#page=10)

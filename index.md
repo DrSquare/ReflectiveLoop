@@ -16,7 +16,7 @@ Generated catalog of `wiki/` pages. Regenerate with
 
 - [Does a modifiable meta-procedure improve skill-library co-training?](wiki/questions/does-a-modifiable-meta-procedure-improve-skill-library-co-training.md)
 
-## self-improving-agents (21)
+## self-improving-agents (22)
 
 - [CoSkill: Joint Reinforcement Learning of Reasoning and Meta-Skill Agents for Hierarchical Skill Evolution](wiki/self-improving-agents/feng-2026-coskill-joint-reinforcement.md)
 - [SE-GoS: Self-Evolving Graph-of-Skills for Skill Library at Scale](wiki/self-improving-agents/fu-2026-se-gos-self-evolving-graph.md)
@@ -34,6 +34,7 @@ Generated catalog of `wiki/` pages. Regenerate with
 - [Adapting the Interface, Not the Model: Runtime Harness Adaptation for Deterministic LLM Agents](wiki/self-improving-agents/xu-2026-adapting-the-interface-not-the.md)
 - [SkillForge: Evolving Verifiable Skills for Reinforcement Learning Agents](wiki/self-improving-agents/yang-2026-skillforge-evolving-verifiable-skills-for.md)
 - [Meta Context Engineering via Agentic Skill Evolution](wiki/self-improving-agents/ye-2026-meta-context-engineering-via-agentic.md)
+- [Co-Evolving Harnesses and Models: On-Policy Correction Helps Weaker Models Catch Up Where Imitation Fails](wiki/self-improving-agents/yu-2026-co-evolving-harnesses-and-models.md)
 - [Ecdysis: Efficient and Effective Training of Runtime Harnesses for LLM Agents](wiki/self-improving-agents/yue-2026-ecdysis-efficient-and-effective-training.md)
 - [Darwin Godel Machine: Open-Ended Evolution of Self-Improving Agents](wiki/self-improving-agents/zhang-2025-darwin-godel-machine-open-ended.md)
 - [HarnessCompass: Guiding Automatic Harness Evolution toward Generalizable and Effective Agent Harnesses](wiki/self-improving-agents/zhang-2026-harnesscompass-guiding-automatic-harness-evolution.md)
