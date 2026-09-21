@@ -38,3 +38,8 @@ model: "Codex; exact model identifier not exposed"
 - The automated review of initial commit `1c95419` found one P2: deleting the schema-v1 `merge_policy.automation_enabled` field removed its machine-readable state. Restored the explicit value `true` for this active recurring run and removed the dangling prose reference to an observation "above". No task schedule was changed. This corrects state compatibility, not scientific content.
 
 - Subsequent private live task lookup reports `is_enabled=false`. Corrected the retained boolean to that actual value and documented the observation date: execution of this run is not proof that future scheduling is enabled. This supersedes the preceding inference of `true` and the earlier instruction to leave it active. Settings were left unchanged; the task was not disabled by this run.
+
+## [2026-09-21] maintenance | merge | Verified PR #13 integration
+
+- Merged PR #13 using expected head `0b8c461c1048f077ee014336ea0e609f3f098e82`; merge commit `b792a4a2312ad3e744ac87489766bed5f416e216`. GitHub confirmed non-draft mergeability, no required CI/reviews, and no unresolved findings after the schema fix. Final-head validation and README coverage/links/count checks passed. No protections were bypassed.
+- Fetched default branch tree `b6010b95ad9ec4b078a936864f2c5b92c68bedcf`, identical to the validated admission tree; 22 PDF/source/wiki triples and 26 wiki pages revalidate. This completion acknowledgement is retained on the ingestion branch after merge, with the merge also recorded in the PR conversation; it changes no scientific content. PR #12 remains draft and unmerged. Other exact-PDF retries remain pending, and incomplete broad-search coverage leaves the successful watermark unchanged.
