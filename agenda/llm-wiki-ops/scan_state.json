@@ -20,38 +20,49 @@
       5
     ],
     "retry_unmerged_prs_after_watermark_advances": true,
-    "automation_state_note": "Observed already disabled during recovery on 2026-09-16; not resumed or rescheduled. Ongoing work is incomplete, not successfully terminated."
+    "automation_state_note": "Private live task lookup on September 21 reports is_enabled=false despite this in-progress run. Retain the schema-v1 boolean with that observed value; an active run does not prove future scheduling is enabled. No schedule change made.",
+    "automation_state_checked_date_utc": "2026-09-21"
   },
   "last_successful_scan_utc": "2026-09-11T15:04:36+00:00",
   "current_scan": {
-    "attempt_date_utc": "2026-09-16",
+    "attempt_date_utc": "2026-09-21",
     "coverage_start_utc": "2026-09-04T15:04:36+00:00",
     "coverage_cutoff_utc": null,
-    "attempted_search_window_end": "2026-09-16",
-    "status": "interrupted_before_complete_ingestion_validation",
-    "publication_status": "recovery_checkpoint_only_not_completed_ingestion",
-    "merge_status": "not_attempted_validation_incomplete",
-    "admitted": [],
-    "materially_updated": [],
-    "branch": "codex/paper-scan-2026-09-14-recovery",
-    "pull_request": "https://github.com/DrSquare/ReflectiveLoop/pull/7",
-    "base_commit": "2695f7cccf1956d6a1eec3298147a4b183fe5ed2",
-    "checkpoint": "agenda/llm-wiki-ops/pending-ingestions/2026-09-16-scan-checkpoint.json",
-    "blockers": [
-      "Workspace disconnected (409 environment_offline); execution/read/render/validation tools no longer available.",
-      "HarnessForge upload interrupted; expected Git blob still returns 404.",
-      "Exact-head validation for PR #8 was not completed; no merge attempted."
+    "status": "partial_scan_recovery_admission_published",
+    "publication_status": "published_complete_exact_PDF_ingestion",
+    "publication_commit": "1c954198a9a176b00952906455b1e0dd39a9d3e7",
+    "pull_request": "https://github.com/DrSquare/ReflectiveLoop/pull/13",
+    "merge_status": "pending_final_exact_head_revalidation",
+    "admitted": [
+      {
+        "id": "2609.09134",
+        "version": "2609.09134v1",
+        "stem": "yu-2026-co-evolving-harnesses-and-models",
+        "change": "recover_previously_reviewed_missing_PDF"
+      }
     ],
-    "watermark_advanced": false
+    "materially_updated": [],
+    "branch": "codex/paper-scan-2026-09-21",
+    "base_commit": "6608e1c5e0a2a0109a242c2d02f80ca0247b35ed",
+    "watermark_advanced": false,
+    "coverage_note": "Targeted primary-source searches and pending-PDF recovery completed; broad scan interrupted, so retain old successful coverage watermark even if this admission publishes.",
+    "deferred": [
+      "2609.13543",
+      "2609.15396",
+      "2609.15820",
+      "2609.02786",
+      "2609.03753",
+      "2609.00829",
+      "2505.22954v3",
+      "2609.11873v2"
+    ],
+    "blockers": [
+      "Dream-RSI binary upload did not complete; expected blob rejected as invalid (422) on subsequent tree check.",
+      "EnvHarness, HarnessForge and Procedural Graphs expected blobs likewise rejected (422); do not admit their reviewed notes.",
+      "Continual Harness and SkillRL base64 payloads exceed 16 MiB; shell Git still lacks authentication."
+    ]
   },
-  "pending_elsewhere": [
-    {
-      "id": "2608.23041",
-      "title": "AutoSaddler: Automatic Harness Optimization with Durable Updates from Agent Execution Traces",
-      "pull_request": "https://github.com/DrSquare/ReflectiveLoop/pull/3",
-      "status": "merged_to_main_as_abstract_summary; exact_PDF_upgrade_in_current_scan"
-    }
-  ],
+  "pending_elsewhere": [],
   "backlog": [
     {
       "id": "2606.01779",
@@ -141,6 +152,24 @@
       "id": "2609.08183",
       "title": "NeoHorse-1: Towards Recursive Self-Improvement",
       "status": "primary_search_result; exact_title_metadata_and_PDF_review_pending"
+    },
+    {
+      "id": "2609.13543",
+      "title": "Asclepius: An Adaptive Harness for Long-Horizon Clinical Agents",
+      "status": "primary_v1_metadata_verified; trace-driven manual revisions and held-out clinical simulation; full_PDF_review_deferred",
+      "discovered_date": "2026-09-21"
+    },
+    {
+      "id": "2609.02786",
+      "title": "SafeEvolve: Harness-Policy Co-Evolution from Agent Experience for Safety Alignment",
+      "status": "primary_abstract_verified; safety-oriented co-evolution comparator; full_PDF_review_deferred",
+      "discovered_date": "2026-09-21"
+    },
+    {
+      "id": "2609.03753",
+      "title": "SimSkill: A Lifelong Learning AI Agent for Autonomous Mastery of Traffic Simulation",
+      "status": "primary_abstract_verified; reusable skill memory with model/budget-dependent outcomes; full_PDF_review_deferred",
+      "discovered_date": "2026-09-21"
     }
   ],
   "missing_pdfs": [
@@ -154,8 +183,8 @@
       "status": "retrieved_and_reviewed_but_publication_blocked_by_16_MiB_request_limit",
       "draft_bundle": "agenda/llm-wiki-ops/pending-ingestions/karten-2026-continual-harness-online-adaptation-for.json",
       "base64_payload_bytes": 42335568,
-      "retry_result": "Preserved prior draft/provenance inspected before ordinary backlog. Shell Git dry-run failed for absent authentication; known base64 sizes remain above 16 MiB. Exact bytes were not re-downloaded/rehashed this run. No oversized upload attempted.",
-      "last_checked_utc": "2026-09-16T00:00:00+00:00",
+      "retry_result": "Prior bundle/provenance inspected; shell push dry-run still unauthenticated; preserved base64 size exceeds 16 MiB. No oversized request or byte modification attempted.",
+      "last_checked_utc": "2026-09-21T20:50:42Z",
       "last_verified_bytes_utc": "2026-09-11T15:04:36+00:00"
     },
     {
@@ -168,8 +197,8 @@
       "status": "retrieved_and_reviewed_but_publication_blocked_by_16_MiB_request_limit",
       "draft_bundle": "agenda/llm-wiki-ops/pending-ingestions/xia-2026-skillrl-evolving-agents-via-recursive.json",
       "base64_payload_bytes": 17537600,
-      "retry_result": "Preserved prior draft/provenance inspected before ordinary backlog. Shell Git dry-run failed for absent authentication; known base64 sizes remain above 16 MiB. Exact bytes were not re-downloaded/rehashed this run. No oversized upload attempted.",
-      "last_checked_utc": "2026-09-16T00:00:00+00:00",
+      "retry_result": "Prior bundle/provenance inspected; shell push dry-run still unauthenticated; preserved base64 size exceeds 16 MiB. No oversized request or byte modification attempted.",
+      "last_checked_utc": "2026-09-21T20:50:42Z",
       "last_verified_bytes_utc": "2026-09-11T15:04:36+00:00"
     },
     {
@@ -183,22 +212,9 @@
       "pages": 25,
       "status": "retrieved_hash_matches_prior_review; upload_interrupted; expected_remote_blob_404",
       "draft_bundle": "agenda/llm-wiki-ops/pending-ingestions/2026-09-14-reviewed-evidence.md",
-      "last_checked_utc": "2026-09-16T00:00:00+00:00",
-      "last_verified_bytes_utc": "2026-09-16T00:00:00+00:00"
-    },
-    {
-      "id": "2609.09134",
-      "version": "2609.09134v1",
-      "stem": "yu-2026-co-evolving-harnesses-and-models",
-      "url": "https://arxiv.org/pdf/2609.09134v1",
-      "bytes": 378829,
-      "sha256": "ae8b8973f7964fca32b192fe3166ac66edb1afb78ad2b5212ec33b892a25cc34",
-      "git_blob": "3fbf1bd0b0da7fe04c589b7ba23ee5a401182e0a",
-      "pages": 10,
-      "status": "retrieved_hash_matches_prior_review; historical_remote_upload_returned_expected_SHA; current_connector_cannot_decode_binary; not_in_published_tree",
-      "draft_bundle": "agenda/llm-wiki-ops/pending-ingestions/2026-09-14-reviewed-evidence.md",
-      "last_checked_utc": "2026-09-16T00:00:00+00:00",
-      "last_verified_bytes_utc": "2026-09-16T00:00:00+00:00"
+      "last_checked_utc": "2026-09-21T20:50:42Z",
+      "last_verified_bytes_utc": "2026-09-21T20:50:42Z",
+      "retry_result": "Fresh exact download matches preserved SHA-256; expected blob rejected by GitHub tree creation (422 not a valid blob). No source/wiki admission."
     },
     {
       "id": "2609.14858",
@@ -212,11 +228,13 @@
       "git_blob": "0cb845272e11df00319a97fc62ecdbb700db0640",
       "status": "reviewed_exact_PDF_local; binary_upload_timeout; expected_remote_blob_404; not_admitted",
       "draft_bundle": "agenda/llm-wiki-ops/pending-ingestions/zheng-2026-dream-rsi-recursive-self-improvement.json",
-      "last_checked_utc": "2026-09-18T22:59:08.527905+00:00",
+      "last_checked_utc": "2026-09-21T20:50:42Z",
       "blocker_category": "transport",
-      "base64_payload_bytes": 1272600
-     },
-     {
+      "base64_payload_bytes": 1272600,
+      "last_verified_bytes_utc": "2026-09-21T20:50:42Z",
+      "retry_result": "Fresh exact download matches preserved SHA-256; expected blob rejected by GitHub tree creation (422 not a valid blob). No source/wiki admission. Supported base64 upload was attempted but did not return completion; subsequent blob check remains negative."
+    },
+    {
       "id": "2608.19880",
       "version": "2608.19880v1",
       "title": "EnvHarness: Awakening Static Worlds for Agent Learning",
@@ -228,9 +246,29 @@
       "git_blob": "6c77627830248ad9baeead15859ca6d1ae72912b",
       "status": "exact_PDF_reviewed_locally; binary_upload_stalled; expected_remote_blob_404; no_admission",
       "draft_bundle": "agenda/llm-wiki-ops/pending-ingestions/huang-2026-envharness-awakening-static-worlds-for.json",
-      "last_checked_utc": "2026-09-18T17:24:24.902609+00:00",
+      "last_checked_utc": "2026-09-21T20:50:42Z",
       "blocker_category": "transport",
-      "base64_payload_bytes": 3347328
+      "base64_payload_bytes": 3347328,
+      "last_verified_bytes_utc": "2026-09-21T20:50:42Z",
+      "retry_result": "Fresh exact download matches preserved SHA-256; expected blob rejected by GitHub tree creation (422 not a valid blob). No source/wiki admission."
+    },
+    {
+      "id": "2609.09153",
+      "version": "2609.09153v1",
+      "title": "Procedural Graphs: Self-Evolving Execution Structures for LLM Agents",
+      "stem": "lu-2026-procedural-graphs-self-evolving-execution",
+      "url": "https://arxiv.org/pdf/2609.09153v1",
+      "bytes": 5653711,
+      "pages": 36,
+      "sha256": "90ffc33b32c009846a183edab09b521cde4d5342ccbfafa71cd00bd2186ddb9a",
+      "git_blob": "bfa0a1d0afe173cbbce74faefcd8e8b8f8e5ff80",
+      "base64_payload_bytes": 7538284,
+      "status": "reviewed_bundle_in_PR12; expected_blob_invalid_422; no_admission",
+      "draft_bundle_url": "https://github.com/DrSquare/ReflectiveLoop/blob/codex/procedural-graphs-pending-2026-09-20/agenda/llm-wiki-ops/pending-ingestions/lu-2026-procedural-graphs-self-evolving-execution.json",
+      "pull_request": "https://github.com/DrSquare/ReflectiveLoop/pull/12",
+      "blocker_category": "transport",
+      "last_checked_utc": "2026-09-21T20:50:42Z",
+      "retry_result": "Live draft head unchanged; exact PDF absent. Existing manual browser-upload work left untouched; no duplicate branch admission."
     }
   ],
   "scan_history": [
@@ -375,8 +413,8 @@
       "search_watermark_changed": false,
       "pull_request": "https://github.com/DrSquare/ReflectiveLoop/pull/11",
       "publication_commit": "ea02fb65983f8e254c1066ed423f3c582c750e42"
-     },
-     {
+    },
+    {
       "date_utc": "2026-09-18",
       "branch": "codex/envharness-pending-2026-09-18",
       "base_branch": "main",
@@ -397,26 +435,26 @@
   ],
   "pending_prs": [
     {
-      "number": 10,
-      "head": "0b3113d30151efef0c2ae6904748dcd76a57bd65",
-      "branch": "codex/envharness-pending-2026-09-18",
+      "number": 12,
+      "head": "070eea916492732bb7c0d006a5e94fdfaebda425",
+      "branch": "codex/procedural-graphs-pending-2026-09-20",
       "base": "main",
-      "status": "draft_reviewed_EnvHarness_ingestion_blocked_by_missing_published_PDF",
-      "checkpoint_commit": "60967c6685a5f65fd41e9d9bf4eacb8bb1917ee9"
+      "status": "draft_exact_PDF_absent; preserved_manual_browser_work; do_not_merge"
     },
     {
-      "number": 11,
-      "branch": "codex/dream-rsi-pending-2026-09-18",
+      "number": 13,
+      "branch": "codex/paper-scan-2026-09-21",
       "base": "main",
-      "status": "draft_Dream_RSI_reviewed_notes_pending_PDF_publication",
-      "checkpoint_commit": "ea02fb65983f8e254c1066ed423f3c582c750e42"
+      "publication_commit": "1c954198a9a176b00952906455b1e0dd39a9d3e7",
+      "status": "complete_ingestion_published; pending_final_exact_head_revalidation"
     }
   ],
   "duplicate_pending_this_scan": [
-    "2609.15983v2 in PR8",
-    "2609.10922v1 and 2609.11677v1 in PR6",
-    "2609.08228v1 and 2609.08944v1 in seed stack",
-    "2608.23041 abstract on main; full-text correction preserved in PR2 via merged PR5"
+    "2609.10922 Auto-RecSys and 2609.11677 Ecdysis already admitted on main",
+    "2608.23041 AutoSaddler full-text correction already admitted; preserved unchanged",
+    "2609.15983 Stellar Colosseum v2 already admitted",
+    "2609.09153 Procedural Graphs pending PR12",
+    "2608.19880 EnvHarness and 2609.14858 Dream-RSI merged draft bundles, not admitted"
   ],
   "preserved_deferred_ids": [
     "2609.11682",
@@ -465,15 +503,77 @@
         }
       ],
       "note": "Historical state preserved; September 18 fresh read found only PR #10 open before this Dream-RSI checkpoint."
+    },
+    {
+      "snapshot_date_utc": "2026-09-21",
+      "entries": [
+        {
+          "number": 10,
+          "head": "0b3113d30151efef0c2ae6904748dcd76a57bd65",
+          "branch": "codex/envharness-pending-2026-09-18",
+          "base": "main",
+          "status": "draft_reviewed_EnvHarness_ingestion_blocked_by_missing_published_PDF",
+          "checkpoint_commit": "60967c6685a5f65fd41e9d9bf4eacb8bb1917ee9"
+        },
+        {
+          "number": 11,
+          "branch": "codex/dream-rsi-pending-2026-09-18",
+          "base": "main",
+          "status": "draft_Dream_RSI_reviewed_notes_pending_PDF_publication",
+          "checkpoint_commit": "ea02fb65983f8e254c1066ed423f3c582c750e42"
+        }
+      ],
+      "note": "Historical entries; PR10/11 merged checkpoints, not completed admissions."
     }
   ],
   "live_repository_snapshot": {
-    "checked_date_utc": "2026-09-18",
+    "checked_date_utc": "2026-09-21",
     "default_branch": "main",
-    "head": "d249cb8c6878d3816698c3e5e5fa1d42a5654a1f",
+    "head": "6608e1c5e0a2a0109a242c2d02f80ca0247b35ed",
     "open_prs_before_this_checkpoint": [
-      10
+      12
     ],
-    "note": "21 admitted papers; seed/scan/AutoSaddler/Auto-RecSys/Ecdysis/Stellar Colosseum changes integrated. EnvHarness is pending, not a dependency of this separate addition."
-  }
+    "note": "21 admitted papers before this addition. PR2/5/6/8/9 integrated; PR10/11 are merged preservation checkpoints, not admissions."
+  },
+  "scan_attempt_history": [
+    {
+      "attempt_date_utc": "2026-09-16",
+      "coverage_start_utc": "2026-09-04T15:04:36+00:00",
+      "coverage_cutoff_utc": null,
+      "attempted_search_window_end": "2026-09-16",
+      "status": "interrupted_before_complete_ingestion_validation",
+      "publication_status": "recovery_checkpoint_only_not_completed_ingestion",
+      "merge_status": "not_attempted_validation_incomplete",
+      "admitted": [],
+      "materially_updated": [],
+      "branch": "codex/paper-scan-2026-09-14-recovery",
+      "pull_request": "https://github.com/DrSquare/ReflectiveLoop/pull/7",
+      "base_commit": "2695f7cccf1956d6a1eec3298147a4b183fe5ed2",
+      "checkpoint": "agenda/llm-wiki-ops/pending-ingestions/2026-09-16-scan-checkpoint.json",
+      "blockers": [
+        "Workspace disconnected (409 environment_offline); execution/read/render/validation tools no longer available.",
+        "HarnessForge upload interrupted; expected Git blob still returns 404.",
+        "Exact-head validation for PR #8 was not completed; no merge attempted."
+      ],
+      "watermark_advanced": false
+    }
+  ],
+  "missing_pdf_history": [
+    {
+      "id": "2609.09134",
+      "version": "2609.09134v1",
+      "stem": "yu-2026-co-evolving-harnesses-and-models",
+      "url": "https://arxiv.org/pdf/2609.09134v1",
+      "bytes": 378829,
+      "sha256": "ae8b8973f7964fca32b192fe3166ac66edb1afb78ad2b5212ec33b892a25cc34",
+      "git_blob": "3fbf1bd0b0da7fe04c589b7ba23ee5a401182e0a",
+      "pages": 10,
+      "status": "retrieved_hash_matches_prior_review; historical_remote_upload_returned_expected_SHA; current_connector_cannot_decode_binary; not_in_published_tree",
+      "draft_bundle": "agenda/llm-wiki-ops/pending-ingestions/2026-09-14-reviewed-evidence.md",
+      "last_checked_utc": "2026-09-16T00:00:00+00:00",
+      "last_verified_bytes_utc": "2026-09-16T00:00:00+00:00",
+      "resolved_date": "2026-09-21",
+      "resolution": "Fresh exact PDF hash matches; existing Git blob accepted in tree; full admission re-reviewed and prepared."
+    }
+  ]
 }

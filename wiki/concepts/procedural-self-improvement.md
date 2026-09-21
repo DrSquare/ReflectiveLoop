@@ -24,6 +24,10 @@ Evo-Harness learns guidance across tasks. Its reported regression with self-gene
 
 SkillForge adds explicit invocation and outcome-based maintenance, while SESA lets skill-guided solving alter the future self-play curriculum. These mechanisms are distinct from the learned shared-model editing role in CoSkill. [SkillForge, pp. 4-6](https://arxiv.org/pdf/2608.24747v1#page=4); [SESA, pp. 3-5](https://arxiv.org/pdf/2607.29468v1#page=3); [[self-improving-agents/feng-2026-coskill-joint-reinforcement]]
 
+## Compatibility is a separate adaptation axis
+
+[[self-improving-agents/yu-2026-co-evolving-harnesses-and-models]] distinguishes changing a harness from updating the model that uses it. Its fixed expert-correction procedure supervises student-visited states before LoRA SFT, avoiding most of the degradation caused by whole-trajectory imitation. The changed objects are harness artifacts and student weights; the experiment does not train or self-edit the outer correction procedure. Repeated co-evolution is proposed, not established by a multi-round curve. [PDF §§3.3-4, pp. 4-7](https://arxiv.org/pdf/2609.09134v1#page=6)
+
 ## Retrieval and optimizer state
 
 [[self-improving-agents/fu-2026-se-gos-self-evolving-graph]] expands the substrate taxonomy: the skill bodies and retrieval code remain unchanged while execution traces alter the graph that retrieval consumes. Its held-out gain remains inside the paper's stated noise band, and its repeated-update experiment shows a later decline. [SE-GoS, pp. 5-7, 10](https://arxiv.org/pdf/2609.08228v1#page=5)

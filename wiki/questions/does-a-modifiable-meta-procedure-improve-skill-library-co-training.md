@@ -35,6 +35,10 @@ This is a proposed experiment, not an established finding in this wiki.
 - Neither paper evaluates the other's setting, so there is no direct
   evidence in this wiki either way.
 
+## September 21 compatibility control
+
+[[self-improving-agents/yu-2026-co-evolving-harnesses-and-models]] narrows the assumption that harness and policy improvements compose: expert imitation hurts an evolved student harness, whereas localized student-state corrections largely preserve gains. Add a harness-by-update-method factorial control before attributing a joint-training gain to an editable meta-procedure. Hold task split, teacher budget and model-selection exposure fixed; report taskwise regressions and repeated-round retention. This proposed design follows the paper's interference evidence, not a direct test of Hyperagents plus CoSkill. Its fixed correction pipeline and sequential LoRA SFT leave the original question unanswered. [PDF §§3.3-4, pp. 4-7](https://arxiv.org/pdf/2609.09134v1#page=5)
+
 ## Tentative answer
 Unknown — no paper in this wiki tests this combination directly. This is a
 candidate direction to flag if/when a paper explicitly combining

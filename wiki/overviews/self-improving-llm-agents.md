@@ -10,9 +10,10 @@ agent's usable capability lives outside the frozen model weights — in the
 harness/scaffold, the meta-level procedure that modifies the agent, or the
 skill library it draws on — and that these components should themselves be
 learned or searched over, rather than hand-engineered once and frozen.
-Twenty-one papers currently in this wiki cover different parts of that idea,
+Twenty-two papers currently in this wiki cover different parts of that idea,
 including the September 11 scans, the September 12 additions of Auto-RecSys and
-Ecdysis, and the September 16 addition of Stellar Colosseum.
+Ecdysis, the September 16 addition of Stellar Colosseum, and the September 21
+recovery of Co-Evolving Harnesses and Models.
 
 Seed full-text review: September 8, 2026; all four seed PDFs are present.
 Expanded review: September 11, 2026 UTC; all ten new PDFs are present. The
@@ -42,6 +43,10 @@ structured negative feedback during long tasks, while leaving the
 [[questions/does-a-modifiable-meta-procedure-improve-skill-library-co-training]]
 question unanswered.
 [PDF §§6-8, pp. 13-17](https://arxiv.org/pdf/2609.15983v2#page=13)
+
+## Compatibility between harness and weight updates
+
+[[self-improving-agents/yu-2026-co-evolving-harnesses-and-models]] adds a negative composition result: expert-trajectory imitation reduces mean test success from 78.0% to 63.1% under a Qwen-evolved enterprise harness, while localized correction reaches 79.7%. The latter gains on five tasks and slightly regresses two. This narrows any assumption that a stronger teacher and an improved scaffold automatically produce additive gains. Student-state supervision is a concrete compatibility control alongside SIA and Experience Funnel, not a demonstrated self-editable editor or long-run co-evolution result. [PDF pp. 4-7](https://arxiv.org/pdf/2609.09134v1#page=5)
 
 ## Seed papers
 

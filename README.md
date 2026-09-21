@@ -1,8 +1,12 @@
 # ReflectiveLoop
 
-A literature-review knowledge base for self-improving agent harnesses, skills, and systems, following the LLM Wiki pattern. This branch contains **21 PDF-grounded papers**, with source notes, synthesis pages, and research questions.
+A literature-review knowledge base for self-improving agent harnesses, skills, and systems, following the LLM Wiki pattern. This branch contains **22 PDF-grounded papers**, with source notes, synthesis pages, and research questions.
 
 Start with the [generated catalog](index.md), [overview](wiki/overviews/self-improving-llm-agents.md), [mechanism comparison](wiki/concepts/procedural-self-improvement.md), and [evaluation boundaries](wiki/concepts/evaluating-self-improvement.md).
+
+## Added September 21, 2026
+
+- [Co-Evolving Harnesses and Models: On-Policy Correction Helps Weaker Models Catch Up Where Imitation Fails](wiki/self-improving-agents/yu-2026-co-evolving-harnesses-and-models.md) — Expert-trajectory imitation can disrupt a student-specific evolved harness; localized corrections at student-visited states largely preserve its gains. The seven-task result strengthens compatibility testing, not a claim of demonstrated long-run recursive improvement.
 
 ## Added September 16, 2026
 
@@ -13,7 +17,7 @@ Start with the [generated catalog](index.md), [overview](wiki/overviews/self-imp
 - [Auto-RecSys](wiki/self-improving-agents/li-2026-auto-recsys-harnessing-autonomous-research.md) — Persistent industrial research agents with evolving playbooks; operational adaptation evidence and explicit limits on validation and transfer.
 - [Ecdysis](wiki/self-improving-agents/yue-2026-ecdysis-efficient-and-effective-training.md) — Cross-task failure aggregation and diagnostic refinement before harness edits; frozen model-transfer tests and qualified accuracy/cost claims.
 
-Published in [PR #6](https://github.com/DrSquare/ReflectiveLoop/pull/6), stacked on [PR #5](https://github.com/DrSquare/ReflectiveLoop/pull/5), preserving the pending seed-PDF and literature updates. See the [September 12 review log](logs/2026-09-12-codex-workspace.md) and [September 13 publication log](logs/2026-09-13-codex-workspace.md).
+Originally published in [PR #6](https://github.com/DrSquare/ReflectiveLoop/pull/6), stacked on [PR #5](https://github.com/DrSquare/ReflectiveLoop/pull/5); both additions are now integrated into main through [PR #9](https://github.com/DrSquare/ReflectiveLoop/pull/9). See the [September 12 review log](logs/2026-09-12-codex-workspace.md) and [September 13 publication log](logs/2026-09-13-codex-workspace.md).
 
 ## September 11 scan additions and upgrades
 
@@ -35,7 +39,7 @@ Published in [PR #6](https://github.com/DrSquare/ReflectiveLoop/pull/6), stacked
 - [MCE](wiki/self-improving-agents/ye-2026-meta-context-engineering-via-agentic.md) — MCE evolves the instructions and code that build context, then executes those skills to produce context artifacts, while keeping model weights frozen.
 - [Darwin Godel Machine](wiki/self-improving-agents/zhang-2025-darwin-godel-machine-open-ended.md) — The Darwin Godel Machine evolves a population of coding agents that modify their own implementations, retaining useful stepping stones under empirical evaluation.
 
-The four original papers are Meta-Harness, Hyperagents, SIA, and CoSkill. Their PDF-grounded corrections are preserved from PR #2. PR #4 merged into the PR #2 branch; AutoSaddler merged into main through PR #3. The latest scan is stacked on the current seed-PDF branch and upgrades AutoSaddler under its existing stem. PR #2 remains open; this scan does not merge PRs.
+The four original papers are Meta-Harness, Hyperagents, SIA, and CoSkill. Their PDF-grounded corrections from PR #2 are now integrated into main. PR #4 merged into the PR #2 branch; AutoSaddler's initial entry merged through PR #3 and its full-text corrections are preserved under the same stem. Live state checked September 21: PRs #2 and #5 are closed and merged; the new scan starts from main without importing pending branches. EnvHarness and Dream-RSI remain unadmitted PDF-publication checkpoints despite PRs #10/#11 having merged; Procedural Graphs remains pending in draft PR #12.
 
 ## Daily scan
 
