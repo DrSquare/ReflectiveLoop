@@ -6,7 +6,7 @@
   "merge_policy": {
     "authorized_date_utc": "2026-09-13",
     "mode": "auto_merge_validated_ingestion_prs_to_default_branch",
-    "automation_enabled": true,
+    "automation_enabled": false,
     "schedule_start_local": "2026-09-14T08:00:00",
     "requirements": [
       "exact_PDF_and_wiki_validation",
@@ -20,7 +20,8 @@
       5
     ],
     "retry_unmerged_prs_after_watermark_advances": true,
-    "automation_state_note": "The September 16 disabled observation was historical; this September 21 recurring run is active. The schema-v1 automation_enabled field is retained explicitly. No schedule change made."
+    "automation_state_note": "Private live task lookup on September 21 reports is_enabled=false despite this in-progress run. Retain the schema-v1 boolean with that observed value; an active run does not prove future scheduling is enabled. No schedule change made.",
+    "automation_state_checked_date_utc": "2026-09-21"
   },
   "last_successful_scan_utc": "2026-09-11T15:04:36+00:00",
   "current_scan": {

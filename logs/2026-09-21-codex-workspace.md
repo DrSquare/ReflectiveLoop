@@ -36,3 +36,5 @@ model: "Codex; exact model identifier not exposed"
 ## [2026-09-21] maintenance | review correction | Preserve state schema
 
 - The automated review of initial commit `1c95419` found one P2: deleting the schema-v1 `merge_policy.automation_enabled` field removed its machine-readable state. Restored the explicit value `true` for this active recurring run and removed the dangling prose reference to an observation "above". No task schedule was changed. This corrects state compatibility, not scientific content.
+
+- Subsequent private live task lookup reports `is_enabled=false`. Corrected the retained boolean to that actual value and documented the observation date: execution of this run is not proof that future scheduling is enabled. This supersedes the preceding inference of `true` and the earlier instruction to leave it active. Settings were left unchanged; the task was not disabled by this run.
