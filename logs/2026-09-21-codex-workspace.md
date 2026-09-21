@@ -26,3 +26,9 @@ model: "Codex; exact model identifier not exposed"
 - `python3 scripts/build_index.py --apply`, `python3 scripts/validate_wiki.py` and `git diff --check` pass: 22 PDF/source/wiki triples, 26 wiki pages; current catalog, exact-PDF provenance, local links and reciprocal synthesis links.
 - README coverage, links and counts were checked: full affected title, dated contribution, relative wiki link, 22-paper headline consistent with manifest/catalog/inventory/overview. All 21 prior manifest records and source/PDF content remain unchanged. Canonical IDs and normalized titles have no duplicates; PDF signature, EOF and binary Git hash match.
 - Complete diff reviewed for accidental loss, stale state and unrelated edits. Historical snapshots are retained; current PR/retry state is refreshed. No modifications to PR #12, seed dependencies, preserved pending bundles or existing scientific notes. No independent benchmark reproduction or complete new search coverage is claimed.
+
+## [2026-09-21] maintenance | publication | PR #13 exact PDF recovered
+
+- Published [PR #13](https://github.com/DrSquare/ReflectiveLoop/pull/13), initial commit `1c954198a9a176b00952906455b1e0dd39a9d3e7`. Remote tree `e1197a90072345c87ed63ddb774807bece0fbeac` exactly matches the reviewed local tree. Fetching that branch recovered the exact binary; SHA-256 and all 22 triples revalidate successfully.
+- GitHub reports a non-draft, clean, mergeable PR. Current reviews and review threads are empty. Main is unprotected with no required status contexts, and repository rulesets are empty. The exact initial head has zero check runs and zero commit statuses; the combined endpoint's default `pending` label is not a running or required check. No CI pass is fabricated.
+- This acknowledgement updates only publication state and the log. Final head must be revalidated before the guarded merge. Broad-search coverage watermark remains unchanged, independently of successful publication.
