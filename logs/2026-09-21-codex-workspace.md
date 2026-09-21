@@ -32,3 +32,7 @@ model: "Codex; exact model identifier not exposed"
 - Published [PR #13](https://github.com/DrSquare/ReflectiveLoop/pull/13), initial commit `1c954198a9a176b00952906455b1e0dd39a9d3e7`. Remote tree `e1197a90072345c87ed63ddb774807bece0fbeac` exactly matches the reviewed local tree. Fetching that branch recovered the exact binary; SHA-256 and all 22 triples revalidate successfully.
 - GitHub reports a non-draft, clean, mergeable PR. Current reviews and review threads are empty. Main is unprotected with no required status contexts, and repository rulesets are empty. The exact initial head has zero check runs and zero commit statuses; the combined endpoint's default `pending` label is not a running or required check. No CI pass is fabricated.
 - This acknowledgement updates only publication state and the log. Final head must be revalidated before the guarded merge. Broad-search coverage watermark remains unchanged, independently of successful publication.
+
+## [2026-09-21] maintenance | review correction | Preserve state schema
+
+- The automated review of initial commit `1c95419` found one P2: deleting the schema-v1 `merge_policy.automation_enabled` field removed its machine-readable state. Restored the explicit value `true` for this active recurring run and removed the dangling prose reference to an observation "above". No task schedule was changed. This corrects state compatibility, not scientific content.
